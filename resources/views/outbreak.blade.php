@@ -70,11 +70,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="corona-count-bottom">
-                    <div class="gmaps">
-                        <img src="images/map.png" alt="map">
-                    </div>
-                </div>
+{{--                <div class="corona-count-bottom">--}}
+{{--                    <div class="gmaps">--}}
+{{--                        <img src="images/map.png" alt="map">--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
                 <div class="countcorona">
                     <div class="countcorona-area">
