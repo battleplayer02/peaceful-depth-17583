@@ -8,10 +8,9 @@ class SampleController extends Controller
 {
     //
     function dbCheck(){
-//        echo("<pre>");
-//        $users = DB::table("user_details")->get();
-//        echo($users);
-//        echo("</pre>");
-        echo("gggg");
+        echo("<pre>");
+        $users = DB::table("user_details")->get();
+        echo($users);
+        echo("</pre>");
     }
 }
