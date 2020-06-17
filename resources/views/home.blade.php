@@ -18,7 +18,8 @@
                                 <h2><span>Raise Your Hand </span></h2>
                                 <h2 class="banner-title">COVID19-ncov</h2>
                                 <h4>Healthcare Professionals And Researchers</h4>
-                                <a href="#" class="lab-btn style-2"><span>donate now <i class="icofont-heart"></i></span></a>
+                                <a href="#" class="lab-btn style-2"><span>donate now <i
+                                            class="icofont-heart"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -49,7 +50,8 @@
                         <div class="relife-title wow fadeInUp" data-wow-delay="0.4s">
                             <h4>Corona Virus</h4>
                             <h2>Relief Fund</h2>
-                            <p>Completely pursue parallel value with synergistic paradigms. extensible content whereas visionary expertise.</p>
+                            <p>Completely pursue parallel value with synergistic paradigms. extensible content whereas
+                                visionary expertise.</p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-12">
@@ -95,7 +97,8 @@
                                 </div>
                                 <div class="service-content">
                                     <h5>Give Donation</h5>
-                                    <p>Our comprehensive Online Marketing strategy will boost your website trafic hence monthly sales.</p>
+                                    <p>Our comprehensive Online Marketing strategy will boost your website trafic hence
+                                        monthly sales.</p>
                                     <a href="#" class="text-btn">donate now</a>
                                 </div>
                             </div>
@@ -112,7 +115,8 @@
                                 </div>
                                 <div class="service-content">
                                     <h5>Support Us</h5>
-                                    <p>Our comprehensive Online Marketing strategy will boost your website trafic hence monthly sales.</p>
+                                    <p>Our comprehensive Online Marketing strategy will boost your website trafic hence
+                                        monthly sales.</p>
                                     <a href="" class="text-btn">contact now</a>
                                 </div>
                             </div>
@@ -129,7 +133,8 @@
                                 </div>
                                 <div class="service-content">
                                     <h5>Become A Volunteer</h5>
-                                    <p>Our comprehensive Online Marketing strategy will boost your website trafic hence monthly sales.</p>
+                                    <p>Our comprehensive Online Marketing strategy will boost your website trafic hence
+                                        monthly sales.</p>
                                     <a href="#" class="text-btn">apply now</a>
                                 </div>
                             </div>
@@ -142,7 +147,8 @@
     <!-- Service Section Ending Here -->
 
     <!-- corona count section start here -->
-    <section class="corona-count-section bg_img home-7 padding-tb" style="background-image: url(css/bg-image/bg-5.jpg);">
+    <section class="corona-count-section bg_img home-7 padding-tb"
+             style="background-image: url(css/bg-image/bg-5.jpg);">
         <div class="container">
             <div class="corona-count-bottom">
                 <div class="row justify-content-center align-items-center flex-row-reverse">
@@ -153,7 +159,8 @@
                                 <h2>Update About Coronavirus</h2>
                             </div>
                             <ul class="lab-ul">
-                                <li class="media mb-2 p-4 bg-white align-items-center wow fadeInUp" data-wow-delay="0.3s">
+                                <li class="media mb-2 p-4 bg-white align-items-center wow fadeInUp"
+                                    data-wow-delay="0.3s">
                                     <div class="shape-image">
                                         <img src="images/project/shape.png" alt="project-shape">
                                     </div>
@@ -164,7 +171,8 @@
                                         <p class="mb-0">Coronavirus Cases in India</p>
                                     </div>
                                 </li>
-                                <li class="media mb-2 p-4 bg-white align-items-center wow fadeInUp" data-wow-delay="0.4s">
+                                <li class="media mb-2 p-4 bg-white align-items-center wow fadeInUp"
+                                    data-wow-delay="0.4s">
                                     <div class="shape-image">
                                         <img src="images/project/shape.png" alt="project-shape">
                                     </div>
@@ -175,7 +183,8 @@
                                         <p class="mb-0">Recovered Cases in India</p>
                                     </div>
                                 </li>
-                                <li class="media mb-2 p-4 bg-white align-items-center wow fadeInUp" data-wow-delay="0.5s">
+                                <li class="media mb-2 p-4 bg-white align-items-center wow fadeInUp"
+                                    data-wow-delay="0.5s">
                                     <div class="shape-image">
                                         <img src="images/project/shape.png" alt="project-shape">
                                     </div>
@@ -193,11 +202,18 @@
                         <div class="ccb-content wow fadeInLeft" data-wow-delay="0.4s">
                             <h4><span>WE ARE IN A MISSION</span></h4>
                             <h2>An Outbreak of the 2019 Novel Coronavirus Caused</h2>
-                            <p><em><b>Chikitsa COVID-19 Web App and Android Application Developed By Himanshu, Gaurav and Vaishnavi for NATIONAL BIOINFORMATICS ONLINE HACKATHON FOR FULL STACKERS.</b></em></p>
-                            <p>Coronaviruses are type of virus. There are many different kinds, & some cause disease newly identified type has caused recent outbreak of respiratory ilness now called COVID-19 that started in China.</p>
-                            <p>COVID-19 is the disease caused by the new coronavirus that emerged in China in December 2019.</p>
-                            <p>COVID-19 symptoms include cough fever and shortness breath. COVID-19 can be severe, and some cases have caused death.</p>
-                            <p>The new coronavirus can be spread from person to person. It is diagnosed with a laboratory test.</p>
+                            <p><em><b>Chikitsa COVID-19 Web App and Android Application Developed By Himanshu, Gaurav
+                                        and Vaishnavi for NATIONAL BIOINFORMATICS ONLINE HACKATHON FOR FULL
+                                        STACKERS.</b></em></p>
+                            <p>Coronaviruses are type of virus. There are many different kinds, & some cause disease
+                                newly identified type has caused recent outbreak of respiratory ilness now called
+                                COVID-19 that started in China.</p>
+                            <p>COVID-19 is the disease caused by the new coronavirus that emerged in China in December
+                                2019.</p>
+                            <p>COVID-19 symptoms include cough fever and shortness breath. COVID-19 can be severe, and
+                                some cases have caused death.</p>
+                            <p>The new coronavirus can be spread from person to person. It is diagnosed with a
+                                laboratory test.</p>
                         </div>
                     </div>
                 </div>
@@ -206,30 +222,48 @@
     </section>
     <!-- corona count section ending here -->
 
-
-    <div class="col-lg-12 col-12 mb-6 shuffle-item" data-groups="[&quot;World&quot;]">
-        <div class="position-relative rounded hover-wrapper">
-            <div class='tableauPlaceholder' id='viz1585339255136' style='position: relative'><noscript><a href='#'><img
-                            alt=' '
-                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;T7&#47;T797P95WD&#47;1_rss.png'
-                            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                    <param name='embed_code_version' value='3' />
-                    <param name='path' value='shared&#47;T797P95WD' />
-                    <param name='toolbar' value='yes' />
-                    <param name='static_image'
-                           value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;T7&#47;T797P95WD&#47;1.png' />
-                    <param name='animate_transition' value='yes' />
-                    <param name='display_static_image' value='yes' />
-                    <param name='display_spinner' value='yes' />
-                    <param name='display_overlay' value='yes' />
-                    <param name='display_count' value='yes' /></object></div>
-            <script
-                type='text/javascript'>                    var divElement = document.getElementById('viz1585339255136'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '927px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <div align="center">
+        <div class="" data-groups="[&quot;World&quot;]">
+            <div class="position-relative rounded hover-wrapper">
+                <div class='tableauPlaceholder' id='viz1585339255136' style='position: relative'>
+                    <noscript><a href='#'><img
+                                alt=' '
+                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;T7&#47;T797P95WD&#47;1_rss.png'
+                                style='border: none'/></a></noscript>
+                    <object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F'/>
+                        <param name='embed_code_version' value='3'/>
+                        <param name='path' value='shared&#47;T797P95WD'/>
+                        <param name='toolbar' value='yes'/>
+                        <param name='static_image'
+                               value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;T7&#47;T797P95WD&#47;1.png'/>
+                        <param name='animate_transition' value='yes'/>
+                        <param name='display_static_image' value='yes'/>
+                        <param name='display_spinner' value='yes'/>
+                        <param name='display_overlay' value='yes'/>
+                        <param name='display_count' value='yes'/>
+                    </object>
+                </div>
+                <script
+                    type='text/javascript'>                    var divElement = document.getElementById('viz1585339255136');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    if (divElement.offsetWidth > 800) {
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                    } else if (divElement.offsetWidth > 500) {
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                    } else {
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = '927px';
+                    }
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            </div>
         </div>
     </div>
     </div>
-
 
 
 @stop
