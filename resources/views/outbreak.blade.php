@@ -36,7 +36,7 @@
                                         <img src="images/corona/01.png" alt="corona">
                                     </div>
                                     <div class="corona-content">
-                                        <h3 class="count-number">262774</h3>
+                                        <h3 class="count-number">{{end($data)["Confirmed"]}}</h3>
                                         <p>Active Cases</p>
                                     </div>
                                 </div>
@@ -49,7 +49,7 @@
                                         <img src="images/corona/02.png" alt="corona">
                                     </div>
                                     <div class="corona-content">
-                                        <h3 class="count-number">125050</h3>
+                                        <h3 class="count-number">{{end($data)["Recovered"]}}</h3>
                                         <p>Recovered Cases</p>
                                     </div>
                                 </div>
@@ -62,7 +62,7 @@
                                         <img src="images/corona/03.png" alt="corona">
                                     </div>
                                     <div class="corona-content">
-                                        <h3 class="count-number">16558</h3>
+                                        <h3 class="count-number">{{end($data)["Deaths"]}}</h3>
                                         <p>Deaths</p>
                                     </div>
                                 </div>
