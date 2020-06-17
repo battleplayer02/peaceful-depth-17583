@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="http://johnny.heliohost.org/" uuid="54f9bda3-83dd-4abc-a770-2ded5bd8c1fb">
+      <driver-ref>mariadb</driver-ref>
+      <synchronize>true</synchronize>
+      <remarks>http://johnny.heliohost.org/</remarks>
+      <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mariadb://johnny.heliohost.org:3306</jdbc-url>
+    </data-source>
+  </component>
+</project>
