@@ -32,3 +32,15 @@ Route::get("test",function (){
 });
 
 Route::get("db","SampleController@dbCheck");
+
+Route::post("reghospital","RegHospController@index");
+Route::post("regdoctor","RegDocController@index");
+
+
+Route::view('/registerdoctor', function () {
+    return View("registerdoctor");
+});
+Route::view('/registerhospital', function () {
+    return View("registerhospital");
+});
+
