@@ -30,3 +30,5 @@ Route::view("/contactus","contactus");
 Route::get("test",function (){
     return "test";
 });
+
+Route::get("db","SampleController@dbCheck");
