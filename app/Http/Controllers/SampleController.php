@@ -8,8 +8,9 @@ class SampleController extends Controller
 {
     //
     function dbCheck(){
-        $users = DB::select('select * from user_details');
-        echo "<pre>";
-        return $users;
+        echo("<pre>");
+        $users = DB::table("user_details")->get();
+        echo($users);
+        echo("</pre>");
     }
 }
