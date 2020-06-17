@@ -52,13 +52,7 @@
                     <li><a href="">Training</a></li>
                     <li><a href="">Corona</a>
                         <ul class="lab-ul">
-                            <li><a href="service">Prevention</a>
-                                <ul class="lab-ul">
-                                    <li><a href="service">Prevention</a></li>
-                                    <li><a href="outbreak">Outbreak</a></li>
-                                </ul>
-                            </li>
-                            </li>
+                            <li><a href="prevention">Prevention</a></li>
                             <li><a href="outbreak">Outbreak</a></li>
                         </ul>
                     </li>
@@ -95,7 +89,12 @@
                                 </ul>
                             </li>
                             <li><a href="">Training</a></li>
-                            <li><a href="service">Prevention</a></li>
+                            <li><a href="">Corona</a>
+                                <ul class="lab-ul">
+                                    <li><a href="prevention">Prevention</a></li>
+                                    <li><a href="outbreak">Outbreak</a></li>
+                                </ul>
+                            </li>
                             <li><a href="contactus">Contact Us</a></li>
                         </ul>
                     </div>
