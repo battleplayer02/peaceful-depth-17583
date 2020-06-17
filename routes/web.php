@@ -26,3 +26,7 @@ Route::view("/service","service");
 Route::view("/outbreak","outbreak");
 
 Route::view("/contactus","contactus");
+
+Route::get("test",function (){
+    return "test";
+});
