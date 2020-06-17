@@ -23,7 +23,7 @@ Route::get("/home","ChikitsaController@index");
 Route::view("/doctors","doctors");
 
 Route::view("/service","service");
-Route::view("/outbreak","OutbreakController@index");
+Route::get("/outbreak","OutbreakController@index");
 
 Route::view("/contactus","contactus");
 
