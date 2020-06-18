@@ -1,9 +1,3 @@
-<?php
-$data = array(
-    "abck" => 1,
-    "aasd" => 2
-);
-?>
 @extends("layout")
 @section("title")
     <title>List Of Doctors</title>
