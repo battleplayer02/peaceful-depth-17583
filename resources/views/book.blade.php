@@ -2,7 +2,8 @@
 {{--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">--}}
 @extends("layout")
 @section("content")
-<form>
+<div class="contact-us">
+    <form>
     <div class="form-group row">
         <label for="text1" class="col-2 col-form-label">Text Field</label>
         <div class="col-10">
@@ -34,4 +35,5 @@
         </div>
     </div>
 </form>
+</div>
 @stop
