@@ -17,7 +17,7 @@
                         <div class="team-item">
                             <div class="team-item-inner">
                                 <div class="team-thumb">
-                                    <img src="assets/images/team/01.jpg" alt="team-membar">
+                                    <img src="images/team/01.jpg" alt="team-membar">
                                 </div>
                                 <div class="team-content">
                                     <h5 class="member-name">Dorothy M. Nickell</h5>
@@ -35,7 +35,7 @@
                         <div class="team-item">
                             <div class="team-item-inner">
                                 <div class="team-thumb">
-                                    <img src="assets/images/team/02.jpg" alt="team-membar">
+                                    <img src="images/team/02.jpg" alt="team-membar">
                                 </div>
                                 <div class="team-content">
                                     <h5 class="member-name">Billie R. Courtney</h5>
@@ -53,7 +53,7 @@
                         <div class="team-item">
                             <div class="team-item-inner">
                                 <div class="team-thumb">
-                                    <img src="assets/images/team/03.jpg" alt="team-membar">
+                                    <img src="images/team/03.jpg" alt="team-membar">
                                 </div>
                                 <div class="team-content">
                                     <h5 class="member-name">Courtney A. Smith</h5>
