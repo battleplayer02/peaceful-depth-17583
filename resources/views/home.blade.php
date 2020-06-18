@@ -61,11 +61,11 @@
                                 <span class="pay-price">₹ 20.00</span>
                                 <span class="pay-price">₹ 30.00</span>
                                 <span class="pay-price">₹ 50.00</span>
-                                <span class="pay-price active">$100.00</span>
+                                <span class="pay-price active">₹100.00</span>
                             </div>
                             <div class="donate-pay">
                                 <div class="person-price">
-                                    <label for="">$</label>
+                                    <label for="">₹</label>
                                     <input type="text" placeholder="100.00">
                                 </div>
                                 <div class="donate-send">
@@ -115,7 +115,7 @@
                                 </div>
                                 <div class="service-content">
                                     <h5>Request Travel Pass</h5>
-                                    <p>easily get your travelling pass through our website.</p>
+                                    <p>Easily get your travelling pass through our website.</p>
                                     <a href="" class="text-btn">contact now</a>
                                 </div>
                             </div>

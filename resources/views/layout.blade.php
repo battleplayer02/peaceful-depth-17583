@@ -43,14 +43,14 @@
                             <li><a href="">Hospitals</a></li>
                         </ul>
                     </li>
-                    <li><a href="">Volunteers</a>
-                        <ul class="lab-ul">
-                            <li><a href="">My Work</a></li>
-                            <li><a href="">Events Created</a></li>
-                        </ul>
-                    </li>
                     <li><a href="">Services</a>
                         <ul class="lab-ul">
+                            <li><a href="">Volunteers</a>
+                                <ul class="lab-ul">
+                                    <li><a href="">My Work</a></li>
+                                    <li><a href="">Events Created</a></li>
+                                </ul>
+                            </li>
                             <li><a href="">Training</a></li>
                             <li><a href="">Goverment Services</a></li>
                         </ul>
@@ -64,8 +64,18 @@
                     <li><a href="contactus">Contact Us</a></li>
                     <li><a href="">Sign In/ Sign Up</a>
                         <ul class="lab-ul">
-                            <li><a href="registeruser">User</a></li>
-                            <li><a href="registerdoctor">Doctor</a></li>
+                            <li><a>User</a>
+                                <ul class="lab-ul">
+                                    <li><a href="">Sign In</a></li>
+                                    <li><a href="registeruser">Sign Up</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Doctor</a>
+                                <ul class="lab-ul">
+                                    <li><a href="">Sign In</a></li>
+                                    <li><a href="registerdoctor">Sign Up</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -93,16 +103,16 @@
                                     <li><a href="">Hospitals</a></li>
                                 </ul>
                             </li>
-                            <li><a href="">Volunteers</a>
-                                <ul class="lab-ul">
-                                    <li><a href="">My Work</a></li>
-                                    <li><a href="">Events Created</a></li>
-                                </ul>
-                            </li>
                             <li><a href="">Services</a>
                                 <ul class="lab-ul">
-                                    <li><a href="prevention">Training</a></li>
-                                    <li><a href="outbreak">Goverment Services</a></li>
+                                    <li><a href="">Volunteers</a>
+                                        <ul class="lab-ul">
+                                            <li><a href="">My Work</a></li>
+                                            <li><a href="">Events Created</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">Training</a></li>
+                                    <li><a href="">Goverment Services</a></li>
                                 </ul>
                             </li>
                             <li><a href="">Corona</a>
@@ -114,8 +124,18 @@
                             <li><a href="contactus">Contact Us</a></li>
                             <li><a href="">Sign In/ Sign Up</a>
                                 <ul class="lab-ul">
-                                    <li><a href="registeruser">User</a></li>
-                                    <li><a href="registerdoctor">Doctor</a></li>
+                                    <li><a>User</a>
+                                        <ul class="lab-ul">
+                                            <li><a href="">Sign In</a></li>
+                                            <li><a href="registeruser">Sign Up</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a>Doctor</a>
+                                        <ul class="lab-ul">
+                                            <li><a href="">Sign In</a></li>
+                                            <li><a href="registerdoctor">Sign Up</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
