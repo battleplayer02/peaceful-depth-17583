@@ -43,12 +43,16 @@
                                placeholder="Contact Number" type="text" required="">
                         <br><br><br>
                         <label class="control-label" for="contact_number">Gender:</label>
-                        Male
-                        <input type="radio" class="form-check-input" name="gender">
-
-                        Female
-                        <input type="radio" class="form-check-input" name="gender">
-
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optradio">Option 1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optradio">Option 2
+                            </label>
+                        </div>
                         <br>
                         <label class="control-label" for="blood_group">Blood Group</label>
                         <input id="blood_group" name="blood_group" type="text" placeholder="Enter your Blood Group"
