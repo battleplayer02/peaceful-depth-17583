@@ -9,7 +9,7 @@
     <!-- Contact Section Start Here -->
     <section class="contact-us padding-tb pb-0">
         <div class="container">
-            <div class="contact-wrap col-lg-4 col-sm-4">
+            <div class="contact-wrap col-lg-6 col-sm-4 align-content-center">
                 <div class="contact-title">
                     <h5>New User Registration</h5>
                 </div>
