@@ -54,7 +54,10 @@
                             <label class="custom-file-label" for="customFile">Upload Profile Photo</label>
                         </div>
                         <label class="control-label" for="fullname">Full Name</label>
-                        <input id="fullname" name="fullname" type="text" placeholder="Full Name" class="form-control"
+                        @error('fullname')
+                        <span style="color: red"> {{ $message}}</span>
+                        @enderror
+                        <input id="fullname" name="fullname" type="text" placeholder="Full Name" class="form-control" value="{{$_POST['fullname']}}"
                                required="">
                         <label class="control-label" for="email">Email Id</label>
                         <input id="email" name="email" type="text" placeholder="Enter your Email Id"
