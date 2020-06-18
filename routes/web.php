@@ -12,10 +12,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-//
-//Route::get('/', function () {
-//    return view('welcome');
-//});
 
 Route::get("/","ChikitsaController@index");
 Route::get("/home","ChikitsaController@index");
@@ -25,12 +21,9 @@ Route::view("/service","service");
 Route::get("/outbreak","OutbreakController@index");
 
 Route::get("/doctors","ListOfDoctors@index");
+Route::get("/hospitals","ListOfHospitals@index");
 
 Route::view("/contactus","contactus");
-
-Route::get("test",function (){
-    return "test";
-});
 
 Route::get("db","SampleController@dbCheck");
 
