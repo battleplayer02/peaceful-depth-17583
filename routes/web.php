@@ -21,7 +21,7 @@ Route::view("/service","service");
 Route::get("/outbreak","OutbreakController@index");
 
 Route::get("/doctors","ListOfDoctor@index");
-Route::get("/hospitals","ListOfHospital@index");
+Route::get("/hospitals","ListOfHospitals@index");
 
 Route::view("/contactus","contactus");
 
