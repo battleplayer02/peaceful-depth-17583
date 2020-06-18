@@ -49,14 +49,25 @@
                             <li><a href="">Events Created</a></li>
                         </ul>
                     </li>
-                    <li><a href="">Training</a></li>
+                    <li><a href="">Services</a>
+                        <ul class="lab-ul">
+                            <li><a href="">Training</a></li>
+                            <li><a href="">Goverment Services</a></li>
+                        </ul>
+                    </li>
                     <li><a href="">Corona</a>
                         <ul class="lab-ul">
-                            <li><a href="prevention">Prevention</a></li>
+                            <li><a href="service">Prevention</a></li>
                             <li><a href="outbreak">Outbreak</a></li>
                         </ul>
                     </li>
                     <li><a href="contactus">Contact Us</a></li>
+                    <li><a href="">Sign In/ Sign Up</a>
+                        <ul class="lab-ul">
+                            <li><a href="registeruser">User</a></li>
+                            <li><a href="registerdoctor">Doctor</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -88,14 +99,25 @@
                                     <li><a href="">Events Created</a></li>
                                 </ul>
                             </li>
-                            <li><a href="">Training</a></li>
+                            <li><a href="">Services</a>
+                                <ul class="lab-ul">
+                                    <li><a href="prevention">Training</a></li>
+                                    <li><a href="outbreak">Goverment Services</a></li>
+                                </ul>
+                            </li>
                             <li><a href="">Corona</a>
                                 <ul class="lab-ul">
-                                    <li><a href="prevention">Prevention</a></li>
+                                    <li><a href="service">Prevention</a></li>
                                     <li><a href="outbreak">Outbreak</a></li>
                                 </ul>
                             </li>
                             <li><a href="contactus">Contact Us</a></li>
+                            <li><a href="">Sign In/ Sign Up</a>
+                                <ul class="lab-ul">
+                                    <li><a href="registeruser">User</a></li>
+                                    <li><a href="registerdoctor">Doctor</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                     <div class="header-btn">

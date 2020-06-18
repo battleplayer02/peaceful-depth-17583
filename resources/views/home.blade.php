@@ -114,9 +114,8 @@
                                     <img src={{"images/service/home-7/02.jpg"}} alt="service">
                                 </div>
                                 <div class="service-content">
-                                    <h5>Support Us</h5>
-                                    <p>Our comprehensive Online Marketing strategy will boost your website trafic hence
-                                        monthly sales.</p>
+                                    <h5>Request Travel Pass</h5>
+                                    <p>easily get your travelling pass through our website.</p>
                                     <a href="" class="text-btn">contact now</a>
                                 </div>
                             </div>
