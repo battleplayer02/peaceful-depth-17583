@@ -1,3 +1,10 @@
+<?php
+$data = array(
+    "1"=>1,
+    "2"=>2
+);
+
+?>
 @extends("layout")
 @section("title")
     <title>List Of Doctors</title>
