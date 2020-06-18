@@ -82,6 +82,8 @@
                             <option value="Female"
                                     @if(old('gender'))
                                     selected
+                                    @endif
+
                             >Female</option>
                         </select>
                         <br>
