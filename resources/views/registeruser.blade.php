@@ -5,76 +5,101 @@
     <title>Reg User</title>
 @endsection
 @section('content')
-    <h3 style="text-align: center">User Registration</h3>
-    <!-- Upload  -->
+    <form class="form-horizontal">
+        <fieldset>
 
-    <form action="reguser" method="post" enctype="multipart/form-data">
-        @csrf
-        <div style="">
-            <img width="150" height="150" name="output" id="output">
-        </div>
+            <!-- Form Name -->
+            <legend>Register User</legend>
 
-        <label class="">
-            Upload Photo
-            <input type="file" name="user_profile" value="Upload Photo" onchange="loadfile(event)">
-        </label><br>
-        @error('user_profile')
-        <span style="color: red;"> {{ $message}}</span>
-        @enderror
-        <div class="row">
-            <div class="">
-                <input type="text" name="fullname">
-                @error('fullname')
-                <span style="color: red"> {{ $message}}</span>
-                @enderror
-                <label for="first_name">Full Name</label><br>
-            </div>
-            <div class="">
-                <input type="text" name="email">
-                @error('email')
-                <span style="color: red">{{ $message}}</span>
-                @enderror
-                <label for="last_name">Email ID</label><br>
-            </div>
-            <div class="">
-                <input type="text" name="blood_group">
-                @error('blood_group')
-                <span style="color: red">{{ $message}}</span>
-                @enderror
-                <label for="last_name">Blood Group</label><br>
-            </div>
-            <div class="">
-                <input type="text" name="contact_number">
-                @error('contact_number')
-                <span style="color: red">{{ $message}}</span>
-                @enderror
-                <label for="last_name">Contact Number</label><br>
-            </div>
-            <div class="">
-                <input type="text" name="gender">
-                @error('gender')
-                <span style="color: red">{{ $message}}</span>
-                @enderror
-                <label for="last_name">Gender</label><br>
-            </div>
-            <div class="">
-                <input type="password" name="password">
-                @error('password')
-                <span style="color: red">{{ $message}}</span>
-                @enderror
-                <label for="last_name">Password</label><br>
-            </div>
-            <div class="">
-                <input type="password" name="confirm_password">
-                @error('confirm_password')
-                <span style="color: red">{{ $message}}</span>
-                @enderror
-                <label for="last_name">Confirm Password</label><br>
-            </div>
-            <button type="submit" class="">Submit</button>
-        </div>
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="fullname">Full Name</label>
+                <div class="col-md-5">
+                    <input id="fullname" name="fullname" type="text" placeholder="Full Name" class="form-control input-md" required="">
 
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="email">Email Id</label>
+                <div class="col-md-5">
+                    <input id="email" name="email" type="text" placeholder="Enter your Email Id" class="form-control input-md" required="">
+
+                </div>
+            </div>
+
+            <!-- Prepended text-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="contact_number">Contact Number</label>
+                <div class="col-md-5">
+                    <div class="input-group">
+                        <span class="input-group-addon">+91</span>
+                        <input id="contact_number" name="contact_number" class="form-control" placeholder="Contact Number" type="text" required="">
+                    </div>
+                    <p class="help-block">+91 xxxxx xxxxx</p>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="blood_group">Blood Group</label>
+                <div class="col-md-5">
+                    <input id="blood_group" name="blood_group" type="text" placeholder="Blood Group" class="form-control input-md" required="">
+
+                </div>
+            </div>
+
+            <!-- Multiple Radios -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="gender">Gender</label>
+                <div class="col-md-4">
+                    <div class="radio">
+                        <label for="gender-0">
+                            <input type="radio" name="gender" id="gender-0" value="Male" checked="checked">
+                            Male
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="gender-1">
+                            <input type="radio" name="gender" id="gender-1" value="Female">
+                            Female
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Password input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="password">Password</label>
+                <div class="col-md-5">
+                    <input id="password" name="password" type="password" placeholder="Password" class="form-control input-md" required="">
+                    <span class="help-block">Minimum 6 characters</span>
+                </div>
+            </div>
+
+            <!-- Password input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="confirm_password">Confirm Password</label>
+                <div class="col-md-5">
+                    <input id="confirm_password" name="confirm_password" type="password" placeholder="Re-Type Your Password " class="form-control input-md" required="">
+
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for=""></label>
+                <div class="col-md-4">
+                    <button id="" name="" class="btn btn-info">Submit</button>
+                </div>
+            </div>
+
+        </fieldset>
     </form>
+
+
+
     <script>
         var loadfile = function (event) {
             var output = document.getElementById("output");
