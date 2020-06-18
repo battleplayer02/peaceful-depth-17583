@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 @stop
 @section("content")
-<div class="card shadow">
+<div class="card shadow col-lg-6">
     <form class="card-body">
     <div class="form-group row">
         <label for="text1" class="col-2 col-form-label">Text Field</label>
