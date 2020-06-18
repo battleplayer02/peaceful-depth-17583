@@ -29,19 +29,17 @@
                     <div class="contact-title">
                         <h5>New User Registration</h5>
                     </div>
-                    <form class="contact-form" action="http://demos.codexcoder.com/labartisan/html/covid-19/contact.php"
+                    <form class="contact-form" action=""
                           method="POST">
                         <!-- Text input-->
                         <label class="control-label" for="fullname">Full Name</label>
                         <input id="fullname" name="fullname" type="text" placeholder="Full Name" class="form-control" required="">
-
-                <input type="text" name="name" placeholder="Your Name" class="form-control">
-                <input type="text" name="name" placeholder="Your Name" class="form-control">
-                <input type="text" name="name" placeholder="Your Name" class="form-control">
-                <input type="text" name="name" placeholder="Your Name" class="form-control">
-                <input type="text" name="name" placeholder="Your Name" class="form-control">
-                <input type="text" name="name" placeholder="Your Name" class="form-control">
-                <input type="submit" name="submit" value="Register" class="lab-btn">
+                        <label class="control-label" for="email">Email Id</label>
+                        <input id="email" name="email" type="text" placeholder="Enter your Email Id" class="form-control" required="">
+                        <label class="control-label" for="contact_number">Contact Number</label>
+                        <input id="contact_number" name="contact_number" class="form-control" placeholder="Contact Number" type="text" required="">
+                        <p class="help-block">+91 xxxxx xxxxx</p>
+                        <input type="submit" name="submit" value="Register" class="lab-btn">
                 </form>
             </div>
     </div>
