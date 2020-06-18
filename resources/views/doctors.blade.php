@@ -15,7 +15,6 @@
             <div class="team-area">
                 <div class="row justify-content-center align-items-center">
                     @foreach($data as $key => $value)
-
                     <div class="col-xl-4 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item">
                             <div class="team-item-inner">
@@ -37,9 +36,7 @@
                             </div>
                         </div>
                     </div>
-
-
-
+                    @endforeach
                 </div>
             </div>
         </div>
