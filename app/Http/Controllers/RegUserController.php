@@ -9,7 +9,6 @@ class RegUserController extends Controller
     //
     function register(Request $req)
     {
-        echo "hello";
         $req->validate([
             "fullname"=>"required",
             "email"=>"required | email",

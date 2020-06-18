@@ -53,12 +53,15 @@
                                    onchange="loadfile(event)" required="">
                             <label class="custom-file-label" for="customFile">Upload Profile Photo</label>
                         </div>
-                        <label class="control-label" for="fullname">Full Name</label>
-                        @error('fullname')
-                        <span style="color: red"> {{ $message}}</span>
-                        @enderror
-                        <input id="fullname" name="fullname" type="text" placeholder="Full Name" class="form-control" value="{{$_POST['fullname']}}"
-                               required="">
+                        <div class="form-group {{$error->has("fullname")? "has-error":""}}">
+                            <label class="control-label" for="fullname">Full Name</label>
+                            <input id="fullname" name="fullname" type="text" placeholder="Full Name"
+                                   class="form-control"
+                                   required="">
+                            @if ($error->has("fullname"))
+                                <span class="help-block">{{$message}}</span>
+                            @endif
+                        </div>
                         <label class="control-label" for="email">Email Id</label>
                         <input id="email" name="email" type="text" placeholder="Enter your Email Id"
                                class="form-control" required="">
@@ -75,7 +78,8 @@
                         <input id="blood_group" name="blood_group" type="text" placeholder="Enter your Blood Group"
                                class="form-control" required="">
                         <label class="control-label" for="fullname">Password</label>
-                        <input id="password" name="password" type="password" placeholder="Password" class="form-control"
+                        <input id="password" name="password" type="password" placeholder="Password"
+                               class="form-control"
                                required="">
                         <label class="control-label" for="Password">Confirm Password</label>
                         <input id="confirm_password" name="confirm_password" type="password"
