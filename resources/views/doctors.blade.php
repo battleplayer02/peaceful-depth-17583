@@ -1,3 +1,9 @@
+<?php
+$data = array(
+    "abck" => 1,
+    "aasd" => 2
+);
+?>
 @extends("layout")
 @section("title")
     <title>List Of Doctors</title>
@@ -14,6 +20,8 @@
             </div>
             <div class="team-area">
                 <div class="row justify-content-center align-items-center">
+                    @foreach($data as $key => $value)
+
                     <div class="col-xl-4 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item">
                             <div class="team-item-inner">
@@ -35,42 +43,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="team-item">
-                            <div class="team-item-inner">
-                                <div class="team-thumb">
-                                    <img src="images/team/02.jpg" alt="team-membar">
-                                </div>
-                                <div class="team-content">
-                                    <h5 class="member-name">Billie R. Courtney</h5>
-                                    <span class="member-dagi">Cardiologist</span>
-                                    <p class="member-details"></p>
-                                    <ul class="icon-style-list lab-ul">
-                                        <li><i class="icofont-phone"></i><span>+880 1234 567 890</span></li>
-                                        <li><i class="icofont-envelope"></i><span>b.r.courtney@gmail.com</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="team-item">
-                            <div class="team-item-inner">
-                                <div class="team-thumb">
-                                    <img src="images/team/03.jpg" alt="team-membar">
-                                </div>
-                                <div class="team-content">
-                                    <h5 class="member-name">Courtney A. Smith</h5>
-                                    <span class="member-dagi">Rehabilitation Therapy</span>
-                                    <p class="member-details"></p>
-                                    <ul class="icon-style-list lab-ul">
-                                        <li><i class="icofont-phone"></i><span>+880 1234 567 890</span></li>
-                                        <li><i class="icofont-envelope"></i><span>c.a.smith@gmail.com</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+
+
                 </div>
             </div>
         </div>
