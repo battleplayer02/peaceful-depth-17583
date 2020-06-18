@@ -29,7 +29,7 @@
                     <div class="contact-title">
                         <h5>New User Registration</h5>
                     </div>
-                    <form class="contact-form" action="reguser"
+                    <form class="card shadow" action="reguser"
                           method="POST">
                         <!-- Text input-->
                         <label class="control-label" for="fullname">Full Name</label>
