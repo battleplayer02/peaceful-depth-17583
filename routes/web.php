@@ -38,3 +38,5 @@ Route::view("registeruser","registeruser");
 Route::post("reguser","RegUserController@register");
 
 Route::view("bookappointment","book");
+
+Route::view("login","login");
