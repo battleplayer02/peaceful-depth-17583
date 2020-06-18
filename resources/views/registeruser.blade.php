@@ -10,7 +10,6 @@
     <section class="page-header">
         <div class="container">
             <div class="page-title">
-                <h2>Contact info</h2>
                 <ul class="breadcrumb lab-ul">
                     <li><a href="index.html">Home</a></li>
                     <li>Register New User</li>
@@ -32,6 +31,14 @@
                 </div>
                 <form class="contact-form" action="http://demos.codexcoder.com/labartisan/html/covid-19/contact.php"
                       method="POST">
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="fullname">Full Name</label>
+                        <div class="col-md-5">
+                            <input id="fullname" name="fullname" type="text" placeholder="Full Name" class="form-control input-md" required="">
+
+                        </div>
+                    </div>
                     <input type="text" name="name" placeholder="Your Name" class="form-control">
                     <input type="text" name="name" placeholder="Your Name" class="form-control">
                     <input type="text" name="name" placeholder="Your Name" class="form-control">
