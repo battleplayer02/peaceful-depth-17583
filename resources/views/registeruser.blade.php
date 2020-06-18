@@ -7,6 +7,7 @@
 @section('content')
 
     <!-- Contact Section Start Here -->
+    <div align="center">
     <section class="contact-us padding-tb pb-0 align-content-center">
         <div class="container align-content-center">
             <div class="contact-wrap col-lg-6 col-sm-4" align="center">
@@ -26,6 +27,7 @@
             </div>
         </div>
     </section>
+    </div>
     <!-- Contact Section Ending Here -->
 
 
