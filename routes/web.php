@@ -20,10 +20,11 @@ use Illuminate\Support\Facades\Route;
 Route::get("/","ChikitsaController@index");
 Route::get("/home","ChikitsaController@index");
 
-Route::view("/doctors","doctors");
 
 Route::view("/service","service");
 Route::get("/outbreak","OutbreakController@index");
+
+Route::get("/doctors","ListOfDoctors@index");
 
 Route::view("/contactus","contactus");
 

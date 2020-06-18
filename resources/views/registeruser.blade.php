@@ -29,7 +29,7 @@
                     <div class="contact-title">
                         <h5>New User Registration</h5>
                     </div>
-                    <form class="contact-form" action=""
+                    <form class="contact-form" action="reguser"
                           method="POST">
                         <!-- Text input-->
                         <label class="control-label" for="fullname">Full Name</label>
@@ -41,7 +41,6 @@
                         <label class="control-label" for="contact_number">Contact Number</label>
                         <input id="contact_number" name="contact_number" class="form-control"
                                placeholder="Contact Number" type="text" required="">
-                        <br><br><br>
                         <label class="control-label" for="contact_number">Gender:</label>
                         <select name="gender" id="" class="form-control">
                             <option value="Male">Male</option>
