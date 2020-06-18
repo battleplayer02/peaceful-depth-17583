@@ -11,16 +11,18 @@
         <div class="container">
             <div class="contact-wrap">
                 <div class="row">
-                    <div class="col-lg-8 col-md-6 col-xs-12">
+                    <div class="col-lg-6 col-md-6 col-xs-12">
                         <div class="contact-title">
                             <h5>New User Registration</h5>
                         </div>
                         <form class="contact-form" action="http://demos.codexcoder.com/labartisan/html/covid-19/contact.php" method="POST">
                             <input type="text" name="name" placeholder="Your Name" class="contact-input">
-                            <input type="email" name="email" placeholder="Your Email" class="contact-input">
-                            <input type="text" name="text" placeholder="Your Address" class="contact-input">
-                            <input type="text" name="text" placeholder="Your Company" class="contact-input">
-                            <textarea rows="5" class="contact-input" placeholder="Your Messages"></textarea>
+                            <input type="text" name="name" placeholder="Your Name" class="contact-input">
+                            <input type="text" name="name" placeholder="Your Name" class="contact-input">
+                            <input type="text" name="name" placeholder="Your Name" class="contact-input">
+                            <input type="text" name="name" placeholder="Your Name" class="contact-input">
+                            <input type="text" name="name" placeholder="Your Name" class="contact-input">
+
                             <input type="submit" name="submit" value="Register" class="lab-btn">
                         </form>
                     </div>
