@@ -12,13 +12,13 @@
         <div class="card-body">
             <form>
                 <div class="form-group row">
-                    <label for="text1" class="col-2 col-form-label">Text Field</label>
+                    <label for="text1" class="col-2 col-form-label">Text Field</label><br>
                     <div class="col-10">
                         <input id="text1" name="text1" type="text" class="form-control">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="text" class="col-2 col-form-label">Text Field</label>
+                    <label for="text" class="col-2 col-form-label">Text Field</label><br>
                     <div class="col-10">
                         <div class="input-group">
                             <div class="input-group-prepend">
@@ -31,7 +31,7 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="text2" class="col-2 col-form-label">Text Field</label>
+                    <label for="text2" class="col-2 col-form-label">Text Field</label><br>
                     <div class="col-10">
                         <input id="text2" name="text2" type="text" class="form-control">
                     </div>
