@@ -10,7 +10,7 @@
 
     <form action="reguser" method="post" enctype="multipart/form-data">
         @csrf
-        <div style="width:100%; height:100%">
+        <div style="">
             <img width="150" height="150" name="output" id="output">
         </div>
 
