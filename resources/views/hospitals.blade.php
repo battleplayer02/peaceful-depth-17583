@@ -35,7 +35,7 @@ $data = array(
                                         <ul class="icon-style-list lab-ul">
                                             <li><i class="icofont-phone"></i><span>+880 1234 567 890</span></li>
                                             <li><i class="icofont-envelope"></i><span>d.m.nickell@gmail.com</span></li>
-                                            <li><i class="icofont-envelope"></i>
+                                            <li><i class="icofont-envelope align-content-center"></i>
                                                 <button class="btn btn-info">Book Appointment</button>
                                             </li>
                                         </ul>
