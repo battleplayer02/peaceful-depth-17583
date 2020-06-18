@@ -5,7 +5,7 @@
 @stop
 @section("content")
     <div align="center">
-    <div class="card col-lg-8 m-5">
+    <div class="card col-lg-8 m-5 col-sm-8 col-md-8">
         <h5 class="card-header">
             Book Appointment
         </h5>
