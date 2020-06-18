@@ -6,6 +6,9 @@
 @section("content")
     <div align="center">
         <div class="card shadow col-lg-6">
+            <div class="card-header">
+                Book Appointment
+            </div>
             <form class="card-body">
                 <div class="form-group row">
                     <label for="text1" class="col-2 col-form-label">Text Field</label>
