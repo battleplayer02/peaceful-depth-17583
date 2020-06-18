@@ -23,13 +23,13 @@
 
     <!-- Contact Section Start Here -->
     <div align="center">
-        <section class="contact-us padding-tb pb-0 align-content-center">
+        <section class="card padding-tb pb-0 align-content-center">
             <div class="container align-content-center">
-                <div class="contact-wrap col-lg-6 col-sm-4" align="center">
+                <div class="card-title col-lg-6 col-sm-4" align="center">
                     <div class="contact-title">
                         <h5>New User Registration</h5>
                     </div>
-                    <form class="card shadow" action="reguser"
+                    <form class="card-body shadow" action="reguser"
                           method="POST">
                         <!-- Text input-->
                         <label class="control-label" for="fullname">Full Name</label>
