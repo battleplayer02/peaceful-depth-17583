@@ -61,36 +61,53 @@
                                    class="form-control"
                                    required="">
                             @error('fullname')
-                            <span style="color: red">{{ $message}}</span>
+                            <span style="color: red">{{ $message}}<br></span>
                             @enderror
                         </div>
                         <label class="control-label" for="email">Email Id</label>
                         <input id="email" name="email" type="text" placeholder="Enter your Email Id"
                                class="form-control" required="" value="{{old('email')}}">
                         @error('email')
-                        <span style="color: red">{{ $message}}</span>
+                        <span style="color: red">{{ $message}}<br></span>
                         @enderror
                         <label class="control-label" for="contact_number">Contact Number</label>
                         <input id="contact_number" name="contact_number" class="form-control"
-                               placeholder="Contact Number" type="text" required="">
+                               placeholder="Contact Number" type="text" value="{{old("contact_number")}}" required="">
+                        @error('contact_number')
+                        <span style="color: red">{{ $message}}<br></span>
+                        @enderror
                         <label class="control-label" for="contact_number">Gender:</label>
                         <select name="gender" id="" class="form-control">
                             <option value="Male">Male</option>
-                            <option value="Female">Female</option>
+                            <option value="Female"
+                                    @if(old('gender'))
+                                    selected
+                            >Female</option>
                         </select>
                         <br>
                         <label class="control-label" for="blood_group">Blood Group</label>
                         <input id="blood_group" name="blood_group" type="text" placeholder="Enter your Blood Group"
-                               class="form-control" required="">
+                               class="form-control" value="{{old('blood_group')}}" required="">
+                        @error('blood_group')
+                        <span style="color: red">{{ $message}}<br></span>
+                        @enderror
+
                         <label class="control-label" for="fullname">Password</label>
                         <input id="password" name="password" type="password" placeholder="Password"
                                class="form-control"
                                required="">
+                        @error('password')
+                        <span style="color: red">{{ $message}}<br></span>
+                        @enderror
+
                         <label class="control-label" for="Password">Confirm Password</label>
                         <input id="confirm_password" name="confirm_password" type="password"
                                placeholder="Re-type Password"
                                class="form-control"
                                required="">
+                        @error('confirm_password')
+                        <span style="color: red">{{ $message}}<br></span>
+                        @enderror
                         <input type="submit" name="submit" value="Register" class="lab-btn">
                     </form>
                 </div>
