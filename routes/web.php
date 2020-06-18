@@ -20,8 +20,8 @@ Route::get("/home","ChikitsaController@index");
 Route::view("/service","service");
 Route::get("/outbreak","OutbreakController@index");
 
-Route::get("/doctors","ListOfDoctors@index");
-Route::get("/hospitals","ListOfHospitals@index");
+Route::get("/doctors","ListOfDoctor@index");
+Route::get("/hospitals","ListOfHospital@index");
 
 Route::view("/contactus","contactus");
 
