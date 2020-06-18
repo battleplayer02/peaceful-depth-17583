@@ -9,38 +9,40 @@
             <div class="card-header">
                 Book Appointment
             </div>
-            <form class="card-body">
-                <div class="form-group row">
-                    <label for="text1" class="col-2 col-form-label">Text Field</label>
-                    <div class="col-10">
-                        <input id="text1" name="text1" type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="text" class="col-2 col-form-label">Text Field</label>
-                    <div class="col-10">
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">
-                                    <i class="fa fa-address-card"></i>
-                                </div>
-                            </div>
-                            <input id="text" name="text" type="text" class="form-control">
+            <div class="card-body">
+                <form>
+                    <div class="form-group row">
+                        <label for="text1" class="col-2 col-form-label">Text Field</label>
+                        <div class="col-10">
+                            <input id="text1" name="text1" type="text" class="form-control">
                         </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <label for="text2" class="col-2 col-form-label">Text Field</label>
-                    <div class="col-10">
-                        <input id="text2" name="text2" type="text" class="form-control">
+                    <div class="form-group row">
+                        <label for="text" class="col-2 col-form-label">Text Field</label>
+                        <div class="col-10">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fa fa-address-card"></i>
+                                    </div>
+                                </div>
+                                <input id="text" name="text" type="text" class="form-control">
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <div class="offset-2 col-10">
-                        <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                    <div class="form-group row">
+                        <label for="text2" class="col-2 col-form-label">Text Field</label>
+                        <div class="col-10">
+                            <input id="text2" name="text2" type="text" class="form-control">
+                        </div>
                     </div>
-                </div>
-            </form>
+                    <div class="form-group row">
+                        <div class="offset-2 col-10">
+                            <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 @stop
