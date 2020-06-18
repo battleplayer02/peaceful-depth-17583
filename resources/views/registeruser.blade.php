@@ -23,53 +23,53 @@
         @enderror
         <div class="row">
             <div class="">
-                <input type="text" name="fullname"><br>
+                <input type="text" name="fullname">
                 @error('fullname')
                 <span style="color: red"> {{ $message}}</span>
                 @enderror
-                <label for="first_name">Full Name</label>
+                <label for="first_name">Full Name</label><br>
             </div>
             <div class="">
-                <input type="text" name="email"><br>
+                <input type="text" name="email">
                 @error('email')
                 <span style="color: red">{{ $message}}</span>
                 @enderror
-                <label for="last_name">Email ID</label>
+                <label for="last_name">Email ID</label><br>
             </div>
             <div class="">
-                <input type="text" name="blood_group"><br>
+                <input type="text" name="blood_group">
                 @error('blood_group')
                 <span style="color: red">{{ $message}}</span>
                 @enderror
-                <label for="last_name">Blood Group</label>
+                <label for="last_name">Blood Group</label><br>
             </div>
             <div class="">
-                <input type="text" name="contact_number"><br>
+                <input type="text" name="contact_number">
                 @error('contact_number')
                 <span style="color: red">{{ $message}}</span>
                 @enderror
-                <label for="last_name">Contact Number</label>
+                <label for="last_name">Contact Number</label><br>
             </div>
             <div class="">
-                <input type="text" name="gender"><br>
+                <input type="text" name="gender">
                 @error('gender')
                 <span style="color: red">{{ $message}}</span>
                 @enderror
-                <label for="last_name">Gender</label>
+                <label for="last_name">Gender</label><br>
             </div>
             <div class="">
-                <input type="password" name="password"><br>
+                <input type="password" name="password">
                 @error('password')
                 <span style="color: red">{{ $message}}</span>
                 @enderror
-                <label for="last_name">Password</label>
+                <label for="last_name">Password</label><br>
             </div>
             <div class="">
-                <input type="password" name="confirm_password"><br>
+                <input type="password" name="confirm_password">
                 @error('confirm_password')
                 <span style="color: red">{{ $message}}</span>
                 @enderror
-                <label for="last_name">Confirm Password</label>
+                <label for="last_name">Confirm Password</label><br>
             </div>
             <button type="submit" class="">Submit</button>
         </div>
