@@ -6,6 +6,22 @@
 @endsection
 @section('content')
 
+    <!-- Page Header Section Start Here -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-title">
+                <h2>Contact info</h2>
+                <ul class="breadcrumb lab-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li>Register New User</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Page Header Section Ending Here -->
+
+
+
     <!-- Contact Section Start Here -->
     <div align="center">
     <section class="contact-us padding-tb pb-0 align-content-center">
