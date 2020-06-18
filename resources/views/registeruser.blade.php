@@ -33,13 +33,17 @@
                           method="POST">
                         <!-- Text input-->
                         <label class="control-label" for="fullname">Full Name</label>
-                        <input id="fullname" name="fullname" type="text" placeholder="Full Name" class="form-control" required="">
+                        <input id="fullname" name="fullname" type="text" placeholder="Full Name" class="form-control"
+                               required="">
                         <label class="control-label" for="email">Email Id</label>
-                        <input id="email" name="email" type="text" placeholder="Enter your Email Id" class="form-control" required="">
+                        <input id="email" name="email" type="text" placeholder="Enter your Email Id"
+                               class="form-control" required="">
                         <label class="control-label" for="contact_number">Contact Number</label>
-                        <input id="contact_number" name="contact_number" class="form-control" placeholder="Contact Number" type="text" required="">
+                        <input id="contact_number" name="contact_number" class="form-control"
+                               placeholder="Contact Number" type="text" required="">
                         <p class="help-block">+91 xxxxx xxxxx</p>
-                        <label class="control-label" for="contact_number">Gender:</label>
+                        <p>
+                            <label class="control-label" for="contact_number">Gender:</label>
                         <div class="form-check-inline">
                             <label class="form-check-label">
                                 <input type="radio" class="form-check-input" name="gender">Male
@@ -50,13 +54,13 @@
                                 <input type="radio" class="form-check-input" name="gender">Female
                             </label>
                         </div>
-
+                        </p>
 
                         <input type="submit" name="submit" value="Register" class="lab-btn">
-                </form>
+                    </form>
+                </div>
             </div>
-    </div>
-    </section>
+        </section>
     </div>
     <!-- Contact Section Ending Here -->
 
