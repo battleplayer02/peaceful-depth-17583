@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 @stop
 @section("content")
+    <div align="center">
     <div class="card col-lg-8 m-5">
         <h5 class="card-header">
             Book Appointment
@@ -42,5 +43,6 @@
                 </div>
             </form>
         </div>
+    </div>
     </div>
 @stop
