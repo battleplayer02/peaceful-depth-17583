@@ -86,7 +86,7 @@
 {{--mobile-menu-end--}}
 
 {{--header--}}
-<header class="header-section transparent-header">
+<header class="header-section home-7">
     <div class="header-area">
         <div class="container">
             <div class="primary-menu">
