@@ -10,23 +10,19 @@
     <section class="contact-us padding-tb pb-0">
         <div class="container">
             <div class="contact-wrap">
-
-                <div class="col-lg-4">
-                    <div class="contact-title">
-                        <h5>New User Registration</h5>
-                    </div>
-                    <form class="contact-form" action="http://demos.codexcoder.com/labartisan/html/covid-19/contact.php"
-                          method="POST">
-                        <input type="text" name="name" placeholder="Your Name" class="contact-input">
-                        <input type="text" name="name" placeholder="Your Name" class="contact-input">
-                        <input type="text" name="name" placeholder="Your Name" class="contact-input">
-                        <input type="text" name="name" placeholder="Your Name" class="contact-input">
-                        <input type="text" name="name" placeholder="Your Name" class="contact-input">
-                        <input type="text" name="name" placeholder="Your Name" class="contact-input">
-
-                        <input type="submit" name="submit" value="Register" class="lab-btn">
-                    </form>
+                <div class="contact-title">
+                    <h5>New User Registration</h5>
                 </div>
+                <form class="contact-form" action="http://demos.codexcoder.com/labartisan/html/covid-19/contact.php"
+                      method="POST">
+                    <input type="text" name="name" placeholder="Your Name" class="form-control">
+                    <input type="text" name="name" placeholder="Your Name" class="form-control">
+                    <input type="text" name="name" placeholder="Your Name" class="form-control">
+                    <input type="text" name="name" placeholder="Your Name" class="form-control">
+                    <input type="text" name="name" placeholder="Your Name" class="form-control">
+                    <input type="text" name="name" placeholder="Your Name" class="form-control">
+                    <input type="submit" name="submit" value="Register" class="lab-btn">
+                </form>
             </div>
         </div>
     </section>
