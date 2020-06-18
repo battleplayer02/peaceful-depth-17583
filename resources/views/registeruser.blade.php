@@ -60,13 +60,16 @@
                                    value="{{old('fullname')}}"
                                    class="form-control"
                                    required="">
-                            @error('email')
+                            @error('fullname')
                             <span style="color: red">{{ $message}}</span>
                             @enderror
                         </div>
                         <label class="control-label" for="email">Email Id</label>
                         <input id="email" name="email" type="text" placeholder="Enter your Email Id"
-                               class="form-control" required="">
+                               class="form-control" required="" value="{{old('email')}}">
+                        @error('email')
+                        <span style="color: red">{{ $message}}</span>
+                        @enderror
                         <label class="control-label" for="contact_number">Contact Number</label>
                         <input id="contact_number" name="contact_number" class="form-control"
                                placeholder="Contact Number" type="text" required="">
