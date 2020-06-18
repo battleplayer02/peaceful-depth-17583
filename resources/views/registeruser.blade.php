@@ -43,16 +43,13 @@
                                placeholder="Contact Number" type="text" required="">
                         <br><br><br>
                         <label class="control-label" for="contact_number">Gender:</label>
+                        Male
+                        <input type="radio" class="form-check-input" name="gender">
 
-                            <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="gender">Male
-                            </label>
+                        Female
+                        <input type="radio" class="form-check-input" name="gender">
 
-
-                            <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="gender">Female
-                            </label>
-
+                        <br>
                         <label class="control-label" for="blood_group">Blood Group</label>
                         <input id="blood_group" name="blood_group" type="text" placeholder="Enter your Blood Group"
                                class="form-control" required="">
@@ -60,7 +57,8 @@
                         <input id="password" name="password" type="password" placeholder="Password" class="form-control"
                                required="">
                         <label class="control-label" for="Password">Confirm Password</label>
-                        <input id="confirm_password" name="confirm_password" type="password" placeholder="Re-type Password"
+                        <input id="confirm_password" name="confirm_password" type="password"
+                               placeholder="Re-type Password"
                                class="form-control"
                                required="">
                         <input type="submit" name="submit" value="Register" class="lab-btn">
