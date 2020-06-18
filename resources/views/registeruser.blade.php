@@ -53,7 +53,19 @@
                                 <input type="radio" class="form-check-input" name="gender">Female
                             </label>
                         </div>
-                        <input type="submit" name="submit" value="Register" class="lab-btn btn form-control">
+
+                        <label class="control-label" for="blood_group">Blood Group</label>
+                        <input id="blood_group" name="blood_group" type="text" placeholder="Enter your Blood Group"
+                               class="form-control" required="">
+
+                        <label class="control-label" for="fullname">Password</label>
+                        <input id="password" name="password" type="password" placeholder="Password" class="form-control"
+                               required="">
+                        <label class="control-label" for="Password">Confirm Password</label>
+                        <input id="confirm_password" name="confirm_password" type="password" placeholder="Re-type Password"
+                               class="form-control"
+                               required="">
+                        <input type="submit" name="submit" value="Register" class="lab-btn">
                     </form>
                 </div>
             </div>
