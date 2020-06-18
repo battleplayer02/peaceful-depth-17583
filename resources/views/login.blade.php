@@ -1,6 +1,6 @@
 @extends("layout")
 @section("title")
-Login
+<title>Login Page</title>
 @stop
 @section("content")
 Login Page
