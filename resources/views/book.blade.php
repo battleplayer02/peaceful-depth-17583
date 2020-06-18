@@ -5,20 +5,16 @@
 @stop
 @section("content")
     <div align="center">
-    <div class="card col-lg-8 m-5 col-sm-8 col-md-8">
-        <h5 class="card-header">
-            Book Appointment
-        </h5>
-        <div class="card-body">
-            <form>
+        <div class="card shadow col-lg-6">
+            <form class="card-body">
                 <div class="form-group row">
-                    <label for="text1" class="col-2 col-form-label">Text Field</label><br>
+                    <label for="text1" class="col-2 col-form-label">Text Field</label>
                     <div class="col-10">
                         <input id="text1" name="text1" type="text" class="form-control">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="text" class="col-2 col-form-label">Text Field</label><br>
+                    <label for="text" class="col-2 col-form-label">Text Field</label>
                     <div class="col-10">
                         <div class="input-group">
                             <div class="input-group-prepend">
@@ -31,7 +27,7 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="text2" class="col-2 col-form-label">Text Field</label><br>
+                    <label for="text2" class="col-2 col-form-label">Text Field</label>
                     <div class="col-10">
                         <input id="text2" name="text2" type="text" class="form-control">
                     </div>
@@ -43,6 +39,5 @@
                 </div>
             </form>
         </div>
-    </div>
     </div>
 @stop
