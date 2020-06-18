@@ -40,3 +40,5 @@ Route::post("regdoctor","RegDocController@index");
 Route::view('/registerdoctor',"registerdoctor");
 Route::view('/registerhospital', "registerhospital");
 
+Route::view("registeruser","registeruser");
+Route::post("reguser","RegUserController@register");
