@@ -36,7 +36,7 @@ class RegUserController extends Controller
 
         if($res==1)
         {
-            $file = $req->file('user_profile')->storeAs('storage/app/uploads', $prof_pic_name);
+            $file = $req->file('user_profile')->storeAs('storage/app/public/uploads', $prof_pic_name);
 
             print_r( $file);
             echo "inserted";
