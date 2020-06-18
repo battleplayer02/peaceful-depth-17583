@@ -33,10 +33,9 @@
                       method="POST">
                     <!-- Text input-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="fullname">Full Name</label>
-                        <div class="col-md-5">
+                        <label class="control-label" for="fullname">Full Name</label>
+                        <div>
                             <input id="fullname" name="fullname" type="text" placeholder="Full Name" class="form-control input-md" required="">
-
                         </div>
                     </div>
                     <input type="text" name="name" placeholder="Your Name" class="form-control">
