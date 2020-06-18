@@ -22,7 +22,7 @@
                                 <div class="team-content">
                                     <h5 class="member-name">Dorothy M. Nickell</h5>
                                     <span class="member-dagi">Throat Specialist</span>
-                                    <p class="member-details">Proce Aran Manu Proucs Rahe Conen Cuve Manu Produ Rahe Cuvaes Mana The Conen Testin Motin Was Procedur</p>
+                                    <p class="member-details"></p>
                                     <ul class="icon-style-list lab-ul">
                                         <li><i class="icofont-phone"></i><span>+880 1234 567 890</span></li>
                                         <li><i class="icofont-envelope"></i><span>d.m.nickell@gmail.com</span></li>
@@ -40,7 +40,7 @@
                                 <div class="team-content">
                                     <h5 class="member-name">Billie R. Courtney</h5>
                                     <span class="member-dagi">Cardiologist</span>
-                                    <p class="member-details">Proce Aran Manu Proucs Rahe Conen Cuve Manu Produ Rahe Cuvaes Mana The Conen Testin Motin Was Procedur</p>
+                                    <p class="member-details"></p>
                                     <ul class="icon-style-list lab-ul">
                                         <li><i class="icofont-phone"></i><span>+880 1234 567 890</span></li>
                                         <li><i class="icofont-envelope"></i><span>b.r.courtney@gmail.com</span></li>
@@ -58,7 +58,7 @@
                                 <div class="team-content">
                                     <h5 class="member-name">Courtney A. Smith</h5>
                                     <span class="member-dagi">Rehabilitation Therapy</span>
-                                    <p class="member-details">Proce Aran Manu Proucs Rahe Conen Cuve Manu Produ Rahe Cuvaes Mana The Conen Testin Motin Was Procedur</p>
+                                    <p class="member-details"></p>
                                     <ul class="icon-style-list lab-ul">
                                         <li><i class="icofont-phone"></i><span>+880 1234 567 890</span></li>
                                         <li><i class="icofont-envelope"></i><span>c.a.smith@gmail.com</span></li>
