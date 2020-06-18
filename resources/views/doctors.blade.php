@@ -9,7 +9,8 @@
         <div class="container">
             <div class="section-header wow fadeInUp" data-wow-delay="0.3s">
                 <h2>Meet Our Best Doctors</h2>
-                <p> Dynamically formulate fully tested catalysts for change via focused methods of empowerment Assertively extend alternative synergy and extensive web services.</p>
+                <p> Dynamically formulate fully tested catalysts for change via focused methods of empowerment
+                    Assertively extend alternative synergy and extensive web services.</p>
             </div>
             <div class="team-area">
                 <div class="row justify-content-center align-items-center">
@@ -26,6 +27,9 @@
                                     <ul class="icon-style-list lab-ul">
                                         <li><i class="icofont-phone"></i><span>+880 1234 567 890</span></li>
                                         <li><i class="icofont-envelope"></i><span>d.m.nickell@gmail.com</span></li>
+                                        <li><i class="icofont-envelope"></i>
+                                            <button class="btn btn-info">Book Appointment</button>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
