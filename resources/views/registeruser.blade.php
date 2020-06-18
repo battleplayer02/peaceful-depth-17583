@@ -53,7 +53,7 @@
                                 <input type="radio" class="form-check-input" name="gender">Female
                             </label>
                         </div>
-                        </p>
+                        <br>
                         <br>
                         <input type="submit" name="submit" value="Register" class="lab-btn">
                     </form>
