@@ -39,6 +39,19 @@
                         <label class="control-label" for="contact_number">Contact Number</label>
                         <input id="contact_number" name="contact_number" class="form-control" placeholder="Contact Number" type="text" required="">
                         <p class="help-block">+91 xxxxx xxxxx</p>
+                        <label class="control-label" for="contact_number">Gender:</label>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="gender">Male
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="gender">Female
+                            </label>
+                        </div>
+
+
                         <input type="submit" name="submit" value="Register" class="lab-btn">
                 </form>
             </div>
