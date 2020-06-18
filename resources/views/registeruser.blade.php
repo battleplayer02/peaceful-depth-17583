@@ -43,21 +43,19 @@
                                placeholder="Contact Number" type="text" required="">
                         <br><br><br>
                         <label class="control-label" for="contact_number">Gender:</label>
-                        <div class="form-check-inline">
+
                             <label class="form-check-label">
                                 <input type="radio" class="form-check-input" name="gender">Male
                             </label>
-                        </div>
-                        <div class="form-check-inline">
+
+
                             <label class="form-check-label">
                                 <input type="radio" class="form-check-input" name="gender">Female
                             </label>
-                        </div>
 
                         <label class="control-label" for="blood_group">Blood Group</label>
                         <input id="blood_group" name="blood_group" type="text" placeholder="Enter your Blood Group"
                                class="form-control" required="">
-
                         <label class="control-label" for="fullname">Password</label>
                         <input id="password" name="password" type="password" placeholder="Password" class="form-control"
                                required="">
