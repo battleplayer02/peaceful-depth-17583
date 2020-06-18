@@ -1,6 +1,18 @@
 @extends('layout')
 @section('title')
     <style>
+        .centerImage {
+            align-self: center;
+            margin-bottom: 2%;
+            margin-left: 45%;
+        }
+
+        #over img {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1%;
+            display: block;
+        }
     </style>
     <title>Reg User</title>
 @endsection
@@ -20,17 +32,27 @@
     <!-- Page Header Section Ending Here -->
 
 
+
     <!-- Contact Section Start Here -->
-    <div class="shadow" align="center">
-        <section class="card  col-lg-6 col-sm-4 padding-tb pb-0 ">
-            <div class="container">
-                <div class="card-title" align="center">
+    <div align="center">
+        <section class="contact-us padding-tb pb-0 align-content-center">
+            <div class="container align-content-center">
+                <div class="contact-wrap col-lg-6 col-sm-4" align="center">
                     <div class="contact-title">
                         <h5>New User Registration</h5>
                     </div>
-                    <form class="card-body" action="reguser"
-                          method="POST">
+                    <form class="contact-form" action="reguser" method="post" enctype="multipart/form-data">
                         <!-- Text input-->
+                        {{ csrf_field() }}
+                        <div id="over" style="width:100%; height:100%">
+                            <img class="img-responsive img-rounded centerImage" width="150" height="150" name="output"
+                                 id="output">
+                        </div>
+                        <div class="custom-file mb-3">
+                            <input type="file" class="custom-file-input" id="customFile" name="user_profile"
+                                   onchange="loadfile(event)" required="">
+                            <label class="custom-file-label" for="customFile">Upload Profile Photo</label>
+                        </div>
                         <label class="control-label" for="fullname">Full Name</label>
                         <input id="fullname" name="fullname" type="text" placeholder="Full Name" class="form-control"
                                required="">
@@ -61,9 +83,14 @@
                     </form>
                 </div>
             </div>
+            <script>
+                var loadfile = function (event) {
+                    var output = document.getElementById("output");
+                    output.src = URL.createObjectURL(event.target.files[0]);
+                };
+
+            </script>
         </section>
     </div>
     <!-- Contact Section Ending Here -->
-
-
 @endsection
