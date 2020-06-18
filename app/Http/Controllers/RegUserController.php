@@ -21,7 +21,7 @@ class RegUserController extends Controller
         ]);
 
         $guessExtension = $req->file('user_profile')->guessExtension();
-        $prof_pic_name='1231'.$guessExtension;
+        $prof_pic_name='1231.'.$guessExtension;
         $res=DB::table('user_details')
                 ->insert([
                     'name'=>$req->fullname,
@@ -36,7 +36,7 @@ class RegUserController extends Controller
 
         if($res==1)
         {
-            $file = $req->file('user_profile')->storeAs('storage/app/uploads/', $prof_pic_name);
+            $file = $req->file('user_profile')->storeAs('storage/app/uploads', $prof_pic_name);
 
             print_r( $file);
             echo "inserted";
