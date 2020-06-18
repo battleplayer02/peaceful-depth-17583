@@ -42,7 +42,7 @@
                         <input id="contact_number" name="contact_number" class="form-control"
                                placeholder="Contact Number" type="text" required="">
                         <br><br><br>
-                            <label class="control-label" for="contact_number">Gender:</label>
+                        <label class="control-label" for="contact_number">Gender:</label>
                         <div class="form-check-inline">
                             <label class="form-check-label">
                                 <input type="radio" class="form-check-input" name="gender">Male
@@ -53,9 +53,8 @@
                                 <input type="radio" class="form-check-input" name="gender">Female
                             </label>
                         </div>
-                        <br>
-                        <br>
-                        <input type="submit" name="submit" value="Register" class="lab-btn">
+                        <br><br><br>
+                        <input type="submit" name="submit" value="Register" class="lab-btn btn">
                     </form>
                 </div>
             </div>
