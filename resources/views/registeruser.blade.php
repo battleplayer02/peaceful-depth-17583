@@ -53,14 +53,16 @@
                                    onchange="loadfile(event)" required="">
                             <label class="custom-file-label" for="customFile">Upload Profile Photo</label>
                         </div>
-                        <div class="form-group {{$error->has("fullname")? "has-error":""}}">
+                        <div class="form-group">
+
                             <label class="control-label" for="fullname">Full Name</label>
                             <input id="fullname" name="fullname" type="text" placeholder="Full Name"
+                                   value="{{old('fullname')}}"
                                    class="form-control"
                                    required="">
-                            @if ($error->has("fullname"))
-                                <span class="help-block">{{$message}}</span>
-                            @endif
+                            @error('email')
+                            <span style="color: red">{{ $message}}</span>
+                            @enderror
                         </div>
                         <label class="control-label" for="email">Email Id</label>
                         <input id="email" name="email" type="text" placeholder="Enter your Email Id"
