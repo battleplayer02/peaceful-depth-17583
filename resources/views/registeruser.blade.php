@@ -22,9 +22,9 @@
 
     <!-- Contact Section Start Here -->
     <div class="shadow" align="center">
-        <section class="card padding-tb pb-0 ">
+        <section class="card  col-lg-6 col-sm-4 padding-tb pb-0 ">
             <div class="container">
-                <div class="card-title col-lg-6 col-sm-4" align="center">
+                <div class="card-title" align="center">
                     <div class="contact-title">
                         <h5>New User Registration</h5>
                     </div>
