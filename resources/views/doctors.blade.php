@@ -10,7 +10,6 @@ $data = array(
     <title>List Of Doctors</title>
 @endsection
 @section('content')
-    <h1 style="text-align: center">List Of Doctors</h1>
     <!-- Team Member Section Start here -->
     <div class="team-section bg-team padding-tb">
         <div class="container">
