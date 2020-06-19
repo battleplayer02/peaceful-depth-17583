@@ -14,16 +14,15 @@ class ListOfDoctor extends Controller
             ->join("user_details", "doctor_details.id", "user_details.id")
             ->get();
         echo "<pre>";
+        $d = DB::table('hospital_details')
+            ->get();
         foreach ($data as $key => $value) {
             if ($key == "hosp_id") {
-                $data["hospital_details"] =
-                    DB::table('hospital_details')
-                        ->where('hospid', $value)
-                        ->get();
-
+                echo $value."<br>";
             }
         }
         print_r($data);
+        print_r($d);
 //        return View("doctors",[
 //            "data"=>$data
 //        ]);
