@@ -281,7 +281,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <div class="col-lg-8 col-sm-8">
+                    <div class="coronaUpdateMap">
                         <iframe id="coronaUpdateMap" src="https://www.trackcorona.live/map"></iframe>
                     </div>
                 </div>
