@@ -1,4 +1,4 @@
-{{$data}}
+{{$data["hospid"]}}
 @extends("layout")
 @section("title")
     <title>List Of Doctors</title>
