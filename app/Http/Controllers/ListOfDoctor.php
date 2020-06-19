@@ -16,7 +16,7 @@ class ListOfDoctor extends Controller
             if($key == "hosp_id"){
                 $data[$key] = array(
                     DB::table('hospital_details')
-                    ->where('id',$value)
+                    ->where('hospid',$value)
                     ->get()
                 );
             }
