@@ -263,7 +263,25 @@
         </div>
     </div>
     </div>
-
+    {{--    start world map--}}
+    <section class="pt-120 pb-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center mb-75"><span>World Map</span>
+                        <h2>Corona World Map</h2></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="coronaUpdateMapWrapper">
+                        <iframe id="coronaUpdateMap" src="https://www.trackcorona.live/map"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{--    world map end--}}
 
 @stop
 
