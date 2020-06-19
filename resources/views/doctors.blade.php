@@ -1,4 +1,3 @@
-{{dd($data)}}
 @extends("layout")
 @section("title")
     <title>List Of Doctors</title>

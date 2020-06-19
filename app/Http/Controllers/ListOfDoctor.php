@@ -3,13 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Hospital_detail;
+use Illuminate\Support\Facades\DB;
 class ListOfDoctor extends Controller
 {
     //
     function index(){
-        return View("doctors",[
-            "data"=>Hospital_detail::all()
-        ]);
+        $data = DB::table("doctor_details")
+            ->join("user_details","doctor_details.id","user_details.id")
+            ->get();
+        echo "<pre>";
+        print_r($data);
+//        return View("doctors",[
+//            "data"=>$data
+//        ]);
     }
 }
