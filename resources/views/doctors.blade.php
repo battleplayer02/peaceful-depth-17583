@@ -1,10 +1,4 @@
-<?php
-$data = array(
-    "1" => 1,
-    "2" => 2
-);
-
-?>
+{{$data}}
 @extends("layout")
 @section("title")
     <title>List Of Doctors</title>
