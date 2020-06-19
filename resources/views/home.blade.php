@@ -1,6 +1,13 @@
 @extends("layout")
 
 @section('title')
+    <style>
+        #coronaTestOnline, #coronaUpdateMap {
+            height: 600px;
+            width: 100%;
+            display: block
+        }
+    </style>
     <title>Home</title>
 @endsection
 
