@@ -1,5 +1,5 @@
-<html>
-<head>
+@extends('layout')
+@section('title')
     <title>Hospital Registeration</title>
     <meta name="csrf-param" content="authenticity_token" />
     <meta name="csrf-token" content="eJp8A5GIe8tMrhLZzOKZtiXnN4CTRg9Ahmq07pucB8lHXQphVycCBctGUW33oh4rk4sXr/uLSBC2QnI9Tr2FCg==" />
@@ -89,9 +89,8 @@
             line-height: 22px;
             padding: 14px 16px; }
     </style>
-</head>
-
-<body>
+@endsection
+@section('content')
 <h1 style="text-align: center">Hospital Registration</h1>
 <main>
     <div class="row">
@@ -145,5 +144,4 @@
     </div>
 </main>
 
-</body>
-</html>
+@endsection

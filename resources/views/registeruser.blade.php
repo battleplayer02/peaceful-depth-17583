@@ -35,13 +35,14 @@
 
     <!-- Contact Section Start Here -->
     <div align="center">
-        <section class="contact-us padding-tb pb-0 align-content-center">
+        <section class="contact-us align-content-center">
             <div class="container align-content-center">
                 <div class="contact-wrap col-lg-6 col-sm-4" align="center">
                     <div class="contact-title">
                         <h5>New User Registration</h5>
                     </div>
-                    <form class="contact-form" action="reguser" method="post" enctype="multipart/form-data" onsubmit="uploadpic()">
+                    <form class="contact-form" action="reguser" method="post" enctype="multipart/form-data"
+                          onsubmit="uploadpic()">
                         <!-- Text input-->
                         {{ csrf_field() }}
                         <div id="over" style="width:100%; height:100%">
@@ -54,27 +55,27 @@
                             <label class="custom-file-label" for="customFile">Upload Profile Photo</label>
                             <progress value="0" max="100" id="uploader">0%</progress>
                         </div>
-                        <div class="form-group">
-                            <label class="control-label" for="fullname">Full Name</label>
-                            <input id="fullname" name="fullname" type="text" placeholder="Full Name"
-                                   value="{{old('fullname')}}"
-                                   class="form-control"
-                                   required="">
-                            @error('fullname')
-                            <span style="color: red">{{ $message}}<br></span>
-                            @enderror
-                        </div>
+
+                        <label class="control-label" for="fullname">Full Name</label>
+                        <input id="fullname" name="fullname" type="text" placeholder="Full Name"
+                               value="{{old('fullname')}}"
+                               class="form-control"
+                               required="">
+                        @error('fullname')
+                        <br><span class="form-control" style="color: red">{{ $message}}<br></span>
+                        @enderror
+
                         <label class="control-label" for="email">Email Id</label>
                         <input id="email" name="email" type="text" placeholder="Enter your Email Id"
                                class="form-control" required="" value="{{old('email')}}">
                         @error('email')
-                        <span style="color: red">{{ $message}}<br></span>
+                        <span class="form-control form-check" style="color: red">{{ $message}}<br></span>
                         @enderror
                         <label class="control-label" for="contact_number">Contact Number</label>
                         <input id="contact_number" name="contact_number" class="form-control"
                                placeholder="Contact Number" type="text" value="{{old("contact_number")}}" required="">
                         @error('contact_number')
-                        <span style="color: red">{{ $message}}<br></span>
+                        <br><span class="form-control form-check" style="color: red">{{ $message}}<br></span>
                         @enderror
                         <label class="control-label" for="contact_number">Gender:</label>
                         <select name="gender" id="" class="form-control">
@@ -92,7 +93,7 @@
                         <input id="blood_group" name="blood_group" type="text" placeholder="Enter your Blood Group"
                                class="form-control" value="{{old('blood_group')}}" required="">
                         @error('blood_group')
-                        <span style="color: red">{{ $message}}<br></span>
+                        <span class="form-control" style="color: red">{{ $message}}<br></span>
                         @enderror
 
                         <label class="control-label" for="fullname">Password</label>
@@ -100,7 +101,7 @@
                                class="form-control"
                                required="">
                         @error('password')
-                        <span style="color: red">{{ $message}}<br></span>
+                        <span class="form-control" style="color: red">{{ $message}}<br></span>
                         @enderror
 
                         <label class="control-label" for="Password">Confirm Password</label>
@@ -109,7 +110,7 @@
                                class="form-control"
                                required="">
                         @error('confirm_password')
-                        <span style="color: red">{{ $message}}<br></span>
+                        <span class="form-control" style="color: red">{{ $message}}<br></span>
                         @enderror
                         <input type="submit" name="submit" value="Register" class="lab-btn">
                     </form>
