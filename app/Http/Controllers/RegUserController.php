@@ -9,6 +9,7 @@ class RegUserController extends Controller
     //
     function register(Request $req)
     {
+
         $req->validate([
             "fullname"=>"required",
             "email"=>"required | email",
@@ -30,8 +31,7 @@ class RegUserController extends Controller
                     'mobile_no'=>$req->contact_number,
                     'blood_group'=>$req->blood_group,
                     'password'=>$req->password,
-                    'type'=>'patient',
-                    'pic_url'=>'uploads/'.$prof_pic_name
+                    'type'=>'patient'
                 ]);
 
         if($res==1)

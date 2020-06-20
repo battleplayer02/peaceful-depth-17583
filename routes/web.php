@@ -13,31 +13,34 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get("/","ChikitsaController@index");
-Route::get("/home","ChikitsaController@index");
+Route::get("/", "ChikitsaController@index");
+Route::get("/home", "ChikitsaController@index");
 
 
-Route::view("/service","service");
-Route::get("/outbreak","OutbreakController@index");
+Route::view("/service", "service");
+Route::get("/outbreak", "OutbreakController@index");
 
-Route::get("/doctors","ListOfDoctor@index");
-Route::get("/hospitals","ListOfHospitals@index");
+Route::get("/doctors", "ListOfDoctor@index");
+Route::get("/hospitals", "ListOfHospitals@index");
 
-Route::view("/contactus","contactus");
+Route::view("/contactus", "contactus");
 
-Route::get("db","SampleController@dbCheck");
+Route::get("db", "SampleController@dbCheck");
 
-Route::post("reghospital","RegHospController@index");
-Route::post("regdoctor","RegDocController@index");
+Route::post("reghospital", "RegHospController@index");
+Route::post("regdoctor", "RegDocController@index");
 
 
-Route::view('/registerdoctor',"registerdoctor");
+Route::view('/registerdoctor', "registerdoctor");
 Route::view('/registerhospital', "registerhospital");
 
-Route::view("registeruser","registeruser");
-Route::post("reguser","RegUserController@register");
+Route::view("registeruser", "registeruser");
+Route::post("reguser", "RegUserController@register");
 
-Route::view("bookappointment","book");
+Route::view("bookappointment", "book");
 
-Route::view("login","login");
-Route::post("LoginSubmit","LoginController@index");
+Route::view("login", "login");
+Route::post("LoginSubmit", "LoginController@index");
+
+Route::view("govser", "GovtSer");
+
