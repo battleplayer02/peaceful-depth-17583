@@ -82,9 +82,10 @@
                             <option value="Female"
                                     @if(old('gender'))
                                     selected
-                                    @endif
+                                @endif
 
-                            >Female</option>
+                            >Female
+                            </option>
                         </select>
                         <br>
                         <label class="control-label" for="blood_group">Blood Group</label>
@@ -114,12 +115,35 @@
                     </form>
                 </div>
             </div>
+
+
+            <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
+
+            <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+            <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+
             <script>
+                // Your web app's Firebase configuration
+                var firebaseConfig = {
+                    apiKey: "AIzaSyA-_2TbEuJ8YSJYY8NE6ecSaofP2N3HiMc",
+                    authDomain: "messaging-c93b9.firebaseapp.com",
+                    databaseURL: "https://messaging-c93b9.firebaseio.com",
+                    projectId: "messaging-c93b9",
+                    storageBucket: "messaging-c93b9.appspot.com",
+                    messagingSenderId: "206037349865",
+                    appId: "1:206037349865:web:d8a70455403d1624eec778",
+                    measurementId: "G-77PW5FL81L"
+                };
+                // Initialize Firebase
+                firebase.initializeApp(firebaseConfig);
+                firebase.analytics();
+
                 var loadfile = function (event) {
                     var output = document.getElementById("output");
                     output.src = URL.createObjectURL(event.target.files[0]);
                 };
-
             </script>
         </section>
     </div>

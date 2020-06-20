@@ -66,13 +66,13 @@
                         <ul class="lab-ul">
                             <li><a>User</a>
                                 <ul class="lab-ul">
-                                    <li><a href="">Sign In</a></li>
+                                    <li><a href="login">Sign In</a></li>
                                     <li><a href="registeruser">Sign Up</a></li>
                                 </ul>
                             </li>
                             <li><a>Doctor</a>
                                 <ul class="lab-ul">
-                                    <li><a href="">Sign In</a></li>
+                                    <li><a href="login">Sign In</a></li>
                                     <li><a href="registerdoctor">Sign Up</a></li>
                                 </ul>
                             </li>
@@ -126,13 +126,13 @@
                                 <ul class="lab-ul">
                                     <li><a>User</a>
                                         <ul class="lab-ul">
-                                            <li><a href="">Sign In</a></li>
+                                            <li><a href="login">Sign In</a></li>
                                             <li><a href="registeruser">Sign Up</a></li>
                                         </ul>
                                     </li>
                                     <li><a>Doctor</a>
                                         <ul class="lab-ul">
-                                            <li><a href="">Sign In</a></li>
+                                            <li><a href="login">Sign In</a></li>
                                             <li><a href="registerdoctor">Sign Up</a></li>
                                         </ul>
                                     </li>
