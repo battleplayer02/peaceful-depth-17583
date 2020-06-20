@@ -14,10 +14,11 @@ class ListOfDoctor extends Controller
         $hosp_data = DB::table("hospital_details")
             ->get();
         echo "<pre>";
-        print_r($data);
-        print_r($hosp_data);
-//        return View("doctors",[
-//            "data"=>$data
-//        ]);
+//        print_r($data);
+//        print_r($hosp_data);
+        return View("doctors",[
+            "data"=>$data,
+            "hosp_data"=>$hosp_data
+        ]);
     }
 }
