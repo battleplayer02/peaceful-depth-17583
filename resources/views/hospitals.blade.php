@@ -13,7 +13,7 @@
             </div>
             <div class="team-area">
                 <div class="row justify-content-center align-items-center">
-                    @foreach($data as $key => $value)
+                    @foreach($data as $value)
                         <div class="col-xl-4 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="team-item">
                                 <div class="team-item-inner">
@@ -21,7 +21,7 @@
                                         <img src="images/team/01.jpg" alt="team-membar">
                                     </div>
                                     <div class="team-content">
-                                        <h5 class="member-name">Dorothy M. Nickell</h5>
+                                        <h5 class="member-name">{{$value->hosp_name}}</h5>
                                         <span class="member-dagi">Throat Specialist</span>
                                         <p class="member-details"></p>
                                         <ul class="icon-style-list lab-ul">
@@ -35,8 +35,13 @@
                                 </div>
                             </div>
                         </div>
+
                     @endforeach
                 </div>
+            </div>
+            <br>
+            <div class="row justify-content-center">
+                {{$data->links()}}
             </div>
         </div>
     </div>

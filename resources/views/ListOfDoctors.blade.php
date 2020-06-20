@@ -23,12 +23,20 @@
                                     </div>
                                     <div class="team-content">
                                         <h5 class="member-name">{{$value->name}}</h5>
-                                        <span class="member-dagi">{{$value->specialization}}</span>
+                                        <span class="member-dagi">Specilization:{{$value->specialization}}</span>
+                                        <span class="member-dagi">Hospital ID/Name : {{$value->hosp_id}}/
+                                            @foreach($hosp_data as $value1)
+                                                @if($value1->hospid==$value->hosp_id)
+                                                {{$value1->hosp_name}}
+                                                @endif
+                                            @endforeach
+                                            </span>
                                         <p class="member-details"></p>
                                         <ul class="icon-style-list lab-ul">
                                             <li><i class="icofont-phone"></i><span>{{$value->mobile_no}}</span></li>
-                                            <li><i class="icofont-envelope"></i><span style="width: 100px;text-overflow: visible;overflow: hidden;white-space: nowrap;">{{$value->email}}</span></li>
-                                            <li><i class="icofont-envelope align-content-center"></i>
+                                            <li><i class="icofont-hat"></i><span>{{$value->qualification}}</span></li>
+                                            <li><i class="icofont-envelope"></i><span style="font-size:0.7vw;">{{$value->email}}</span></li>
+                                            <li><i class="icofont-envelope-open align-content-center"></i>
                                                 <button class="btn btn-info">Book Appointment</button>
                                             </li>
                                         </ul>
@@ -37,11 +45,12 @@
                             </div>
                         </div>
                     @endforeach
-                    <br>
-                    <div class="">
-                        {{$data->links()}}
-                    </div>
+
                 </div>
+            </div>
+            <br>
+            <div class="row justify-content-center">
+                {{$data->links()}}
             </div>
         </div>
     </div>
