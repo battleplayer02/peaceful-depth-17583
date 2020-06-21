@@ -23,7 +23,7 @@
                         <div class="content-part">
                             <div class="banner-content">
                                 <h2><span>Raise Your Hand </span></h2>
-                                <h2 class="banner-title">Chikitsa</h2>
+                                <h2 class="banner-title">Chikitsa : For Statename</h2>
                                 <h4>Healthcare, Education And Disister Management</h4>
                                 <a href="#" class="lab-btn style-2"><span>donate now <i
                                             class="icofont-heart"></i></span></a>
