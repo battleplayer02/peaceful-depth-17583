@@ -31,18 +31,14 @@
                                                 @endif
                                             @endforeach
                                             </span>
-                                        <p class="member-details">
-                                        <form action="book" method="post">@csrf
-                                            <input type="hidden" value="{{$value->docid}}">
-                                            <button type="submit" class="btn btn-info">Book Appointment</button>
-                                        </form>
-                                        </p>
-
+                                        <p class="member-details"></p>
                                         <ul class="icon-style-list lab-ul">
                                             <li><i class="icofont-phone"></i><span>{{$value->mobile_no}}</span></li>
                                             <li><i class="icofont-hat"></i><span>{{$value->qualification}}</span></li>
                                             <li><i class="icofont-envelope"></i><span
-                                                    style="font-size:0.7vw;">{{$value->email}}</span>
+                                                    style="font-size:0.7vw;">{{$value->email}}</span></li>
+                                            <li><i class="icofont-envelope-open align-content-center"></i>
+                                                <a href="book/{{$value->docid}}"><button class="btn btn-info">Book Appointment</button></a>
                                             </li>
                                         </ul>
                                     </div>

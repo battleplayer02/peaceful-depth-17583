@@ -38,8 +38,8 @@ Route::view("registeruser", "registeruser");
 Route::post("reguser", "RegUserController@register");
 
 Route::get("bookappointment",'BookAppointmentController@index');
-Route::post("book",function (){
-    return view('book');
+Route::get("book/{docid}",function ($req){
+    return $req->docid;
 });
 
 Route::view("login", "login");
