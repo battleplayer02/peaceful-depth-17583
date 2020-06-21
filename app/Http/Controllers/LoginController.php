@@ -22,13 +22,11 @@ class LoginController extends Controller
 //        echo $checkLogin."<br>";
         if (count($checkLogin) > 0) {
             $request->session()->put('logininfo',$checkLogin);
-            // return $request->session()->get('logininfo');
-//            echo 100;
             if ($request->session()->has('logininfo')) {
-                echo redirect('home');
+                return redirect('home');
             }
         } else {
-            redirect('login');
+            return redirect('login');
         }
     }
 }

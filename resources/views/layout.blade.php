@@ -62,22 +62,30 @@
                         </ul>
                     </li>
                     <li><a href="contactus">Contact Us</a></li>
-                    <li><a href="">Sign In/ Sign Up</a>
-                        <ul class="lab-ul">
-                            <li><a>User</a>
-                                <ul class="lab-ul">
-                                    <li><a href="login">Sign In</a></li>
-                                    <li><a href="registeruser">Sign Up</a></li>
-                                </ul>
-                            </li>
-                            <li><a>Doctor</a>
-                                <ul class="lab-ul">
-                                    <li><a href="login">Sign In</a></li>
-                                    <li><a href="registerdoctor">Sign Up</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
+                    @if(session('logininfo'))
+                        <li><a href="">{{session('logininfo')[0]->name}}</a>
+                            <ul class="lab-ul"><li><a href="profile">Profile</a></li></ul>
+                            <ul class="lab-ul"><li><a href="logout">Logout</a></li></ul>
+                        </li>
+                    @else
+                        <li><a href="">Sign In/ Sign Up</a>
+                            <ul class="lab-ul">
+                                <li><a>User</a>
+                                    <ul class="lab-ul">
+                                        <li><a href="login">Sign In</a></li>
+                                        <li><a href="registeruser">Sign Up</a></li>
+                                    </ul>
+                                </li>
+                                <li><a>Doctor</a>
+                                    <ul class="lab-ul">
+                                        <li><a href="login">Sign In</a></li>
+                                        <li><a href="registerdoctor">Sign Up</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    @endif
+
                 </ul>
             </div>
         </div>
@@ -122,22 +130,29 @@
                                 </ul>
                             </li>
                             <li><a href="contactus">Contact Us</a></li>
-                            <li><a href="">Sign In/ Sign Up</a>
-                                <ul class="lab-ul">
-                                    <li><a>User</a>
-                                        <ul class="lab-ul">
-                                            <li><a href="login">Sign In</a></li>
-                                            <li><a href="registeruser">Sign Up</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a>Doctor</a>
-                                        <ul class="lab-ul">
-                                            <li><a href="login">Sign In</a></li>
-                                            <li><a href="registerdoctor">Sign Up</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
+                            @if(session('logininfo'))
+                                <li><a href="">{{session('logininfo')[0]->name}}</a>
+                                    <ul class="lab-ul"><li><a href="profile">Profile</a></li></ul>
+                                    <ul class="lab-ul"><li><a href="logout">Logout</a></li></ul>
+                                </li>
+                            @else
+                                <li><a href="">Sign In/ Sign Up</a>
+                                    <ul class="lab-ul">
+                                        <li><a>User</a>
+                                            <ul class="lab-ul">
+                                                <li><a href="login">Sign In</a></li>
+                                                <li><a href="registeruser">Sign Up</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a>Doctor</a>
+                                            <ul class="lab-ul">
+                                                <li><a href="login">Sign In</a></li>
+                                                <li><a href="registerdoctor">Sign Up</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            @endif
                         </ul>
                     </div>
                     <div class="header-btn">

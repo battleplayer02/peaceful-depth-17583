@@ -44,3 +44,4 @@ Route::post("LoginSubmit", "LoginController@index");
 
 Route::view("govser", "GovtSer");
 
+Route::get("logout","LogoutController@index");

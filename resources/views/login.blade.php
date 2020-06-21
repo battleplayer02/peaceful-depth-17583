@@ -1,58 +1,57 @@
-@extends('layout')
-@section('title')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href={{"css/style1.css"}}>
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet">
-@stop
-@section("content")
-    <br><br>
-    <div align="center">
-        <div class="cont">
-            <div class="form sign-in">
-                <h2>Sign In</h2>
-                <form action="LoginSubmit" method="post">
-                    @csrf
-                    <label>
-                        <span>Email Address</span>
-                        <input type="email" name="email">
-                    </label>
-                    <label>
-                        <span>Password</span>
-                        <input type="password" name="password">
-                    </label>
-                    <button class="submit" type="submit">Sign In</button>
-                    <p class="forgot-pass">Forgot Password ?</p>
-                </form>
-            </div>
+    <link rel="stylesheet" href="css/style1.css">
 
-            <div class="sub-cont">
-                <div class="img">
-                    <div class="img-text m-up">
-                        <h2>New here?</h2>
-                        <p>Sign up and discover great amount of new opportunities!</p>
-                    </div>
-                    <div class="img-text m-in">
-                        <h2>One of us?</h2>
-                        <p>If you already has an account, just sign in. We've missed you!</p>
-                    </div>
-                    <div class="img-btn">
-                        <span class="m-up">Sign Up</span>
-                        <span class="m-in">Sign In</span>
-                    </div>
-                </div>
-                <div class="form sign-up">
-                    <div class="container">
-                        <div class="row">
-                            <div class="card"></div>
-                        </div>
-                        <div class="row">
-                            <div class="card"></div>
-                        </div>
-                    </div>
-                </div>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<form action="LoginSubmit" method="post">
+    @csrf
+    <div class="panel">
+        <h2>LOGIN</h2>
+        <div class="formset">
+            <div class="form-group">
+                <lable class="form-label">User Name</lable>
+                <input name="email" class="form-control" type="text"/>
             </div>
-        </div>
-        <script type="text/javascript" src={{"js/script.js"}}></script>
+            <div class="form-group">
+                <lable class="form-label">Password</lable>
+                <input name="password" class="form-control" type="password"/>
+            </div>
+            <button type="submit" class="btn">Log in</button>
+</form>
+<a href="#">Forgot Your Password?</a>
+</div>
+<form class="register-form"><i class="close">×</i>
+    <a href="registeruser"><div class="formset">Click Here to signup</div></a>
+    {{--        <h2>REGISTER</h2>--}}
+    {{--        <div class="formset">--}}
+    {{--            <div class="form-group">--}}
+    {{--                <lable class="form-label">User Name</lable>--}}
+    {{--                <input class="form-control" type="text"/>--}}
+    {{--            </div>--}}
+    {{--            <div class="form-group">--}}
+    {{--                <lable class="form-label">Email</lable>--}}
+    {{--                <input class="form-control" type="text"/>--}}
+    {{--            </div>--}}
+    {{--            <div class="form-group">--}}
+    {{--                <lable class="form-label">Password</lable>--}}
+    {{--                <input class="form-control" type="password"/>--}}
+    {{--            </div>--}}
+    {{--            <div class="form-group">--}}
+    {{--                <lable class="form-label">Repeat Password</lable>--}}
+    {{--                <input class="form-control" type="password"/>--}}
+    {{--            </div>--}}
+    {{--            <button class="btn">Log in</button>--}}
     </div>
-    <br><br>
-@stop
+</form>
+</div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="js/script1.js"></script>
+
+</body>
+</html>
