@@ -39,6 +39,12 @@
                     <li class="active"><a href="home">Home</a></li>
                     <li><a href="">Treatment</a>
                         <ul class="lab-ul">
+                            <li><a href="">Get Lab Reports</a>
+                                <ul class="lab-ul">
+                                    <li><a href="">Get My Report</a></li>
+                                    <li><a href="">Upload Report</a></li>
+                                </ul>
+                            </li>
                             <li><a href="">Doctors</a></li>
                             <li><a href="">Hospitals</a></li>
                         </ul>
@@ -113,6 +119,11 @@
                             <li class="active"><a href="home">Home</a></li>
                             <li><a href="">Treatment</a>
                                 <ul class="lab-ul">
+                                    <li><a href="">Lab Reports</a></li>
+                                    <ul class="lab-ul">
+                                        <li><a href="">Get My Report</a></li>
+                                        <li><a href="">Upload Report</a></li>
+                                    </ul>
                                     <li><a href="doctors">Doctors</a></li>
                                     <li><a href="hospitals">Hospitals</a></li>
                                 </ul>
@@ -126,7 +137,6 @@
                                         </ul>
                                     </li>
                                     <li><a href="">Videos (Training/Entertainment)</a></li>
-                                    <li><a href="">Get Lab Reports</a></li>
                                     <li><a href="">Request For Travelling Pass</a></li>
                                     <li><a href="govser">Goverment Services</a></li>
                                 </ul>
