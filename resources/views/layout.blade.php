@@ -51,7 +51,9 @@
                                     <li><a href="">Events Created</a></li>
                                 </ul>
                             </li>
-                            <li><a href="">Training</a></li>
+                            <li><a href="">Videos (Training/Entertainment)</a></li>
+                            <li><a href="">Get Lab Reports</a></li>
+                            <li><a href="">Request For Travelling Pass</a></li>
                             <li><a href="govser">Goverment Services</a></li>
                         </ul>
                     </li>
@@ -64,8 +66,12 @@
                     <li><a href="contactus">Contact Us</a></li>
                     @if(session('logininfo'))
                         <li><a href="">{{session('logininfo')[0]->name}}</a>
-                            <ul class="lab-ul"><li><a href="profile">Profile</a></li></ul>
-                            <ul class="lab-ul"><li><a href="logout">Logout</a></li></ul>
+                            <ul class="lab-ul">
+                                <li><a href="profile">Profile</a></li>
+                            </ul>
+                            <ul class="lab-ul">
+                                <li><a href="logout">Logout</a></li>
+                            </ul>
                         </li>
                     @else
                         <li><a href="">Sign In/ Sign Up</a>
@@ -119,7 +125,9 @@
                                             <li><a href="">Events Created</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="">Training</a></li>
+                                    <li><a href="">Videos (Training/Entertainment)</a></li>
+                                    <li><a href="">Get Lab Reports</a></li>
+                                    <li><a href="">Request For Travelling Pass</a></li>
                                     <li><a href="govser">Goverment Services</a></li>
                                 </ul>
                             </li>
@@ -132,8 +140,12 @@
                             <li><a href="contactus">Contact Us</a></li>
                             @if(session('logininfo'))
                                 <li><a href="">{{session('logininfo')[0]->name}}</a>
-                                    <ul class="lab-ul"><li><a href="profile">Profile</a></li></ul>
-                                    <ul class="lab-ul"><li><a href="logout">Logout</a></li></ul>
+                                    <ul class="lab-ul">
+                                        <li><a href="profile">Profile</a></li>
+                                    </ul>
+                                    <ul class="lab-ul">
+                                        <li><a href="logout">Logout</a></li>
+                                    </ul>
                                 </li>
                             @else
                                 <li><a href="">Sign In/ Sign Up</a>
