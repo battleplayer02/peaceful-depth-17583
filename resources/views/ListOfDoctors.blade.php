@@ -38,11 +38,7 @@
                                             <li><i class="icofont-envelope"></i><span
                                                     style="font-size:0.7vw;">{{$value->email}}</span></li>
                                             <li><i class="icofont-envelope-open align-content-center"></i>
-                                                <form action="book" method="post">
-{{--                                                    @csrf--}}
-{{--                                                    <input type="hidden" value="{{$value->docid}}">--}}
-                                                    <button type="submit" class="btn btn-info">Book Appointment</button>
-                                                </form>
+                                                <form action="book" method="post">@csrf{{--                                                    <input type="hidden" value="{{$value->docid}}">--}}<button type="submit" class="btn btn-info">Book Appointment</button></form>
                                             </li>
                                         </ul>
                                     </div>
