@@ -37,11 +37,14 @@ Route::view('/registerhospital', "registerhospital");
 Route::view("registeruser", "registeruser");
 Route::post("reguser", "RegUserController@register");
 
-Route::post("bookappointment", "book");
+Route::get("bookappointment",'BookAppointmentController@index');
+Route::post("book",function (){
+    return view('book');
+});
 
 Route::view("login", "login");
 Route::post("LoginSubmit", "LoginController@index");
 
 Route::view("govser", "GovtSer");
 
-Route::get("logout","LogoutController@index");
+Route::get("logout", "LogoutController@index");
