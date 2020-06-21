@@ -39,14 +39,14 @@
                     <li class="active"><a href="home">Home</a></li>
                     <li><a href="">Treatment</a>
                         <ul class="lab-ul">
-                            <li><a href="">Get Lab Reports</a>
+                            <li><a href="">Lab Reports</a>
                                 <ul class="lab-ul">
                                     <li><a href="">Get My Report</a></li>
                                     <li><a href="">Upload Report</a></li>
                                 </ul>
                             </li>
-                            <li><a href="">Doctors</a></li>
-                            <li><a href="">Hospitals</a></li>
+                            <li><a href="doctors">Doctors</a></li>
+                            <li><a href="hospitals">Hospitals</a></li>
                         </ul>
                     </li>
                     <li><a href="">Services</a>
@@ -119,11 +119,12 @@
                             <li class="active"><a href="home">Home</a></li>
                             <li><a href="">Treatment</a>
                                 <ul class="lab-ul">
-                                    <li><a href="">Lab Reports</a></li>
-                                    <ul class="lab-ul">
-                                        <li><a href="">Get My Report</a></li>
-                                        <li><a href="">Upload Report</a></li>
-                                    </ul>
+                                    <li><a href="">Lab Reports</a>
+                                        <ul class="lab-ul">
+                                            <li><a href="">Get My Report</a></li>
+                                            <li><a href="">Upload Report</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a href="doctors">Doctors</a></li>
                                     <li><a href="hospitals">Hospitals</a></li>
                                 </ul>
