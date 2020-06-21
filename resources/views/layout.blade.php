@@ -109,7 +109,7 @@
         <div class="container">
             <div class="primary-menu">
                 <div class="logo">
-                    <a href="index.html"><img src="/images/logo/01.png" alt="logo"></a>
+                    <a href="/home"><img src="/images/logo/01.png" alt="logo"></a>
                 </div>
                 <div class="main-area">
                     <div class="main-menu">
