@@ -25,25 +25,25 @@ Route::get("/hospitals", "ListOfHospitals@index");
 
 Route::view("/contactus", "contactus");
 
-Route::get("db", "SampleController@dbCheck");
+Route::get("/db", "SampleController@dbCheck");
 
-Route::post("reghospital", "RegHospController@index");
-Route::post("regdoctor", "RegDocController@index");
+Route::post("/reghospital", "RegHospController@index");
+Route::post("/regdoctor", "RegDocController@index");
 
 
 Route::view('/registerdoctor', "registerdoctor");
 Route::view('/registerhospital', "registerhospital");
 
-Route::view("registeruser", "registeruser");
-Route::post("reguser", "RegUserController@register");
+Route::view("/registeruser", "registeruser");
+Route::post("/reguser", "RegUserController@register");
 
-Route::get("bookappointment/{a}", "Controller@index");
+Route::get("/bookappointment/{a}", "BookAppointmentController@index");
 
-Route::post("bookApp", 'BookAppointmentController@index');
+Route::post("/bookApp", 'BookAppointmentController@bookapp');
 
-Route::view("login", "login");
-Route::post("LoginSubmit", "LoginController@index");
+Route::view("/login", "login");
+Route::post("/LoginSubmit", "LoginController@index");
 
-Route::view("govser", "GovtSer");
+Route::view("/govser", "GovtSer");
 
-Route::get("logout", "LogoutController@index");
+Route::get("/logout", "LogoutController@index");
