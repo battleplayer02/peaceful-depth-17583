@@ -37,10 +37,9 @@ Route::view('/registerhospital', "registerhospital");
 Route::view("registeruser", "registeruser");
 Route::post("reguser", "RegUserController@register");
 
-Route::get("bookappointment",'BookAppointmentController@index');
-Route::get("book/{docid}",function ($req){
-    return $req->docid;
-});
+Route::get("bookappointment/{a}", "Controller@index");
+
+Route::post("bookApp", 'BookAppointmentController@index');
 
 Route::view("login", "login");
 Route::post("LoginSubmit", "LoginController@index");

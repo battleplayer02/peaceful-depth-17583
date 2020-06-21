@@ -7,8 +7,9 @@ use Illuminate\Http\Request;
 class BookAppointmentController extends Controller
 {
     //
-    function index()
+    function index($docid)
     {
-        return "hello";
+
+        return $docid;
     }
 }

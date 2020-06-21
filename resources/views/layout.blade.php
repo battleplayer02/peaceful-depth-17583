@@ -4,17 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- google fonts -->
-    <link
-        href="../../../../fonts.googleapis.com/css8a16.css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap"
-        rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="images/x-icon/01.png">
+    <link rel="shortcut icon" type="image/x-icon" href={{"/images/x-icon/01.png"}}>
 
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/icofont.min.css">
-    <link rel="stylesheet" href="css/lightcase.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href={{"/css/animate.css"}}>
+    <link rel="stylesheet" href={{"/css/bootstrap.min.css"}}>
+    <link rel="stylesheet" href={{"/css/icofont.min.css"}}>
+    <link rel="stylesheet" href={{"/css/lightcase.css"}}>
+    <link rel="stylesheet" href={{"/css/swiper.min.css"}}>
+    <link rel="stylesheet" href={{"/css/style.css"}}>
     @yield('title')
 </head>
 <body>
@@ -24,7 +21,7 @@
 <div class="mobile-menu">
     <nav class="mobile-header">
         <div class="header-logo">
-            <a href="home"><img src={{"images/logo/04.png"}} alt="logo"></a>
+            <a href={{"/home"}}><img src={{"/images/logo/04.png"}} alt="logo"></a>
         </div>
         <div class="header-bar">
             <span></span>
@@ -36,7 +33,7 @@
         <div class="mobile-menu-area">
             <div class="mobile-menu-area-inner">
                 <ul class="lab-ul">
-                    <li class="active"><a href="home">Home</a></li>
+                    <li class="active"><a href={{"/home"}}>Home</a></li>
                     <li><a href="">Treatment</a>
                         <ul class="lab-ul">
                             <li><a href="">Lab Reports</a>
@@ -112,12 +109,12 @@
         <div class="container">
             <div class="primary-menu">
                 <div class="logo">
-                    <a href="index.html"><img src={{"images/logo/01.png"}} alt="logo"></a>
+                    <a href="index.html"><img src="/images/logo/01.png" alt="logo"></a>
                 </div>
                 <div class="main-area">
                     <div class="main-menu">
                         <ul class="lab-ul">
-                            <li class="active"><a href="home">Home</a></li>
+                            <li class="active"><a href={{"home"}}>Home</a></li>
                             <li><a href="">Treatment</a>
                                 <ul class="lab-ul">
                                     <li><a href="">Lab Reports</a>
@@ -181,7 +178,7 @@
                         </ul>
                     </div>
                     <div class="header-btn">
-                        <a href="#" class="lab-btn"><span>Donate<i class="icofont-heart"></i></span></a>
+                        <a  class="lab-btn"><span>Donate<i class="icofont-heart"></i></span></a>
                     </div>
                 </div>
             </div>
@@ -189,17 +186,9 @@
     </div>
 </header>
 {{--header-end--}}
-
-
-
-
-
 @yield('content')
-
-
-
 {{--footer-start--}}
-<footer style="background-image: url({{'css/bg-image/bg-5.jpg'}});">
+<footer style="background-image: url({{'/css/bg-image/bg-5.jpg'}});">
     <div class="footer-top padding-tb">
         <div class="container">
             <div class="row">
@@ -219,7 +208,7 @@
                                             <p><span>Phone:</span>(91) 8547 632521</p>
                                         </li>
                                         <li>
-                                            <p><span>Email:</span><a href="#">info@covid-19.com</a></p>
+                                            <p><span>Email:</span><a >info@covid-19.com</a></p>
                                         </li>
                                     </ul>
                                 </div>
@@ -236,11 +225,11 @@
                                 </div>
                                 <div class="content">
                                     <ul class="lab-ul">
-                                        <li><a href="#"><i class="icofont-caret-right"></i>Advertisers</a></li>
-                                        <li><a href="#"><i class="icofont-caret-right"></i>Developers</a></li>
-                                        <li><a href="#"><i class="icofont-caret-right"></i>Resources</a></li>
-                                        <li><a href="#"><i class="icofont-caret-right"></i>Company</a></li>
-                                        <li><a href="#"><i class="icofont-caret-right"></i>Connect</a></li>
+                                        <li><a ><i class="icofont-caret-right"></i>Advertisers</a></li>
+                                        <li><a ><i class="icofont-caret-right"></i>Developers</a></li>
+                                        <li><a ><i class="icofont-caret-right"></i>Resources</a></li>
+                                        <li><a ><i class="icofont-caret-right"></i>Company</a></li>
+                                        <li><a ><i class="icofont-caret-right"></i>Connect</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -256,11 +245,11 @@
                                 </div>
                                 <div class="content">
                                     <ul class="lab-ul">
-                                        <li><a href="#"><i class="icofont-facebook"></i>Facebook</a></li>
-                                        <li><a href="#"><i class="icofont-twitter"></i>Twitter</a></li>
-                                        <li><a href="#"><i class="icofont-instagram"></i>Instagram</a></li>
-                                        <li><a href="#"><i class="icofont-youtube"></i>YouTube</a></li>
-                                        <li><a href="#"><i class="icofont-xing"></i>Xing</a></li>
+                                        <li><a ><i class="icofont-facebook"></i>Facebook</a></li>
+                                        <li><a ><i class="icofont-twitter"></i>Twitter</a></li>
+                                        <li><a ><i class="icofont-instagram"></i>Instagram</a></li>
+                                        <li><a ><i class="icofont-youtube"></i>YouTube</a></li>
+                                        <li><a ><i class="icofont-xing"></i>Xing</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -276,12 +265,12 @@
                                 </div>
                                 <div class="content">
                                     <ul class="lab-ul">
-                                        <li><a href="#"><i class="icofont-caret-right"></i>Advertiser Agreement</a></li>
-                                        <li><a href="#"><i class="icofont-caret-right"></i>Acceptable Use Policy</a>
+                                        <li><a ><i class="icofont-caret-right"></i>Advertiser Agreement</a></li>
+                                        <li><a ><i class="icofont-caret-right"></i>Acceptable Use Policy</a>
                                         </li>
-                                        <li><a href="#"><i class="icofont-caret-right"></i>Privacy Policy</a></li>
-                                        <li><a href="#"><i class="icofont-caret-right"></i>Technology Privacy</a></li>
-                                        <li><a href="#"><i class="icofont-caret-right"></i>Developer Agreement</a></li>
+                                        <li><a ><i class="icofont-caret-right"></i>Privacy Policy</a></li>
+                                        <li><a ><i class="icofont-caret-right"></i>Technology Privacy</a></li>
+                                        <li><a ><i class="icofont-caret-right"></i>Developer Agreement</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -301,20 +290,20 @@
 </footer>
 
 <!-- scrollToTop start here -->
-<a href="#" class="scrollToTop"><i class="icofont-swoosh-up"></i><span class="pluse_1"></span><span
+<a class="scrollToTop"><i class="icofont-swoosh-up"></i><span class="pluse_1"></span><span
         class="pluse_2"></span></a>
 <!-- scrollToTop ending here -->
 
 
-<script src="js/jquery.js"></script>
-<script src="js/waypoints.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/lightcase.js"></script>
-<script src="js/isotope.pkgd.min.js"></script>
-<script src="js/swiper.min.js"></script>
-<script src="js/jquery.countdown.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/functions.js"></script>
+<script src={{"/js/jquery.js"}}></script>
+<script src={{"/js/waypoints.min.js"}}></script>
+<script src={{"/js/bootstrap.min.js"}}></script>
+<script src={{"/js/lightcase.js"}}></script>
+<script src={{"/js/isotope.pkgd.min.js"}}></script>
+<script src={{"/js/swiper.min.js"}}></script>
+<script src={{"/js/jquery.countdown.min.js"}}></script>
+<script src={{"/js/wow.min.js"}}></script>
+<script src={{"/js/functions.js"}}></script>
 
 {{--footer-end--}}
 </body>
