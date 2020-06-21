@@ -12,8 +12,6 @@
 @endsection
 
 @section('content')
-
-
     <!-- Banner Section start here -->
     <section class="banner-section home-7">
         <div class="banner-area">

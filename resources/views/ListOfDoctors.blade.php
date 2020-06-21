@@ -27,7 +27,7 @@
                                         <span class="member-dagi">Hospital ID/Name : {{$value->hosp_id}}/
                                             @foreach($hosp_data as $value1)
                                                 @if($value1->hospid==$value->hosp_id)
-                                                {{$value1->hosp_name}}
+                                                    {{$value1->hosp_name}}
                                                 @endif
                                             @endforeach
                                             </span>
@@ -35,9 +35,14 @@
                                         <ul class="icon-style-list lab-ul">
                                             <li><i class="icofont-phone"></i><span>{{$value->mobile_no}}</span></li>
                                             <li><i class="icofont-hat"></i><span>{{$value->qualification}}</span></li>
-                                            <li><i class="icofont-envelope"></i><span style="font-size:0.7vw;">{{$value->email}}</span></li>
+                                            <li><i class="icofont-envelope"></i><span
+                                                    style="font-size:0.7vw;">{{$value->email}}</span></li>
                                             <li><i class="icofont-envelope-open align-content-center"></i>
-                                                <button class="btn btn-info">Book Appointment</button>
+                                                <form action="bookappointment" method="post">
+                                                    @csrf
+                                                    <input type="hidden" value="{{$value->docid}}">
+                                                    <button type="submit" class="btn btn-info">Book Appointment</button>
+                                                </form>
                                             </li>
                                         </ul>
                                     </div>
