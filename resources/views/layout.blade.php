@@ -45,6 +45,7 @@
                                     <li><a href="">Upload Report</a></li>
                                 </ul>
                             </li>
+                            <li><a href="">My Appointments</a></li>
                             <li><a href="doctors">Doctors</a></li>
                             <li><a href="hospitals">Hospitals</a></li>
                         </ul>
@@ -125,6 +126,7 @@
                                             <li><a href="">Upload Report</a></li>
                                         </ul>
                                     </li>
+                                    <li><a href="">My Appointments</a></li>
                                     <li><a href="doctors">Doctors</a></li>
                                     <li><a href="hospitals">Hospitals</a></li>
                                 </ul>
