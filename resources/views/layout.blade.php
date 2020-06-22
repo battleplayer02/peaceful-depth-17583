@@ -119,8 +119,8 @@
                                 <ul class="lab-ul">
                                     <li><a href="">Lab Reports</a>
                                         <ul class="lab-ul">
-                                            <li><a href="">Get My Report</a></li>
-                                            <li><a href="">Upload Report</a></li>
+                                            <li><a href="labdownload">Get My Report</a></li>
+                                            <li><a href="labupload">Upload Report</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="">My Appointments</a></li>
@@ -132,8 +132,8 @@
                                 <ul class="lab-ul">
                                     <li><a href="">Volunteers</a>
                                         <ul class="lab-ul">
-                                            <li><a href="">My Work</a></li>
-                                            <li><a href="">Events Created</a></li>
+                                            <li><a href="mywork">My Work</a></li>
+                                            <li><a href="participate">Events Created</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="">Videos (Training/Entertainment)</a></li>
