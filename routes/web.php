@@ -37,9 +37,13 @@ Route::view('/registerhospital', "registerhospital");
 Route::view("/registeruser", "registeruser");
 Route::post("/reguser", "RegUserController@register");
 
-Route::get("/bookappointment/{a}", "BookAppointmentController@index");
+Route::get("/bookappointment", function (){
+    return view('book',[
+        "docid"=>request()->get('docid')
+    ]);
+});
 
-Route::post("/bookApp", 'BookAppointmentController@bookapp');
+Route::post("/bookapp","BookAppointmentController@bookapp");
 
 Route::view("/login", "login");
 Route::post("/LoginSubmit", "LoginController@index");
@@ -62,4 +66,6 @@ Route::view("/mywork", "mywork");
 
 Route::view("/participate", "participate");
 
-Route::get('/firebase',"FirebaseController@index");
+Route::get('/firebase', "FirebaseController@index");
+
+Route::get("MyBookingController","MyBookingController@index");

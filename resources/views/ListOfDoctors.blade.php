@@ -36,14 +36,17 @@
                                             <li><i class="icofont-phone"></i><span>{{$value->mobile_no}}</span></li>
                                             <li><i class="icofont-hat"></i><span>{{$value->qualification}}</span></li>
                                             <li><i class="icofont-envelope"></i><span style="font-size:0.7vw;">{{$value->email}}</span></li>
-                                            <li><i class="icofont-envelope-open align-content-center"></i>
+
                                                 @if(session('logininfo'))
-                                                    <a href="{{ url('/bookappointment/' . $value->docid) }}"><button class="btn btn-info"> Book Appointment</button></a>
+                                                    <form action="bookappointment">
+                                                        <input type="hidden" value="{{$value->docid}}" name="docid">
+                                                        <button class="btn btn-info"> Book Appointment</button>
+                                                    </form>
                                                 @else
                                                     <button class="btn btn-info" onclick="alert('Please Login First')"> Book Appointment</button>
                                                 @endif
 
-                                            </li>
+
                                         </ul>
                                     </div>
                                 </div>

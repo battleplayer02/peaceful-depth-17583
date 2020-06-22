@@ -45,7 +45,7 @@
                                 </ul>
                             </li>
                             @if(session('logininfo'))
-                                <li><a href="">My Appointments</a></li>
+                                <li><a href="MyBookingController">My Appointments</a></li>
                             @endif
                             <li><a href="doctors">Doctors</a></li>
                             <li><a href="hospitals">Hospitals</a></li>
@@ -131,7 +131,7 @@
                                         </ul>
                                     </li>
                                     @if(session('logininfo'))
-                                    <li><a href="">My Appointments</a></li>
+                                    <li><a href="MyBookingController">My Appointments</a></li>
                                     @endif
                                     <li><a href="doctors">Doctors</a></li>
                                     <li><a href="hospitals">Hospitals</a></li>

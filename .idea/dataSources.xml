@@ -8,5 +8,11 @@
       <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mariadb://johnny.heliohost.org:3306</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="naya wala" uuid="c66f7843-db68-4b35-92b2-2dc68be2c839">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://remotemysql.com:3306/XJwymcKX9H</jdbc-url>
+    </data-source>
   </component>
 </project>
