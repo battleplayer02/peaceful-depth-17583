@@ -44,7 +44,10 @@ Route::post("/bookApp", 'BookAppointmentController@bookapp');
 Route::view("/login", "login");
 Route::post("/LoginSubmit", "LoginController@index");
 
-Route::view("/govser", "GovtSer");
+Route::view("/govser", "govser");
+
+Route::view("/products", "GovtSer");
+
 Route::view("/book", "book");
 
 Route::get("/logout", "LogoutController@index");
