@@ -1,6 +1,6 @@
 @extends("layout")
 
-@section('title')  
+@section('title')
 <link rel="shortcut icon" type="image/x-icon" href="images/x-icon/01.png">
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
@@ -28,8 +28,8 @@
                         <input type="number" class="form-control" id="seckey" placeholder="Enter Key" name="seckey">
                     </div>
                     <div class="form-group">
-                    <label for="symptoms">Name:</label>
-                        <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+                    <label for="id">Id:</label>
+                        <input type="text" class="form-control" id="id" placeholder="ID" name="id">
                     </div>
                     <div class="custom-file mb-3">
                         <input type="file" class="custom-file-input" id="customFile" name="filename">
@@ -39,10 +39,10 @@
                 </form>
                 <br/><br/>
         </div>
-    </div>                
+    </div>
 </div>
 <script type="text/javascript" src="js/book.js">
-            
+
 </script>
 @stop
-    
+
