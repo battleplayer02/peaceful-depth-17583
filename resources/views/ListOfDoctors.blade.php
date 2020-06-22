@@ -37,7 +37,7 @@
                                             <li><i class="icofont-hat"></i><span>{{$value->qualification}}</span></li>
                                             <li><i class="icofont-envelope"></i><span style="font-size:0.7vw;">{{$value->email}}</span></li>
                                             <li><i class="icofont-envelope-open align-content-center"></i>
-                                                <a href="bookappointment/{{$value->docid}}"><button class="btn btn-info">Book Appointment</button></a>
+                                                <a href="{{ url('/bookappointment/' . $value->docid) }}"><button class="btn btn-info"> Book Appointment</button></a>
                                             </li>
                                         </ul>
                                     </div>

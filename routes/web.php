@@ -49,7 +49,7 @@ Route::view("/book", "book");
 
 Route::get("/logout", "LogoutController@index");
 
-    Route::view("/profile", "profile");
+Route::view("/profile", "profile");
 Route::view("/labdownload", "labdownload");
 Route::view("/labupload", "labupload");
 Route::view("/mywork", "mywork");
