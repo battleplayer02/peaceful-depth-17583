@@ -33,31 +33,37 @@
         <div class="mobile-menu-area">
             <div class="mobile-menu-area-inner">
                 <ul class="lab-ul">
-                    <li class="active"><a href={{"/home"}}>Home</a></li>
+                    <li class="active"><a href={{"home"}}>Home</a></li>
                     <li><a href="">Treatment</a>
                         <ul class="lab-ul">
                             <li><a href="">Lab Reports</a>
                                 <ul class="lab-ul">
-                                    <li><a href="labdownload">Get My Report</a></li>
+                                    @if(session('logininfo'))
+                                        <li><a href="labdownload">Get My Report</a></li>
+                                    @endif
                                     <li><a href="labupload">Upload Report</a></li>
                                 </ul>
                             </li>
-                            <li><a href="">My Appointments</a></li>
+                            @if(session('logininfo'))
+                                <li><a href="">My Appointments</a></li>
+                            @endif
                             <li><a href="doctors">Doctors</a></li>
                             <li><a href="hospitals">Hospitals</a></li>
                         </ul>
                     </li>
                     <li><a href="">Services</a>
                         <ul class="lab-ul">
-                            <li><a href="">Volunteers</a>
-                                <ul class="lab-ul">
-                                    <li><a href="mywork">My Work</a></li>
-                                    <li><a href="participate">Events Created</a></li>
-                                </ul>
-                            </li>
+                            @if(session('logininfo'))
+                                <li><a href="">Volunteers</a>
+                                    <ul class="lab-ul">
+                                        <li><a href="mywork">My Work</a></li>
+                                        <li><a href="participate">Events Created</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Request For Travelling Pass</a></li>
+                            @endif
                             <li><a href="">Videos (Training/Entertainment)</a></li>
-                            <li><a href="">Get Lab Reports</a></li>
-                            <li><a href="">Request For Travelling Pass</a></li>
+
                             <li><a href="govserv">Goverment Services</a></li>
                             <li><a href="products">Products</a></li>
                         </ul>
@@ -73,8 +79,6 @@
                         <li><a href="">{{session('logininfo')[0]->name}}</a>
                             <ul class="lab-ul">
                                 <li><a href="profile">Profile</a></li>
-                            </ul>
-                            <ul class="lab-ul">
                                 <li><a href="logout">Logout</a></li>
                             </ul>
                         </li>
@@ -120,25 +124,32 @@
                                 <ul class="lab-ul">
                                     <li><a href="">Lab Reports</a>
                                         <ul class="lab-ul">
+                                            @if(session('logininfo'))
                                             <li><a href="labdownload">Get My Report</a></li>
+                                            @endif
                                             <li><a href="labupload">Upload Report</a></li>
                                         </ul>
                                     </li>
+                                    @if(session('logininfo'))
                                     <li><a href="">My Appointments</a></li>
+                                    @endif
                                     <li><a href="doctors">Doctors</a></li>
                                     <li><a href="hospitals">Hospitals</a></li>
                                 </ul>
                             </li>
                             <li><a href="">Services</a>
                                 <ul class="lab-ul">
-                                    <li><a href="">Volunteers</a>
-                                        <ul class="lab-ul">
-                                            <li><a href="mywork">My Work</a></li>
-                                            <li><a href="participate">Events Created</a></li>
-                                        </ul>
-                                    </li>
+                                    @if(session('logininfo'))
+                                        <li><a href="">Volunteers</a>
+                                            <ul class="lab-ul">
+                                                <li><a href="mywork">My Work</a></li>
+                                                <li><a href="participate">Events Created</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">Request For Travelling Pass</a></li>
+                                    @endif
                                     <li><a href="">Videos (Training/Entertainment)</a></li>
-                                    <li><a href="">Request For Travelling Pass</a></li>
+
                                     <li><a href="govserv">Goverment Services</a></li>
                                     <li><a href="products">Products</a></li>
                                 </ul>
@@ -179,7 +190,7 @@
                         </ul>
                     </div>
                     <div class="header-btn">
-                        <a  class="lab-btn"><span>Donate<i class="icofont-heart"></i></span></a>
+                        <a class="lab-btn"><span>Donate<i class="icofont-heart"></i></span></a>
                     </div>
                 </div>
             </div>
@@ -209,7 +220,7 @@
                                             <p><span>Phone:</span>(91) 8547 632521</p>
                                         </li>
                                         <li>
-                                            <p><span>Email:</span><a >info@covid-19.com</a></p>
+                                            <p><span>Email:</span><a>info@covid-19.com</a></p>
                                         </li>
                                     </ul>
                                 </div>
@@ -226,11 +237,11 @@
                                 </div>
                                 <div class="content">
                                     <ul class="lab-ul">
-                                        <li><a ><i class="icofont-caret-right"></i>Advertisers</a></li>
-                                        <li><a ><i class="icofont-caret-right"></i>Developers</a></li>
-                                        <li><a ><i class="icofont-caret-right"></i>Resources</a></li>
-                                        <li><a ><i class="icofont-caret-right"></i>Company</a></li>
-                                        <li><a ><i class="icofont-caret-right"></i>Connect</a></li>
+                                        <li><a><i class="icofont-caret-right"></i>Advertisers</a></li>
+                                        <li><a><i class="icofont-caret-right"></i>Developers</a></li>
+                                        <li><a><i class="icofont-caret-right"></i>Resources</a></li>
+                                        <li><a><i class="icofont-caret-right"></i>Company</a></li>
+                                        <li><a><i class="icofont-caret-right"></i>Connect</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -246,11 +257,11 @@
                                 </div>
                                 <div class="content">
                                     <ul class="lab-ul">
-                                        <li><a ><i class="icofont-facebook"></i>Facebook</a></li>
-                                        <li><a ><i class="icofont-twitter"></i>Twitter</a></li>
-                                        <li><a ><i class="icofont-instagram"></i>Instagram</a></li>
-                                        <li><a ><i class="icofont-youtube"></i>YouTube</a></li>
-                                        <li><a ><i class="icofont-xing"></i>Xing</a></li>
+                                        <li><a><i class="icofont-facebook"></i>Facebook</a></li>
+                                        <li><a><i class="icofont-twitter"></i>Twitter</a></li>
+                                        <li><a><i class="icofont-instagram"></i>Instagram</a></li>
+                                        <li><a><i class="icofont-youtube"></i>YouTube</a></li>
+                                        <li><a><i class="icofont-xing"></i>Xing</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -266,12 +277,12 @@
                                 </div>
                                 <div class="content">
                                     <ul class="lab-ul">
-                                        <li><a ><i class="icofont-caret-right"></i>Advertiser Agreement</a></li>
-                                        <li><a ><i class="icofont-caret-right"></i>Acceptable Use Policy</a>
+                                        <li><a><i class="icofont-caret-right"></i>Advertiser Agreement</a></li>
+                                        <li><a><i class="icofont-caret-right"></i>Acceptable Use Policy</a>
                                         </li>
-                                        <li><a ><i class="icofont-caret-right"></i>Privacy Policy</a></li>
-                                        <li><a ><i class="icofont-caret-right"></i>Technology Privacy</a></li>
-                                        <li><a ><i class="icofont-caret-right"></i>Developer Agreement</a></li>
+                                        <li><a><i class="icofont-caret-right"></i>Privacy Policy</a></li>
+                                        <li><a><i class="icofont-caret-right"></i>Technology Privacy</a></li>
+                                        <li><a><i class="icofont-caret-right"></i>Developer Agreement</a></li>
                                     </ul>
                                 </div>
                             </div>
