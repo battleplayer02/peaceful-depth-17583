@@ -53,7 +53,13 @@ Route::view("/book", "book");
 Route::get("/logout", "LogoutController@index");
 
 Route::view("/profile", "profile");
+
 Route::view("/labdownload", "labdownload");
+
 Route::view("/labupload", "labupload");
+
 Route::view("/mywork", "mywork");
+
 Route::view("/participate", "participate");
+
+Route::get('/firebase',"FirebaseController@index");
