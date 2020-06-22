@@ -45,5 +45,12 @@ Route::view("/login", "login");
 Route::post("/LoginSubmit", "LoginController@index");
 
 Route::view("/govser", "GovtSer");
+Route::view("/book", "book");
 
 Route::get("/logout", "LogoutController@index");
+
+    Route::view("/profile", "profile");
+Route::view("/labdownload", "labdownload");
+Route::view("/labupload", "labupload");
+Route::view("/mywork", "mywork");
+Route::view("/participate", "participate");
