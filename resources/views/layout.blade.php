@@ -152,8 +152,6 @@
                                 <li><a href="">{{session('logininfo')[0]->name}}</a>
                                     <ul class="lab-ul">
                                         <li><a href="profile">Profile</a></li>
-                                    </ul>
-                                    <ul class="lab-ul">
                                         <li><a href="logout">Logout</a></li>
                                     </ul>
                                 </li>
