@@ -10,12 +10,11 @@ class FirebaseController extends Controller
 {
     public function index()
     {
-
-        $factory = (new Factory)->withServiceAccount('AuthKey.json');
+        $factory = (new Factory())
+            ->withDatabaseUri("https://messaging-c93b9.firebaseio.com/");
         $database = $factory->createDatabase();
         $reference = $database->getReference('sample');
         $snapshot = $reference->getSnapshot();
-        echo $snapshot->getKey().":".$snapshot->getValue();
-
+        echo $snapshot->getKey() . ":" . $snapshot->getValue();
     }
 }
