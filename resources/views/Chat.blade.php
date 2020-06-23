@@ -33,7 +33,7 @@
 
         <div class="chat-history">
             <ul>
-                @foreach($previous_messages as $value)
+                @foreach($previous_chats as $value)
                     @if ($value->kaun_bheja == 0)
                         <li class="clearfix">
                             <div class="message-data align-right">
