@@ -11,38 +11,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="/css/stylechat.css">
-    <script>
-        var did;
-
-        function setdocid(docid) {
-            did = docid;
-        }
-    </script>
 </head>
 <body>
+<pre>
+    {{print_r($previous_chats)}}
+    {{print_r($docname)}}
+</pre>
+
 <!-- partial:index.partial.html -->
 <div class="container clearfix">
-    <div class="people-list" id="people-list">
-        <div class="search">
-            <input type="text" placeholder="search"/>
-            <i class="fa fa-search"></i>
-        </div>
-        <ul class="list">
-            @csrf
-            @foreach($data as $value)
-                <li class="clearfix">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_09.jpg" alt="avatar"/>
-                    <div class="about">
-                        <div class="name" onclick="setdocid({{$value->docid}})">{{$value->doctorname[0]->name}}</div>
-                        <div class="status">
-                            <i class="fa fa-circle offline"></i> offline since Oct 28
-                        </div>
-                    </div>
-                </li>
-            @endforeach
-        </ul>
-    </div>
-
     <div class="chat">
         <div class="chat-header clearfix">
             <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_01_green.jpg" alt="avatar"/>
@@ -126,7 +103,7 @@
             $.get("api/inputchat",
                 {
                     '_token':document.getElementsByName('_token')[0].value,
-                    'docid': 1,
+                    'docid': ,
                     "pat_id":{{session('logininfo')[0]->id}},
                     'message': document.getElementById('message-to-send').value,
                     'kaunbheja':

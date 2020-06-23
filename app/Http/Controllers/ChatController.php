@@ -8,25 +8,23 @@ use Illuminate\Support\Facades\DB;
 class ChatController extends Controller
 {
     //
-    function index()
+    function index(Request $request)
     {
-        $data = DB::table('appointments')
-            ->where('id', session('logininfo')[0]->id)
+        $data = DB::table('chats')
+            ->where([
+                "doc_id"=>$request->docid,
+                "pat_id"=>session('logininfo')[0]->id
+            ])
             ->get();
-        foreach ($data as $value) {
-            $value->doctorname = DB::table("doctor_details")
-                ->join("user_details", "doctor_details.id", "user_details.id")
-                ->where('docid', $value->docid)
-                ->get();
-        }
 
-        return view('Chat', [
-            "data" => $data
+        $docname = DB::table("doctor_details")
+            ->join("user_details", "doctor_details.id", "user_details.id")
+            ->where('docid', $request->docid)
+            ->get();
+
+        return view('Chat',[
+            "previous_chats"=>$data,
+            "docname"=>$docname
         ]);
-    }
-
-    public function example()
-    {
-        return "hello";
     }
 }

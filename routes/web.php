@@ -37,13 +37,13 @@ Route::view('/registerhospital', "registerhospital");
 Route::view("/registeruser", "registeruser");
 Route::post("/reguser", "RegUserController@register");
 
-Route::get("/bookappointment", function (){
-    return view('book',[
-        "docid"=>request()->get('docid')
+Route::get("/bookappointment", function () {
+    return view('book', [
+        "docid" => request()->get('docid')
     ]);
 });
 
-Route::post("/bookapp","BookAppointmentController@bookapp");
+Route::post("/bookapp", "BookAppointmentController@bookapp");
 
 Route::view("/login", "login");
 Route::post("/LoginSubmit", "LoginController@index");
@@ -68,7 +68,11 @@ Route::view("/participate", "participate");
 
 Route::get('/firebase', "FirebaseController@index");
 
-Route::get("MyBookingController","MyBookingController@index");
+Route::get("MyBookingController", "MyBookingController@index");
 
-Route::get('/chat', "ChatController@index");
+Route::get('/chat/{docid}', function ($a) {
+    redirect('ChatController@index',[
+        "docid"=>$a
+    ]);
+});
 
