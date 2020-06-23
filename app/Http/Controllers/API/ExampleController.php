@@ -16,9 +16,9 @@ class ExampleController extends Controller
                 'doc_id' => $request->docid,
                 'pat_id' => $request->pat_id,
                 'message' => $request->message,
-                'kaun_bheja' => $request->kaunbheja
+                'kaun_bheja' => $request->kaunbheja,
+                'date_and_time'=>date("Y-m-d h:i:sa")
             ]);
-
         return $a;
     }
 }

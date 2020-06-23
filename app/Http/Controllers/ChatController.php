@@ -25,19 +25,6 @@ class ChatController extends Controller
         ]);
     }
 
-    public function inputChat(Request $request)
-    {
-        $a = DB::table('chat')
-            ->insert([
-                'doc_id' => $request->docid,
-                'pat_id' => session('logininfo')[0]->id,
-                'message' => $request->message,
-                'kaun_bheja' => $request->kaunbheja
-            ]);
-
-        echo $a;
-    }
-
     public function example()
     {
         return "hello";
