@@ -19,6 +19,6 @@ class ExampleController extends Controller
                 'kaun_bheja' => $request->kaunbheja
             ]);
 
-        echo $a;
+        return $a;
     }
 }
