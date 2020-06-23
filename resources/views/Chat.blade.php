@@ -129,7 +129,12 @@
             {
                 docid: did,
                 message: document.getElementById('message-to-send').value,
-                kaunbheja: @if(session('logininfo')[0]->type=='patient')0@else1@endif
+                kaunbheja:
+                    @if(session('logininfo')[0]->type=='patient')
+                        0
+                @else
+                1
+                @endif
             },
             function (data, status) {
                 document.getElementById('message-to-send').value = "";
