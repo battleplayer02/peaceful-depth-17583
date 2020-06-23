@@ -102,10 +102,8 @@
 <script>
     $(document).ready(function () {
         $("#sendbutton").click(function () {
-            alert(did + document.getElementsByName('_token').value);
             $.get("api/inputchat",
                 {
-                    '_token': document.getElementsByName('_token')[0].value,
                     'docid': {{$docname[0]->docid}},
                     "pat_id":{{session('logininfo')[0]->id}},
                     'message': document.getElementById('message-to-send').value,
