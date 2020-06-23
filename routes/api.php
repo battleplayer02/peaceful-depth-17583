@@ -21,5 +21,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 Route::get('/inputchat', "API\ExampleController@inputChat");
-Route::get('/inputchat', "API\ExampleController@sample");
+Route::get('/sample', "API\ExampleController@sample");
 
