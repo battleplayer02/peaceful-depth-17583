@@ -126,7 +126,7 @@
             $.get("inputchat",
                 {
                     '_token':document.getElementsByName('_token')[0].value,
-                    'docid': did,
+                    'docid': 1,
                     'message': document.getElementById('message-to-send').value,
                     'kaunbheja':
                         @if(session('logininfo')[0]->type=='patient') 0
