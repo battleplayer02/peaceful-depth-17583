@@ -26,9 +26,8 @@
 
             <div class="chat-about">
                 <div class="chat-with">{{$docname[0]->name}}</div>
-                <div class="chat-num-messages">already 1 902 messages</div>
             </div>
-            <i class="fa fa-star"></i>
+            <i class="fa fa-refresh"></i>
         </div> <!-- end chat-header -->
 
         <div class="chat-history">
