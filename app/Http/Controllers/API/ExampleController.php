@@ -11,7 +11,7 @@ class ExampleController extends Controller
     //
     public function inputChat(Request $request)
     {
-        $a = DB::table('chat')
+        $a = DB::table('chats')
             ->insert([
                 'doc_id' => $request->docid,
                 'pat_id' => $request->pat_id,
