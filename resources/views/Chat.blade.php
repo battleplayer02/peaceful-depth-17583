@@ -9,7 +9,9 @@
 </head>
 <body>
 <!-- partial:index.partial.html -->
+<pre>
 {{print_r($data)}}
+</pre>
 <div class="container clearfix">
     <div class="people-list" id="people-list">
         <div class="search">
