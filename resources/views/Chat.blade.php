@@ -128,6 +128,7 @@
         alert("helo");
         $.post("inputchat",
             {
+                token:@csrf,
                 docid: did,
                 message: document.getElementById('message-to-send').value,
                 kaunbheja:
