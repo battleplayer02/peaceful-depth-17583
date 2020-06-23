@@ -122,10 +122,10 @@
 <script>
     $(document).ready(function() {
         $("#sendbutton").click(function () {
-            alert("helo");
+            alert(did+document.getElementsByName('_token').value);
             $.get("inputchat",
                 {
-                    '_token':document.getElementsByName('_token').value,
+                    '_token':document.getElementsByName('_token')[0].value,
                     'docid': did,
                     'message': document.getElementById('message-to-send').value,
                     'kaunbheja':
