@@ -127,6 +127,7 @@
                 {
                     '_token':document.getElementsByName('_token')[0].value,
                     'docid': 1,
+                    "pat_id":{{session('logininfo')[0]->id}},
                     'message': document.getElementById('message-to-send').value,
                     'kaunbheja':
                         @if(session('logininfo')[0]->type=='patient') 0

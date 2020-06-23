@@ -14,7 +14,7 @@ class ExampleController extends Controller
         $a = DB::table('chat')
             ->insert([
                 'doc_id' => $request->docid,
-                'pat_id' => session('logininfo')[0]->id,
+                'pat_id' => $request->pat_id,
                 'message' => $request->message,
                 'kaun_bheja' => $request->kaunbheja
             ]);
