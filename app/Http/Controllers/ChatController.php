@@ -25,7 +25,7 @@ class ChatController extends Controller
         ]);
     }
 
-    function inputChat(Request $request)
+    public function inputChat(Request $request)
     {
         $a = DB::table('chat')
             ->insert([
@@ -36,5 +36,10 @@ class ChatController extends Controller
             ]);
 
         echo $a;
+    }
+
+    public function example()
+    {
+        echo "chal raha hai ";
     }
 }
