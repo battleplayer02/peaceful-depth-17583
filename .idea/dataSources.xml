@@ -14,5 +14,12 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://remotemysql.com:3306/XJwymcKX9H</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="postgres@heroku" uuid="0a514181-a3be-4b4c-a7f6-9b49411636ce">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <remarks>sabse naya wala</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://ec2-34-233-226-84.compute-1.amazonaws.com:5432/dckall389gq3ht</jdbc-url>
+    </data-source>
   </component>
 </project>
