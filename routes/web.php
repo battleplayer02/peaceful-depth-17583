@@ -70,9 +70,5 @@ Route::get('/firebase', "FirebaseController@index");
 
 Route::get("MyBookingController", "MyBookingController@index");
 
-Route::get('/chat/{docid}', function () {
-    redirect('ChatController@index',[
-        "docid"=>request()->get('docid')
-    ]);
-});
+Route::get('/chat/{docid}', 'ChatController@index');
 
