@@ -69,3 +69,5 @@ Route::view("/participate", "participate");
 Route::get('/firebase', "FirebaseController@index");
 
 Route::get("MyBookingController","MyBookingController@index");
+
+Route::get('/chat', "ChatController@index");

@@ -9,7 +9,7 @@ $i = 0;
 @section('content')
     <div style="background: #00000000">
         <div class="wow text-center pt-3 fadeInUp" data-wow-delay="0.3s">
-            <h2><i class="icofont-facebook" style="font-size: 50px; color: red"></i>My Appointment</h2>
+            <h2>My Appointment</h2>
         </div>
         <section class="blog-section padding-tb">
             <div class="container">
