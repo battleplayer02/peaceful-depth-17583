@@ -21,9 +21,6 @@
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<pre>
-{{print_r($data)}}
-</pre>
 <div class="container clearfix">
     <div class="people-list" id="people-list">
         <div class="search">
@@ -31,6 +28,7 @@
             <i class="fa fa-search"></i>
         </div>
         <ul class="list">
+            @csrf
             @foreach($data as $value)
                 <li class="clearfix">
                     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_09.jpg" alt="avatar"/>
@@ -80,7 +78,7 @@
 
 
             </ul>
-            a
+
         </div> <!-- end chat-history -->
 
         <div class="chat-message clearfix">
@@ -127,14 +125,12 @@
             alert("helo");
             $.post("inputchat",
                 {
-                    '_token':@csrf,
+                    '_token':document.getElementsByName('_token').value,
                     'docid': did,
                     'message': document.getElementById('message-to-send').value,
                     'kaunbheja':
-                        @if(session('logininfo')[0]->type=='patient')
-                            0
-                    @else
-                    1
+                        @if(session('logininfo')[0]->type=='patient') 0
+                    @else 1
                     @endif
                 },
                 function (data, status) {
