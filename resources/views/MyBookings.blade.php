@@ -41,7 +41,7 @@ $i = 0;
                                                 <a href="#" class="text-btn">Mob
                                                     No. {{$value->doc_details[0]->mobile_no}}<i
                                                         class="icofont-double-right"></i></a>
-                                                <a href="chat" class="comments"><b class="card-title text-btn">Chat</b> <i
+                                                <a href="chat" class="comments" target="_blank"><b class="card-title text-btn">Chat</b> <i
                                                         class="icofont-comment"></i></a>
                                             </div>
                                         </div>
