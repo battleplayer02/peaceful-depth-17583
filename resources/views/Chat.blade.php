@@ -125,6 +125,7 @@
 <script>
 
     $("#sendbutton").click(function () {
+        alert("helo");
         $.post("inputchat",
             {
                 docid: did,
