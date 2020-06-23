@@ -6,6 +6,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="/css/stylechat.css">
+    <script>
+        var did;
+
+        function setdocid(docid) {
+            did = docid;
+        }
+    </script>
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -23,7 +30,7 @@
                 <li class="clearfix">
                     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_09.jpg" alt="avatar"/>
                     <div class="about">
-                        <div class="name">{{$value->doctorname[0]->name}}</div>
+                        <div class="name" onclick="setdocid({{$value->docid}})">{{$value->doctorname[0]->name}}</div>
                         <div class="status">
                             <i class="fa fa-circle offline"></i> offline since Oct 28
                         </div>
@@ -56,7 +63,6 @@
                         Hi Vincent, how are you? How is the project coming along?
                     </div>
                 </li>
-
                 <li>
                     <div class="message-data">
                         <span class="message-data-name"><i class="fa fa-circle online"></i> Vincent</span>
@@ -69,7 +75,7 @@
 
 
             </ul>
-
+            a
         </div> <!-- end chat-history -->
 
         <div class="chat-message clearfix">
@@ -78,7 +84,7 @@
             <i class="fa fa-file-o"></i> &nbsp;&nbsp;&nbsp;
             <i class="fa fa-file-image-o"></i>
 
-            <button>Send</button>
+            <button id="sendbutton">Send</button>
 
         </div> <!-- end chat-message -->
 
@@ -111,9 +117,24 @@
 </script>
 <!-- partial -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js'></script>
 <script src="/js/scriptchat.js"></script>
 
 </body>
 </html>
+<script>
+
+    $("#sendbutton").click(function () {
+        $.post("inputchat",
+            {
+                docid: did,
+                message: document.getElementById('message-to-send').value,
+                kaunbheja: @if(session('logininfo')[0]->type=='patient')0@else1@endif
+            },
+            function (data, status) {
+                document.getElementById('message-to-send').value = "";
+                alert("Data: " + data + "\nStatus: " + status);
+            });
+    });
+
+</script>
