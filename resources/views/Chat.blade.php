@@ -104,7 +104,7 @@
         $("#sendbutton").click(function () {
             $.get("api/inputchat",
                 {
-                    'docid': {{$docname[0]->docid}},
+                    'docid': {{$did}},
                     "pat_id":{{session('logininfo')[0]->id}},
                     'message': document.getElementById('message-to-send').value,
                     'kaunbheja':

@@ -22,4 +22,8 @@ class ExampleController extends Controller
             ]);
         return $a;
     }
+    public function sample()
+    {
+        return "hello";
+    }
 }

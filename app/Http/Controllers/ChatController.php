@@ -24,7 +24,8 @@ class ChatController extends Controller
 
         return view('Chat',[
             "previous_chats"=>$data,
-            "docname"=>$docname
+            "docname"=>$docname,
+            "did"=>$request->docid
         ]);
     }
 }
