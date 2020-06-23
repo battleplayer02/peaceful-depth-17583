@@ -25,7 +25,7 @@
             <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_01_green.jpg" alt="avatar"/>
 
             <div class="chat-about">
-                <div class="chat-with">Chat with Vincent Porter</div>
+                <div class="chat-with">{{$docname[0]->name}}</div>
                 <div class="chat-num-messages">already 1 902 messages</div>
             </div>
             <i class="fa fa-star"></i>
@@ -33,27 +33,30 @@
 
         <div class="chat-history">
             <ul>
-                <li class="clearfix">
-                    <div class="message-data align-right">
-                        <span class="message-data-time">10:10 AM, Today</span> &nbsp; &nbsp;
-                        <span class="message-data-name">Olia</span> <i class="fa fa-circle me"></i>
+                @foreach($previous_messages as $value)
+                    @if ($value->kaun_bheja == 0)
+                        <li class="clearfix">
+                            <div class="message-data align-right">
+                                <span class="message-data-time">{{$value->date_and_time}}</span> &nbsp; &nbsp;
+                                <span class="message-data-name">{{session('logininfo')[0]->name}}</span> <i class="fa fa-circle me"></i>
 
-                    </div>
-                    <div class="message other-message float-right">
-                        Hi Vincent, how are you? How is the project coming along?
-                    </div>
-                </li>
-                <li>
-                    <div class="message-data">
-                        <span class="message-data-name"><i class="fa fa-circle online"></i> Vincent</span>
-                        <span class="message-data-time">10:12 AM, Today</span>
-                    </div>
-                    <div class="message my-message">
-                        Are we meeting today? Project has been already finished and I have results to show you.
-                    </div>
-                </li>
-
-
+                            </div>
+                            <div class="message other-message float-right">
+                                {{$value->message}}
+                            </div>
+                        </li>
+                    @else
+                        <li>
+                            <div class="message-data">
+                                <span class="message-data-name"><i class="fa fa-circle online"></i> {{$docname[0]->name}}</span>
+                                <span class="message-data-time">{{$value->date_and_time}}</span>
+                            </div>
+                            <div class="message my-message">
+                                {{$value->message}}
+                            </div>
+                        </li>
+                    @endif
+                @endforeach
             </ul>
 
         </div> <!-- end chat-history -->
@@ -97,13 +100,13 @@
 </script>
 <!-- partial -->
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         $("#sendbutton").click(function () {
-            alert(did+document.getElementsByName('_token').value);
+            alert(did + document.getElementsByName('_token').value);
             $.get("api/inputchat",
                 {
-                    '_token':document.getElementsByName('_token')[0].value,
-                    'docid': ,
+                    '_token': document.getElementsByName('_token')[0].value,
+                    'docid': {{$docname[0]->docid}},
                     "pat_id":{{session('logininfo')[0]->id}},
                     'message': document.getElementById('message-to-send').value,
                     'kaunbheja':
