@@ -23,7 +23,7 @@
                 <li class="clearfix">
                     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_09.jpg" alt="avatar"/>
                     <div class="about">
-                        <div class="name"></div>
+                        <div class="name">{{$value->doctorname[0]->name}}</div>
                         <div class="status">
                             <i class="fa fa-circle offline"></i> offline since Oct 28
                         </div>
