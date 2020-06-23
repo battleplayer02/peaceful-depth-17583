@@ -2,7 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="csrf-token" content="@csrf">
     <title>Consult With Doctor</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js'></script>
+    <script src="/js/scriptchat.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="/css/stylechat.css">
@@ -116,32 +121,30 @@
     </li>
 </script>
 <!-- partial -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js'></script>
-<script src="/js/scriptchat.js"></script>
-
-</body>
-</html>
 <script>
-
-    $("#sendbutton").click(function () {
-        alert("helo");
-        $.post("inputchat",
-            {
-                token:@csrf,
-                docid: did,
-                message: document.getElementById('message-to-send').value,
-                kaunbheja:
-                    @if(session('logininfo')[0]->type=='patient')
-                        0
-                @else
-                1
-                @endif
-            },
-            function (data, status) {
-                document.getElementById('message-to-send').value = "";
-                alert("Data: " + data + "\nStatus: " + status);
-            });
+    $(document).ready(function() {
+        $("#sendbutton").click(function () {
+            alert("helo");
+            $.post("inputchat",
+                {
+                    '_token':@csrf,
+                    'docid': did,
+                    'message': document.getElementById('message-to-send').value,
+                    'kaunbheja':
+                        @if(session('logininfo')[0]->type=='patient')
+                            0
+                    @else
+                    1
+                    @endif
+                },
+                function (data, status) {
+                    document.getElementById('message-to-send').value = "";
+                    alert("Data: " + data + "\nStatus: " + status);
+                });
+        });
     });
 
 </script>
+
+</body>
+</html>
