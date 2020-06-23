@@ -123,7 +123,7 @@
     $(document).ready(function() {
         $("#sendbutton").click(function () {
             alert("helo");
-            $.post("inputchat",
+            $.get("inputchat",
                 {
                     '_token':document.getElementsByName('_token').value,
                     'docid': did,

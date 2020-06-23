@@ -72,4 +72,4 @@ Route::get("MyBookingController","MyBookingController@index");
 
 Route::get('/chat', "ChatController@index");
 
-Route::post('/inputchat', "ChatController@inputChat");
+Route::get('/inputchat', "ChatController@inputChat");
