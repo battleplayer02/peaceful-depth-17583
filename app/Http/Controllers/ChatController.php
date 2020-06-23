@@ -40,6 +40,6 @@ class ChatController extends Controller
 
     public function example()
     {
-        echo "chal raha hai ";
+        return "hello";
     }
 }
