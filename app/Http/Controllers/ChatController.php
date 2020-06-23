@@ -9,6 +9,6 @@ class ChatController extends Controller
     //
     function index()
     {
-        return view('chat');
+        return view('Chat');
     }
 }
