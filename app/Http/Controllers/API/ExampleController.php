@@ -11,6 +11,7 @@ class ExampleController extends Controller
     //
     public function inputChat(Request $request)
     {
+        date_default_timezone_set('Asia/Kolkata');
         $a = DB::table('chats')
             ->insert([
                 'doc_id' => $request->docid,
