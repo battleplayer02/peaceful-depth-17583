@@ -102,7 +102,7 @@
 <script>
     $(document).ready(function () {
         $("#sendbutton").click(function () {
-            $.get("api/inputchat",
+            $.get("http://peaceful-depths-17583.herokuapp.com/api/inputchat",
                 {
                     'docid': {{$did}},
                     "pat_id":{{session('logininfo')[0]->id}},
