@@ -41,39 +41,39 @@
             </div>
             <div class="card col-lg-4 col-md-6 col-sm-12 ">
                     <div class="card-body">
-                    <img src="{{"images/card4.PNG"}}" alt="Image">
+                    <img src="{{"images/card4.png"}}" alt="Image">
                     </div>
             </div>
             <div class="card col-lg-4 col-md-6 col-sm-12">
                     <div class="card-body">
-                    <img src="{{"images/card5.PNG"}}" alt="Image">
+                    <img src="{{"images/card5.png"}}" alt="Image">
                     </div>
             </div>
             <div class="card col-lg-4 col-md-6 col-sm-12">
                     <div class="card-body">
-                    <img src="{{"images/card6.PNG"}}" alt="Image">
+                    <img src="{{"images/card6.png"}}" alt="Image">
                     </div>
             </div>
         </div>
         <div class="row">
-            <div class="bg-warning card col-lg-2 col-md-5 col-sm-12 m-5" style="height: 150px;" >
+            <div class="bg-warning card col-lg-2 col-md-5 col-sm-12 m-3" style="height: 150px;" >
                     <p class="m-auto">Apply For movement pass</p>
                     <button class="btn btn-warning" style="width:100%"><a href="">Click for Details</a></button>
 
             </div>
-            <div class="bg-danger card col-lg-2 col-md-5 col-sm-12 m-5" style="height: 150px;">
+            <div class="bg-danger card col-lg-2 col-md-5 col-sm-12 m-3" style="height: 150px;">
                     <p class="m-auto">
                         State/UTs Helpline No.
                     </p>
                     <button class="btn btn-danger" style="width:100%"><a href="">Click for Details</a></button>
             </div>
-            <div class="bg-info card col-lg-2 col-md-5 col-sm-12 m-5" style="height: 150px;">
+            <div class="bg-info card col-lg-2 col-md-5 col-sm-12 m-3" style="height: 150px;">
                     <p class="m-auto">
                         Live Helpdesk
                     </p>
                     <button class="btn btn-info" style="width:100%"><a href="">Click for Details</a></button>
             </div>
-            <div class="bg-primary card col-lg-2 col-md-5 col-sm-12 m-5" style="height: 150px;">
+            <div class="bg-primary card col-lg-2 col-md-5 col-sm-12 m-3" style="height: 150px;">
                     <p class="m-auto">
                         State/District wise details
                     </p>
@@ -81,6 +81,7 @@
             </div>
         </div>
         <div class="row">
+            <br/><br/>
             <button type="button" onclick="myFunction('Demo1')" class="btn btn-primary" data-toggle="collapse" data-target="#demo" style="width:100%;">Helpline Numbers</button>
             <div id="demo" class="collapse">
             <ol>
@@ -124,11 +125,13 @@
             </ol>
             </div>
         </div>
+        <br/><br/>
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h2 class="justify-content-center">Steps Taken By Goverment</h2>
+
                 <div class="section-wrapper">
                             <div class="row justify-content-center">
+                                <h2 class="justify-content-center">Steps Taken By Goverment</h2>
                                 <div class="col-lg-6 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
                                     <div class="service-item text-center">
                                         <div class="service-inner">
@@ -149,7 +152,7 @@
                                                 <img src={{"images/modiji.jpg"}} alt="service">
                                             </div>
                                             <div class="service-content">
-                                                <h4>MSME Products</h4>
+                                                <h4>Step of Lockdown</h4>
                                                 <p>Our comprehensive Online Marketing strategy will boost your website trafic hence monthly sales.</p>
                                             </div>
                                         </div>
@@ -162,7 +165,7 @@
                                                 <img src="images/modiji.jpg" alt="service">
                                             </div>
                                             <div class="service-content">
-                                                <h4>MSME Products</h4>
+                                                <h4>PM Mann Ki Baat</h4>
                                                 <p>Our comprehensive Online Marketing strategy will boost your website trafic hence monthly sales.</p>
                                             </div>
                                         </div>
@@ -175,7 +178,7 @@
                                                 <img src="images/modiji.jpg" alt="service">
                                             </div>
                                             <div class="service-content">
-                                                <h4>MSME PRODUCTS</h4>
+                                                <h4>Funds By Goverment</h4>
                                                 <p>Our comprehensive Online Marketing strategy will boost your website trafic hence monthly sales.</p>
                                             </div>
                                         </div>
@@ -186,36 +189,36 @@
                 </div>
         </div>
         <div class="row">
-        <div class="card bg-success col-lg-2 col-md-6 col-sm-12 m-5" style="width:400px">
+        <div class="card bg-success col-lg-2 col-md-6 col-sm-12 m-3" style="width:400px">
                 <div class="card-body">
                     <h4 class="card-title">Whatsapp</h4>
                     <p class="card-text">Contact for any details</p>
                     <a href="#" class="btn btn-primary">View Details</a>
                 </div>
         </div>
-        <div class="card bg-danger col-lg-2 col-md-6 col-sm-12 m-5" style="width:400px">
+        <div class="card bg-danger col-lg-2 col-md-6 col-sm-12 m-3" style="width:400px">
                 <div class="card-body">
                     <h4 class="card-title">Youtube</h4>
                     <p class="card-text">Contact for any details</p>
                     <a href="#" class="btn btn-primary">View Details</a>
                 </div>
         </div>
-        <div class="card bg-info col-lg-2 col-md-6 col-sm-12 m-5" style="width:400px">
+        <div class="card bg-info col-lg-2 col-md-6 col-sm-12 m-3" style="width:400px">
                 <div class="card-body">
                     <h4 class="card-title">Messenger</h4>
                     <p class="card-text">Contact for any details</p>
                     <a href="#" class="btn btn-primary">View Details</a>
                 </div>
         </div>
-        <div class="card bg-primary col-lg-2 col-md-6 col-sm-12 m-5" style="width:400px">
+        <div class="card bg-primary col-lg-2 col-md-6 col-sm-12 m-3" style="width:400px">
                 <div class="card-body">
                     <h4 class="card-title">Facebook</h4>
                     <p class="card-text">Contact for any details</p>
                     <a href="#" class="btn btn-primary">View Details</a>
                 </div>
         </div>
-        </div>  
+        </div>
     </div>
-    
-    
+
+
 @stop
