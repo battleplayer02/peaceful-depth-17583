@@ -20,7 +20,7 @@
                     <div class="col-md-6 col-12">
                         <div class="content-part">
                             <div class="banner-content">
-                                <h2 class="banner-title">Chikitsa : Andaman and Nicobar Islands</h2>
+                                <h4 class="banner-title">Chikitsa : Andaman and Nicobar Islands</h4>
                                 <h4>Healthcare, Education And Disister Management</h4>
                                 <a href="#" class="lab-btn style-2"><span>donate now <i
                                             class="icofont-heart"></i></span></a>
