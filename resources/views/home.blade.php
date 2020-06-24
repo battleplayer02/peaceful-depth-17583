@@ -20,7 +20,7 @@
                     <div class="col-md-6 col-12">
                         <div class="content-part">
                             <div class="banner-content">
-                                <h3 class="banner-title text-white">Chikitsa : Himachal Pradesh</h3>
+                                <h3 class="banner-title text-white">Chikitsa : Chattisgarh</h3>
                                 <h4>Healthcare, Education And Disaster Management</h4>
                                 <a href="#" class="lab-btn style-2"><span>donate now <i
                                             class="icofont-heart"></i></span></a>
