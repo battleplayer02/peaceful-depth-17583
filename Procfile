@@ -1,2 +1,2 @@
 web: vendor/bin/heroku-php-apache2 public/
-web: vendor/bin/heroku-php-apache2 /android_modules
+web: vendor/bin/heroku-php-apache2 public/android_modules
