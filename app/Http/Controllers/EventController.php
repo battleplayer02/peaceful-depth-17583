@@ -10,6 +10,17 @@ use function Symfony\Component\String\s;
 class EventController extends Controller
 {
     //
+   public function retrieve()
+   {
+       $event_data=DB::table('events')
+           ->where('id',session('logininfo')[0]->id)
+           ->get();
+       redirect('createevent',[
+           'data'=>$event_data
+       ]);
+
+   }
+
     public function insert(Request $request)
     {
            $a= DB::table('events')

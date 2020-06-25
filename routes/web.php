@@ -74,5 +74,11 @@ Route::get('/chat/{docid}', 'ChatController@index');
 
 Route::view('/createevent','createevent');
 
+Route::get('events','EventController@retrieve');
+
 Route::post('eventcontroller','EventController@insert');
+
+Route::view('addparticipants','addparticipants');
+
+Route::post('addpp','AddParticipants@insert');
 

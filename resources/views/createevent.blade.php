@@ -17,14 +17,16 @@
     <title>Reg User</title>
 @endsection
 @section('content')
-
+    <pre>
+        {{$data}}
+    </pre>
     <!-- Page Header Section Start Here -->
     <section class="page-header">
         <div class="container">
             <div class="page-title">
                 <ul class="breadcrumb lab-ul">
                     <li><a href="index.html">Home</a></li>
-                    <li>Register New User</li>
+                    <li>Create Events</li>
                 </ul>
             </div>
         </div>
@@ -39,7 +41,7 @@
             <div class="container align-content-center">
                 <div class="contact-wrap col-lg-6 col-sm-4" align="center">
                     <div class="contact-title">
-                        <h5>New User Registration</h5>
+                        <h5>Create Events</h5>
                     </div>
                     <form class="contact-form" action="eventcontroller" method="post" enctype="multipart/form-data"
                           onsubmit="uploadpic()">
@@ -66,7 +68,7 @@
                         @enderror
 
                         <label class="control-label" for="organizercontact">Contact Number</label>
-                        <input id="organizercontact" name="organizercontact" type="text" placeholder="organizercontact"
+                        <input id="organizercontact" name="organizercontact" type="text" placeholder="Contact"
                                value="{{old('organizercontact')}}"
                                class="form-control"
                                required="">
