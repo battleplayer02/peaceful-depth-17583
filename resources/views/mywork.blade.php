@@ -19,9 +19,7 @@
 @endsection
 
 @section('content')
-    <pre>
-        {{$data}}
-    </pre>
+
 
     <div class="container">
         <br/><br/>

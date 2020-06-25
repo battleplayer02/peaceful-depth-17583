@@ -41,7 +41,7 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    @foreach($particpants as $value)
+                                    @foreach($participants as $value)
                                         <?php
                                         $i++;
                                         ?>
