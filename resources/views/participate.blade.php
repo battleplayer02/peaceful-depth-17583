@@ -43,44 +43,52 @@ $i = 0;
                                                 <img src="/images/shop/0{{$i%9}}.jpg" alt="shop">
                                             </div>
                                         </div>
-                                        <div class="product-content">
-                                            <h5><a href="#">Event Name: {{$value->ename}}</a></h5>
-                                            <h6>Organizer:{{$value->owner_name}}</h6>
-                                            <h6> Contact:{{$value->mobile}}</h6>
-                                            <ul class="icon-style-list lab-ul">
-                                                <li>Event Date:{{$value->edate}}</li>
-                                                @if($value->assigned_work == null)
-                                                    <li>Your Work:No Work Assigned</li>
-                                                @else
-                                                    <li>Your Work:{{$value->assigned_work}}</li>
-                                                @endif
-                                                @if($value->address == null)
-                                                    <li> Work Address:No Work Assigned</li>
-                                                @else
-                                                    <li>Work Address:{{$value->address}}</li>
-                                                @endif
-                                            </ul>
-
-
-                                        </div>
                                         <div class="team-content">
                                             <h5 class="member-name">Event Name: {{$value->ename}}</h5>
                                             <span class="member-dagi">Organizer:{{$value->owner_name}}</span>
                                             <span class="member-dagi">Contact:{{$value->mobile}}</span>
-                                            <p class="member-details"></p>
-                                            <ul class="icon-style-list lab-ul">
-                                                <li><i>Event Date:</i><span>{{$value->edate}}</span></li>
-                                                @if($value->assigned_work == null)
-                                                    <li><i>Your Work:</i><span>No Work Assigned</span></li>
-                                                @else
-                                                    <li><i>Your Work:</i><span>{{$value->assigned_work}}</span></li>
-                                                @endif
-                                                @if($value->address == null)
-                                                    <li><i>Work Address:</i><span>No Work Assigned</span></li>
-                                                @else
-                                                    <li><i>Work Address:</i><span>{{$value->address}}</span></li>
-                                                @endif
-                                            </ul>
+                                            <table>
+                                                <tr>
+                                                    <th>
+                                                        Event Date:
+                                                    </th>
+                                                    <th>
+                                                        {{$value->edate}}
+                                                    </th>
+                                                </tr>
+                                                <tr>
+
+                                                    <th>
+                                                        Your Work:
+                                                    </th>
+                                                    @if($value->assigned_work == null)
+                                                        <th>
+                                                            No Work Assigned
+                                                        </th>
+                                                    @else
+                                                        <th>
+                                                            {{$value->assigned_work}}
+                                                        </th>
+                                                    @endif
+
+                                                </tr>
+                                                <tr>
+
+                                                    <th>
+                                                        Work Address:
+                                                    </th>
+                                                    @if($value->address == null)
+                                                        <th>
+                                                            No Work Assigned
+                                                        </th>
+                                                    @else
+                                                        <th>
+                                                            {{$value->address}}
+                                                        </th>
+                                                    @endif
+
+                                                </tr>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
