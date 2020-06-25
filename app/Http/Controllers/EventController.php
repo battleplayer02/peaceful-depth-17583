@@ -27,7 +27,7 @@ class EventController extends Controller
        $participants=DB::table('participants')
            ->where('eid',$eid)
            ->get();
-       return View('showparticipants',[
+       return View('showparticipant',[
            'participants'=>$participants
        ]);
    }

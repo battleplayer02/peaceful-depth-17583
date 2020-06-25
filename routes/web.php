@@ -74,7 +74,7 @@ Route::get('/chat/{docid}', 'ChatController@index');
 
 Route::view('/createevent','createevent');
 Route::get('geteid','EventController@getfulldata');
-Route::view('showparticipants','showparticipants');
+Route::view('showparticipant','showparticipant');
 
 Route::get('events','EventController@retrieve');
 
