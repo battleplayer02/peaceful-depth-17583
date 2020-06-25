@@ -36,7 +36,7 @@ $i = 0;
                                 <?php
                                 $i++;
                                 ?>
-                                <div class="col-lg-4 col-md-6 col-12">
+                                <div class="col-xl-4 col-md-6 col-12">
                                     <div class="product-item">
                                         <div class="product-thumb">
                                             <div class="pro-thumb">
@@ -62,6 +62,25 @@ $i = 0;
                                             </ul>
 
 
+                                        </div>
+                                        <div class="team-content">
+                                            <h5 class="member-name">Event Name: {{$value->ename}}</h5>
+                                            <span class="member-dagi">Organizer:{{$value->owner_name}}</span>
+                                            <span class="member-dagi">Contact:{{$value->mobile}}</span>
+                                            <p class="member-details"></p>
+                                            <ul class="icon-style-list lab-ul">
+                                                <li><i>Event Date:</i><span>{{$value->edate}}</span></li>
+                                                @if($value->assigned_work == null)
+                                                    <li><i>Your Work:</i><span>No Work Assigned</span></li>
+                                                @else
+                                                    <li><i>Your Work:</i><span>{{$value->assigned_work}}</span></li>
+                                                @endif
+                                                @if($value->address == null)
+                                                    <li><i>Work Address:</i><span>No Work Assigned</span></li>
+                                                @else
+                                                    <li><i>Work Address:</i><span>{{$value->address}}</span></li>
+                                                @endif
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
