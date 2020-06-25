@@ -91,3 +91,5 @@ Route::get('assignwork',function () {
     ]);
 });
 Route::post('/addwork','EventController@addwork');
+
+Route::get("/participates", "ParticiapantController@retrieve");

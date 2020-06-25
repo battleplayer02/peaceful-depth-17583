@@ -57,7 +57,7 @@
                                 <li><a href="">Volunteers</a>
                                     <ul class="lab-ul">
                                         <li><a href="mywork">Events Created</a></li>
-                                        <li><a href="participate">Participated Events</a></li>
+                                        <li><a href="participates">Participated Events</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="">Request For Travelling Pass</a></li>
@@ -143,7 +143,7 @@
                                         <li><a href="">Volunteers</a>
                                             <ul class="lab-ul">
                                                 <li><a href="events">Events Created</a></li>
-                                                <li><a href="participate">Participated Events</a></li>
+                                                <li><a href="participates">Participated Events</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="">Request For Travelling Pass</a></li>

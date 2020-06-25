@@ -19,9 +19,6 @@ $i = 0;
 @endsection
 
 @section('content')
-    <pre>
-        {{$participants}}
-    </pre>
     <div class="container">
         <br/><br/>
         <div class="section-wrapper">
