@@ -1,3 +1,6 @@
+<?php
+$i = 0;
+?>
 @extends("layout")
 
 @section('title')
@@ -16,7 +19,9 @@
 @endsection
 
 @section('content')
-
+    <pre>
+        {{$participants}}
+    </pre>
     <div class="container">
         <br/><br/>
         <div class="section-wrapper">
@@ -28,9 +33,7 @@
                                 <h4>Your Report</h4>
                                 <table class="table table-striped">
                                     <thead>
-                                    <?php
-                                    $i = 1;
-                                    ?>
+
                                     <tr>
                                         <th>Sr.No</th>
                                         <th>Participant Name</th>
@@ -60,7 +63,7 @@
                                                 </th>
                                             @endif
 
-                                            @if($value->assigned_work == 'null')
+                                            @if($value->assigned_work == 'NULL')
                                                 <th>
                                                     No work Assigned
                                                 </th>
