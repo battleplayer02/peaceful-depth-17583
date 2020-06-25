@@ -264,7 +264,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-7 col-12">
+                    <div class="col-lg-3 col-md-7 col-12 p-content-3">
                         <aside>
                             <div class="widget shop-widget">
                                 <div class="widget-header">
