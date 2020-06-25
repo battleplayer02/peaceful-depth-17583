@@ -1,5 +1,5 @@
 <?php
-    $i=0;
+$i=0;
 ?>
 @extends("layout")
 
@@ -15,7 +15,7 @@
             src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
-    <title>My Work</title>
+    <title>Events</title>
 @endsection
 
 @section('content')
@@ -30,7 +30,7 @@
                     <div class="widget-header">
                         <div class="row">
                             <div class="col">
-                                <h2>Events Created</h2>
+                                <h2>Events</h2>
                             </div>
                             <div class="col justify-content-end">
                                 <a href="createevent"><img src={{"images/plus.png"}} alt="create"
@@ -44,7 +44,7 @@
             <div class="container">
                 @foreach($data as $value)
                     <?php
-                        $i++;
+                    $i++;
                     ?>
                     <div class="row justify-content-center">
                         <div class="col-lg-9 col-12 sticky-widget">
@@ -59,9 +59,9 @@
                                         <div class="product-content">
                                             <h5><a href="#">{{$value->ename}}</a></h5>
                                             <h6>Place:{{$value->eaddress}}</h6>
-                                            <form action="geteid">
+                                            <form action="eventparticipate">
                                                 <input type="hidden" value="{{$value->eid}}" name="eid">
-                                                <button class="btn btn-primary">Show Participant</button>
+                                                <button class="btn btn-primary">Participate</button>
                                             </form>
                                         </div>
                                     </div>

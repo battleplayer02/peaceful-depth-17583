@@ -45,7 +45,7 @@
                           onsubmit="uploadpic()">
                         <!-- Text input-->
                         {{ csrf_field() }}
-
+                        <input type="hidden" value="{{$eid}}" name="eid">
 
                         <label class="control-label" for="participantname">Participant Name</label>
                         <input id="participantname" name="participantname" type="text" placeholder="Participant Name"

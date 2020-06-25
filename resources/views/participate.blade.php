@@ -44,10 +44,12 @@ $i = 0;
                                             </div>
                                         </div>
                                         <div class="team-content">
+                                            <br>
                                             <h5 class="member-name"><b>Event Name: {{$value->ename}}</b></h5>
                                             <span class="member-dagi"><b>Organizer:{{$value->owner_name}}</b></span>
+                                            <br>
                                             <span class="member-dagi"><b>Contact:{{$value->mobile}}</b></span>
-                                            <table>
+                                            <table border="1">
                                                 <tr>
                                                     <th colspan="2">
                                                         Event Date:
