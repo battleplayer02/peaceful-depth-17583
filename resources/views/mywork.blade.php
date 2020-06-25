@@ -1,25 +1,43 @@
 @extends("layout")
 
 @section('title')
-<link rel="shortcut icon" type="image/x-icon" href="images/x-icon/01.png">
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="images/x-icon/01.png">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
-<!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
-<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+    <!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css"/>
 
-<!-- Bootstrap Date-Picker Plugin -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+    <!-- Bootstrap Date-Picker Plugin -->
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
     <title>My Work</title>
 @endsection
 
 @section('content')
 
-<div class="container">
-    <br/><br/>
-    <section class="shop-page padding-tb">
+    <div class="container">
+        <br/><br/>
+        <section class="shop-page padding-tb">
             <div class="section-header wow fadeInUp" data-wow-delay="0.3s">
-                <h2>Events Created</h2>
+                <div class="widget shop-widget">
+                    <div class="widget-header">
+                        <div class="row">
+                            <table>
+                                <tr>
+                                    <th colspan="">
+                                        <h5>Events Created</h5>
+                                    </th>
+                                    <th>
+                                        <a href=""><img src={{"images/plus.png"}} alt="create"
+                                             style="height: 30px; width: 40px;" class="ml-3"></a>
+                                    </th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="container">
                 <div class="row justify-content-center">
@@ -34,7 +52,9 @@
                                     </div>
                                     <div class="product-content">
                                         <h5><a href="#">Event Name</a></h5>
-                                        <p><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i></p>
+                                        <p><i class="icofont-star"></i><i class="icofont-star"></i><i
+                                                class="icofont-star"></i><i class="icofont-star"></i><i
+                                                class="icofont-star"></i></p>
                                         <h6>Place</h6>
                                         <a href="#" class="btn btn-primary">View Details</a>
                                     </div>
@@ -52,11 +72,15 @@
                                     </div>
                                     <div class="product-content">
                                         <h5><a href="#">Product Title Here</a></h5>
-                                        <p><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i></p>
+                                        <p><i class="icofont-star"></i><i class="icofont-star"></i><i
+                                                class="icofont-star"></i><i class="icofont-star"></i><i
+                                                class="icofont-star"></i></p>
                                         <h6>
                                             $200
                                         </h6>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
                                     </div>
                                 </div>
                             </div>
@@ -69,7 +93,9 @@
                                     </div>
                                     <div class="product-content">
                                         <h5><a href="#">Event Name</a></h5>
-                                        <p><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i></p>
+                                        <p><i class="icofont-star"></i><i class="icofont-star"></i><i
+                                                class="icofont-star"></i><i class="icofont-star"></i><i
+                                                class="icofont-star"></i></p>
                                         <h6>Place</h6>
                                         <a href="#" class="btn btn-primary">View Details</a>
                                     </div>
@@ -87,11 +113,15 @@
                                     </div>
                                     <div class="product-content">
                                         <h5><a href="#">Product Title Here</a></h5>
-                                        <p><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i></p>
+                                        <p><i class="icofont-star"></i><i class="icofont-star"></i><i
+                                                class="icofont-star"></i><i class="icofont-star"></i><i
+                                                class="icofont-star"></i></p>
                                         <h6>
                                             $200
                                         </h6>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
                                     </div>
                                 </div>
                             </div>
@@ -104,7 +134,9 @@
                                     </div>
                                     <div class="product-content">
                                         <h5><a href="#">Event Name</a></h5>
-                                        <p><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i></p>
+                                        <p><i class="icofont-star"></i><i class="icofont-star"></i><i
+                                                class="icofont-star"></i><i class="icofont-star"></i><i
+                                                class="icofont-star"></i></p>
                                         <h6>Place</h6>
                                         <a href="#" class="btn btn-primary">View Details</a>
                                     </div>
@@ -122,11 +154,15 @@
                                     </div>
                                     <div class="product-content">
                                         <h5><a href="#">Product Title Here</a></h5>
-                                        <p><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i></p>
+                                        <p><i class="icofont-star"></i><i class="icofont-star"></i><i
+                                                class="icofont-star"></i><i class="icofont-star"></i><i
+                                                class="icofont-star"></i></p>
                                         <h6>
                                             $200
                                         </h6>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
                                     </div>
                                 </div>
                             </div>
@@ -139,7 +175,9 @@
                                     </div>
                                     <div class="product-content">
                                         <h5><a href="#">Event Name</a></h5>
-                                        <p><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i></p>
+                                        <p><i class="icofont-star"></i><i class="icofont-star"></i><i
+                                                class="icofont-star"></i><i class="icofont-star"></i><i
+                                                class="icofont-star"></i></p>
                                         <h6>Place</h6>
                                         <a href="#" class="btn btn-primary">View Details</a>
                                     </div>
@@ -157,11 +195,15 @@
                                     </div>
                                     <div class="product-content">
                                         <h5><a href="#">Product Title Here</a></h5>
-                                        <p><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i></p>
+                                        <p><i class="icofont-star"></i><i class="icofont-star"></i><i
+                                                class="icofont-star"></i><i class="icofont-star"></i><i
+                                                class="icofont-star"></i></p>
                                         <h6>
                                             $200
                                         </h6>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
                                     </div>
                                 </div>
                             </div>
@@ -174,7 +216,9 @@
                                     </div>
                                     <div class="product-content">
                                         <h5><a href="#">Event Name</a></h5>
-                                        <p><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i></p>
+                                        <p><i class="icofont-star"></i><i class="icofont-star"></i><i
+                                                class="icofont-star"></i><i class="icofont-star"></i><i
+                                                class="icofont-star"></i></p>
                                         <h6>Place</h6>
                                         <a href="#" class="btn btn-primary">View Details</a>
                                     </div>
@@ -192,11 +236,15 @@
                                     </div>
                                     <div class="product-content">
                                         <h5><a href="#">Product Title Here</a></h5>
-                                        <p><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i></p>
+                                        <p><i class="icofont-star"></i><i class="icofont-star"></i><i
+                                                class="icofont-star"></i><i class="icofont-star"></i><i
+                                                class="icofont-star"></i></p>
                                         <h6>
                                             $200
                                         </h6>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
                                     </div>
                                 </div>
                             </div>
@@ -209,7 +257,9 @@
                                     </div>
                                     <div class="product-content">
                                         <h5><a href="#">Event Name</a></h5>
-                                        <p><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i></p>
+                                        <p><i class="icofont-star"></i><i class="icofont-star"></i><i
+                                                class="icofont-star"></i><i class="icofont-star"></i><i
+                                                class="icofont-star"></i></p>
                                         <h6>Place</h6>
                                         <a href="#" class="btn btn-primary">View Details</a>
                                     </div>
@@ -227,11 +277,15 @@
                                     </div>
                                     <div class="product-content">
                                         <h5><a href="#">Product Title Here</a></h5>
-                                        <p><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i></p>
+                                        <p><i class="icofont-star"></i><i class="icofont-star"></i><i
+                                                class="icofont-star"></i><i class="icofont-star"></i><i
+                                                class="icofont-star"></i></p>
                                         <h6>
                                             $200
                                         </h6>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
                                     </div>
                                 </div>
                             </div>
@@ -263,27 +317,13 @@
                             </ul>
                         </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-7 col-12 p-content-3">
-                        <aside>
-                            <div class="widget shop-widget">
-                                <div class="widget-header">
-                                    <div class="row">
-                                        <h5>Create Event</h5>
-                                        <img src={{"images/plus.png"}} alt="create" style="height: 20px; width: 20px;"><a href=""></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </aside>
-                    </div>
                 </div>
             </div>
         </section>
-    <br/><br/>
-</div>
-<script type="text/javascript" src="js/book.js">
+        <br/><br/>
+    </div>
+    <script type="text/javascript" src="js/book.js">
 
-</script>
+    </script>
 @stop
 
