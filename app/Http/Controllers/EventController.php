@@ -23,8 +23,13 @@ class EventController extends Controller
 
    public function getfulldata(Request $request)
    {
-//       $eid=$request->eid;
-//       $eve
+       $eid=$request->eid;
+       $participants=DB::table('participants')
+           ->where('eid',$eid)
+           ->get();
+       return View('showparticipants',[
+           'participants'=>$participants
+       ]);
    }
 
     public function insert(Request $request)
