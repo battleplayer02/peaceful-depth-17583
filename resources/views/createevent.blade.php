@@ -41,7 +41,7 @@
                     <div class="contact-title">
                         <h5>New User Registration</h5>
                     </div>
-                    <form class="contact-form" action="reguser" method="post" enctype="multipart/form-data"
+                    <form class="contact-form" action="eventcontroller" method="post" enctype="multipart/form-data"
                           onsubmit="uploadpic()">
                         <!-- Text input-->
                         {{ csrf_field() }}
@@ -90,6 +90,15 @@
                                class="form-control"
                                required="">
                         @error('eventdescription')
+                        <br><span class="form-control" style="color: red">{{ $message}}<br></span>
+                        @enderror
+
+                        <label class="control-label" for="eventaddress">Event Address</label>
+                        <input id="eventaddress" name="eventaddress" type="text" placeholder="Event Address"
+                               value="{{old('eventaddress')}}"
+                               class="form-control"
+                               required="">
+                        @error('eventaddress')
                         <br><span class="form-control" style="color: red">{{ $message}}<br></span>
                         @enderror
 

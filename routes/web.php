@@ -72,3 +72,7 @@ Route::get("MyBookingController", "MyBookingController@index");
 
 Route::get('/chat/{docid}', 'ChatController@index');
 
+Route::view('/createevent','createevent');
+
+Route::post('eventcontroller','EventController@insert');
+

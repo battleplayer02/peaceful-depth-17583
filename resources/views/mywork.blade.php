@@ -28,7 +28,7 @@
                                 <h2>Events Created</h2>
                             </div>
                             <div class="col justify-content-end" >
-                                <a href=""><img src={{"images/plus.png"}} alt="create"
+                                <a href="createevent"><img src={{"images/plus.png"}} alt="create"
                                                 style="height: 30px; width: 40px;" class="ml-3"></a>
                             </div>
 
