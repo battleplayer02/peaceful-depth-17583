@@ -53,7 +53,7 @@ $i = 0;
                                             <th>{{$i}}</th>
                                             <th>{{$value->pname}}</th>
                                             <th>{{$value->pmobile}}</th>
-                                            @if($value->address == 'null')
+                                            @if($value->address == null)
                                                 <th>
                                                     Work is not alloted
                                                 </th>
@@ -63,7 +63,7 @@ $i = 0;
                                                 </th>
                                             @endif
 
-                                            @if($value->assigned_work == 'NULL')
+                                            @if($value->assigned_work == null)
                                                 <th>
                                                     No work Assigned
                                                 </th>
