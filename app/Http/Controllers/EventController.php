@@ -15,10 +15,16 @@ class EventController extends Controller
        $event_data=DB::table('events')
            ->where('id',session('logininfo')[0]->id)
            ->get();
-       return View('createevent',[
+       return View('mywork',[
            'data'=>$event_data
        ]);
 
+   }
+
+   public function getfulldata(Request $request)
+   {
+//       $eid=$request->eid;
+//       $eve
    }
 
     public function insert(Request $request)

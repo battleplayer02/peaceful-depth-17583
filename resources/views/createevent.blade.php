@@ -17,9 +17,7 @@
     <title>Reg User</title>
 @endsection
 @section('content')
-    <pre>
-        {{$data}}
-    </pre>
+
     <!-- Page Header Section Start Here -->
     <section class="page-header">
         <div class="container">

@@ -1,3 +1,6 @@
+<?php
+    $i=0;
+?>
 @extends("layout")
 
 @section('title')
@@ -16,9 +19,13 @@
 @endsection
 
 @section('content')
+    <pre>
+        {{$data}}
+    </pre>
 
     <div class="container">
         <br/><br/>
+
         <section class="shop-page padding-tb">
             <div class="section-header wow fadeInUp" data-wow-delay="0.3s">
                 <div class="widget shop-widget">
@@ -27,9 +34,9 @@
                             <div class="col">
                                 <h2>Events Created</h2>
                             </div>
-                            <div class="col justify-content-end" >
+                            <div class="col justify-content-end">
                                 <a href="createevent"><img src={{"images/plus.png"}} alt="create"
-                                                style="height: 30px; width: 40px;" class="ml-3"></a>
+                                                           style="height: 30px; width: 40px;" class="ml-3"></a>
                             </div>
 
                         </div>
@@ -37,62 +44,67 @@
                 </div>
             </div>
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-9 col-12 sticky-widget">
-                        <div class="shop-product-wrap grid row justify-content-center">
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <div class="product-item">
-                                    <div class="product-thumb">
-                                        <div class="pro-thumb">
-                                            <img src="{{"images/shop/01.jpg"}}" alt="shop">
+                @foreach($data as $value)
+                    <?php
+                        $i++;
+                    ?>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9 col-12 sticky-widget">
+                            <div class="shop-product-wrap grid row justify-content-center">
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="product-item">
+                                        <div class="product-thumb">
+                                            <div class="pro-thumb">
+                                                <img src="/images/shop/0{{$i%9}}.jpg" alt="shop">
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <h5><a href="#">{{$value->ename}}</a></h5>
+                                            <h6>Place:{{$value->eaddress}}</h6>
+                                            <form action="geteid">
+                                                <input type="hidden" value="{{$value->eid}}" name="eid">
+                                                <button class="btn btn-primary">Show Participant</button>
+                                            </form>
                                         </div>
                                     </div>
-                                    <div class="product-content">
-                                        <h5><a href="#">Event Name</a></h5>
-                                        <h6>Place</h6>
-                                        <form action="geteid">
-                                            <input type="hidden" value="{{}}">
-                                            <button class="btn btn-primary">Add Participant</button>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="product-list-item">
-                                    <div class="product-thumb">
-                                        <div class="pro-thumb">
-                                            <img src="assets/images/shop/01.jpg" alt="shop">
+                                    <div class="product-list-item">
+                                        <div class="product-thumb">
+                                            <div class="pro-thumb">
+                                                <img src="assets/images/shop/01.jpg" alt="shop">
+                                            </div>
                                         </div>
-                                    </div>
 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="paginations">
-                            <ul class="d-flex flex-wrap lab-ul justify-content-center">
-                                <li>
-                                    <a href="#">1</a>
-                                </li>
-                                <li class="d-none d-sm-block">
-                                    <a href="#">2</a>
-                                </li>
-                                <li class="d-none d-sm-block">
-                                    <a href="#" class="active">3</a>
-                                </li>
-                                <li>
-                                    <a class="dot">...</a>
-                                </li>
-                                <li class="d-none d-sm-block">
-                                    <a href="#">9</a>
-                                </li>
-                                <li class="d-none d-sm-block">
-                                    <a href="#">10</a>
-                                </li>
-                                <li>
-                                    <a href="#">11</a>
-                                </li>
-                            </ul>
+                            <div class="paginations">
+                                <ul class="d-flex flex-wrap lab-ul justify-content-center">
+                                    <li>
+                                        <a href="#">1</a>
+                                    </li>
+                                    <li class="d-none d-sm-block">
+                                        <a href="#">2</a>
+                                    </li>
+                                    <li class="d-none d-sm-block">
+                                        <a href="#" class="active">3</a>
+                                    </li>
+                                    <li>
+                                        <a class="dot">...</a>
+                                    </li>
+                                    <li class="d-none d-sm-block">
+                                        <a href="#">9</a>
+                                    </li>
+                                    <li class="d-none d-sm-block">
+                                        <a href="#">10</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">11</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
+                @endforeach
             </div>
         </section>
         <br/><br/>
