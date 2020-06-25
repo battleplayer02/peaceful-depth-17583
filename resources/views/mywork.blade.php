@@ -268,8 +268,10 @@
                         <aside>
                             <div class="widget shop-widget">
                                 <div class="widget-header">
-                                    <h5>Create Event</h5>
-                                    <img src={{"images/plus.png"}} alt="create"><a href=""></a>
+                                    <div class="row">
+                                        <h5>Create Event</h5>
+                                        <img src={{"images/plus.png"}} alt="create" style="height: 20px; width: 20px;"><a href=""></a>
+                                    </div>
                                 </div>
                             </div>
 
