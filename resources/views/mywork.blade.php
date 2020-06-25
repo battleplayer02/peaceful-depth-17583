@@ -24,17 +24,14 @@
                 <div class="widget shop-widget">
                     <div class="widget-header">
                         <div class="row">
-                            <table>
-                                <tr>
-                                    <th colspan="">
-                                        <h5>Events Created</h5>
-                                    </th>
-                                    <th>
-                                        <a href=""><img src={{"images/plus.png"}} alt="create"
-                                             style="height: 30px; width: 40px;" class="ml-3"></a>
-                                    </th>
-                                </tr>
-                            </table>
+                            <div class="col">
+                                <h3>Events Created</h3>
+                            </div>
+                            <div class="col justify-content-end" >
+                                <a href=""><img src={{"images/plus.png"}} alt="create"
+                                                style="height: 30px; width: 40px;" class="ml-3"></a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
