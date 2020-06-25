@@ -25,7 +25,7 @@
                     <div class="widget-header">
                         <div class="row">
                             <div class="col">
-                                <h3>Events Created</h3>
+                                <h2>Events Created</h2>
                             </div>
                             <div class="col justify-content-end" >
                                 <a href=""><img src={{"images/plus.png"}} alt="create"
