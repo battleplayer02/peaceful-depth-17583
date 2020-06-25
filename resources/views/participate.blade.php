@@ -36,7 +36,7 @@ $i = 0;
                                 <?php
                                 $i++;
                                 ?>
-                                <div class="col-xl-4 col-md-6 col-12">
+                                <div class="col-xl-6 col-md-6 col-12">
                                     <div class="product-item">
                                         <div class="product-thumb">
                                             <div class="pro-thumb">
@@ -44,29 +44,29 @@ $i = 0;
                                             </div>
                                         </div>
                                         <div class="team-content">
-                                            <h5 class="member-name">Event Name: {{$value->ename}}</h5>
-                                            <span class="member-dagi">Organizer:{{$value->owner_name}}</span>
-                                            <span class="member-dagi">Contact:{{$value->mobile}}</span>
+                                            <h5 class="member-name"><b>Event Name: {{$value->ename}}</b></h5>
+                                            <span class="member-dagi"><b>Organizer:{{$value->owner_name}}</b></span>
+                                            <span class="member-dagi"><b>Contact:{{$value->mobile}}</b></span>
                                             <table>
                                                 <tr>
-                                                    <th>
+                                                    <th colspan="2">
                                                         Event Date:
                                                     </th>
-                                                    <th>
+                                                    <th colspan="2">
                                                         {{$value->edate}}
                                                     </th>
                                                 </tr>
                                                 <tr>
 
-                                                    <th>
+                                                    <th colspan="3">
                                                         Your Work:
                                                     </th>
                                                     @if($value->assigned_work == null)
-                                                        <th>
+                                                        <th colspan="3">
                                                             No Work Assigned
                                                         </th>
                                                     @else
-                                                        <th>
+                                                        <th colspan="3">
                                                             {{$value->assigned_work}}
                                                         </th>
                                                     @endif
@@ -74,15 +74,15 @@ $i = 0;
                                                 </tr>
                                                 <tr>
 
-                                                    <th>
+                                                    <th colspan="3">
                                                         Work Address:
                                                     </th>
                                                     @if($value->address == null)
-                                                        <th>
+                                                        <th colspan="3">
                                                             No Work Assigned
                                                         </th>
                                                     @else
-                                                        <th>
+                                                        <th colspan="3">
                                                             {{$value->address}}
                                                         </th>
                                                     @endif
