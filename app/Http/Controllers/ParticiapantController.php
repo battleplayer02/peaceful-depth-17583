@@ -14,7 +14,7 @@ class ParticiapantController extends Controller
     {
         $event_data=DB::table('participants')
             ->join('events','participants.eid','events.eid')
-            ->where('id',session('logininfo')[0]->id)
+            ->where('participants.id',session('logininfo')[0]->id)
             ->get();
         return View('participate',[
             'data'=>$event_data
