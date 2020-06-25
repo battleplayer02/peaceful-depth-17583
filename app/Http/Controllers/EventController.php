@@ -15,7 +15,7 @@ class EventController extends Controller
        $event_data=DB::table('events')
            ->where('id',session('logininfo')[0]->id)
            ->get();
-       redirect('createevent',[
+       return View('createevent',[
            'data'=>$event_data
        ]);
 
