@@ -13,7 +13,7 @@ class ParticiapantController extends Controller
     public function retrieve()
     {
         $event_data=DB::table('participants')
-            ->join('participants','events','events.eid')
+            ->join('events','participants.eid','events.eid')
             ->where('id',session('logininfo')[0]->id)
             ->get();
         return View('participate',[
