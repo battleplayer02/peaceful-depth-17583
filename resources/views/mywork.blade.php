@@ -1,6 +1,6 @@
 @extends("layout")
 
-@section('title')  
+@section('title')
 <link rel="shortcut icon" type="image/x-icon" href="images/x-icon/01.png">
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
@@ -19,7 +19,7 @@
     <br/><br/>
     <section class="shop-page padding-tb">
             <div class="section-header wow fadeInUp" data-wow-delay="0.3s">
-                <h2>My Work</h2>
+                <h2>Events Created</h2>
             </div>
             <div class="container">
                 <div class="row justify-content-center">
@@ -235,7 +235,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                         <div class="paginations">
                             <ul class="d-flex flex-wrap lab-ul justify-content-center">
@@ -375,15 +375,124 @@
                                     </ul>
                                 </div>
                             </div>
+                            <div class="widget shop-widget">
+                                <div class="widget-header">
+                                    <h5>All Categories</h5>
+                                </div>
+                                <div class="widget-wrapper">
+                                    <ul class="shop-menu lab-ul">
+                                        <li>
+                                            <a href="#">Participants</a>
+                                            <ul class="shop-submenu lab-ul">
+                                                <li><a href="#">Event One</a>
+                                                    <ul class="shop-submenu lab-ul">
+                                                        <li><a href="#">Participant 1</a>
+                                                            <a href="#" class="btn btn-primary">Show Work</a>
+                                                        </li>
+                                                        <li><a href="#">Participant 2</a>
+                                                            <a href="#" class="btn btn-primary">Show Work</a>
+                                                        </li>
+                                                        <li><a href="#">Participant 3</a>
+                                                            <a href="#" class="btn btn-primary">Show Work</a>
+                                                        </li>
+                                                        <li><a href="#">Participant 4</a>
+                                                            <a href="#" class="btn btn-primary">Show Work</a>
+                                                        </li>
+                                                        <li><a href="#">Participant 5</a>
+                                                            <a href="#" class="btn btn-primary">Show Work</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Event Two</a>
+                                                    <ul class="shop-submenu lab-ul">
+                                                        <li><a href="#">Participant 1</a>
+                                                            <a href="#" class="btn btn-primary">Show Work</a>
+                                                        </li>
+                                                        <li><a href="#">Participant 2</a>
+                                                            <a href="#" class="btn btn-primary">Show Work</a>
+                                                        </li>
+                                                        <li><a href="#">Participant 3</a>
+                                                            <a href="#" class="btn btn-primary">Show Work</a>
+                                                        </li>
+                                                        <li><a href="#">Participant 4</a>
+                                                            <a href="#" class="btn btn-primary">Show Work</a>
+                                                        </li>
+                                                        <li><a href="#">Participant 5</a>
+                                                            <a href="#" class="btn btn-primary">Show Work</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Event Three</a>
+                                                    <ul class="shop-submenu lab-ul">
+                                                        <li><a href="#">Participant 1</a>
+                                                            <a href="#" class="btn btn-primary">Show Work</a>
+                                                        </li>
+                                                        <li><a href="#">Participant 2</a>
+                                                            <a href="#" class="btn btn-primary">Show Work</a>
+                                                        </li>
+                                                        <li><a href="#">Participant 3</a>
+                                                            <a href="#" class="btn btn-primary">Show Work</a>
+                                                        </li>
+                                                        <li><a href="#">Participant 4</a>
+                                                            <a href="#" class="btn btn-primary">Show Work</a>
+                                                        </li>
+                                                        <li><a href="#">Participant 5</a>
+                                                            <a href="#" class="btn btn-primary">Show Work</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Event Four</a>
+                                                    <ul class="shop-submenu lab-ul">
+                                                        <li><a href="#">Participant 1</a>
+                                                            <a href="#" class="btn btn-primary">Show Work</a>
+                                                        </li>
+                                                        <li><a href="#">Participant 2</a>
+                                                            <a href="#" class="btn btn-primary">Show Work</a>
+                                                        </li>
+                                                        <li><a href="#">Participant 3</a>
+                                                            <a href="#" class="btn btn-primary">Show Work</a>
+                                                        </li>
+                                                        <li><a href="#">Participant 4</a>
+                                                            <a href="#" class="btn btn-primary">Show Work</a>
+                                                        </li>
+                                                        <li><a href="#">Participant 5</a>
+                                                            <a href="#" class="btn btn-primary">Show Work</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Event Five</a>
+                                                    <ul class="shop-submenu lab-ul">
+                                                        <li><a href="#">Participant 1</a>
+                                                            <a href="#" class="btn btn-primary">Show Work</a>
+                                                        </li>
+                                                        <li><a href="#">Participant 2</a>
+                                                            <a href="#" class="btn btn-primary">Show Work</a>
+                                                        </li>
+                                                        <li><a href="#">Participant 3</a>
+                                                            <a href="#" class="btn btn-primary">Show Work</a>
+                                                        </li>
+                                                        <li><a href="#">Participant 4</a>
+                                                            <a href="#" class="btn btn-primary">Show Work</a>
+                                                        </li>
+                                                        <li><a href="#">Participant 5</a>
+                                                            <a href="#" class="btn btn-primary">Show Work</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </aside>
                     </div>
                 </div>
             </div>
         </section>
-    <br/><br/>               
+    <br/><br/>
 </div>
 <script type="text/javascript" src="js/book.js">
-            
+
 </script>
 @stop
-    
+

@@ -56,8 +56,8 @@
                             @if(session('logininfo'))
                                 <li><a href="">Volunteers</a>
                                     <ul class="lab-ul">
-                                        <li><a href="mywork">My Work</a></li>
-                                        <li><a href="participate">Events Created</a></li>
+                                        <li><a href="mywork">Events Created</a></li>
+                                        <li><a href="participate">Participated Events</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="">Request For Travelling Pass</a></li>
@@ -142,8 +142,8 @@
                                     @if(session('logininfo'))
                                         <li><a href="">Volunteers</a>
                                             <ul class="lab-ul">
-                                                <li><a href="mywork">My Work</a></li>
-                                                <li><a href="participate">Events Created</a></li>
+                                                <li><a href="mywork">Events Created</a></li>
+                                                <li><a href="participate">Participated Events</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="">Request For Travelling Pass</a></li>
