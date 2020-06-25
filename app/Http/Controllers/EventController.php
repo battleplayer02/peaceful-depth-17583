@@ -58,7 +58,11 @@ class EventController extends Controller
                 ]);
         if($work == 1)
         {
-            redirect('events');
+            return redirect('events');
+        }
+        else
+        {
+            return $work;
         }
     }
 }

@@ -90,4 +90,4 @@ Route::get('assignwork',function () {
         "eid" => request()->get('eid')
     ]);
 });
-Route::post('addwork','EventController@addwork');
+Route::post('/addwork','EventController@addwork');
