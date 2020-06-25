@@ -46,4 +46,19 @@ class EventController extends Controller
                 ]);
            return $a;
     }
+
+    public function addwork(Request $request)
+    {
+        $work= DB::table('participants')
+            ->where('pid', $request->pid)
+            ->where('eid', $request->eid)
+            ->update([
+                'assigned_work' => $request->participantwork,
+                'address' => $request->workaddress,
+                ]);
+        if($work == 1)
+        {
+            return View('mywork');
+        }
+    }
 }

@@ -15,7 +15,7 @@ $i = 0;
             src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
-    <title>Your Labs</title>
+    <title>Your Participants</title>
 @endsection
 
 @section('content')
@@ -30,7 +30,7 @@ $i = 0;
                     <div class="service-item text-center">
                         <div class="service-inner">
                             <div class="service-content">
-                                <h4>Your Report</h4>
+                                <h4>Your Event Participants</h4>
                                 <table class="table table-striped">
                                     <thead>
 
@@ -73,7 +73,11 @@ $i = 0;
                                                 </th>
                                             @endif
                                             <th>
-                                                <button class="btn btn-primary">Edit</button>
+                                                <form action="assignwork">
+                                                    <input type="hidden" value="{{$value->pid}}" name="pid">
+                                                    <input type="hidden" value="{{$value->eid}}" name="eid">
+                                                    <button class="btn btn-primary">Edit</button>
+                                                </form>
                                             </th>
                                         </tr>
                                     @endforeach

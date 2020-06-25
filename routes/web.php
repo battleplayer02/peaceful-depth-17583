@@ -84,3 +84,10 @@ Route::view('addparticipants','addparticipants');
 
 Route::post('addpp','AddParticipants@insert');
 
+Route::get('assignwork',function () {
+    return view('assignwork', [
+        "pid" => request()->get('pid'),
+        "eid" => request()->get('eid')
+    ]);
+});
+Route::post('addwork','EventController@addwork');
