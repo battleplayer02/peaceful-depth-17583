@@ -269,7 +269,7 @@
                             <div class="widget shop-widget">
                                 <div class="widget-header">
                                     <h5>Create Event</h5>
-                                    <button class="btn btn-primary" style="width:100%; border-radius: 50%;"><a href="">+</a></button>
+                                    <button class="btn btn-primary" style= "border-radius: 50%;"><a href="">+</a></button>
                                 </div>
                             </div>
 
