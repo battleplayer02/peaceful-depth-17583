@@ -20,9 +20,7 @@
 
 <div class="container">
     <br/><br/>
-    <pre>
-        {{$data}}
-    </pre>
+
     <section class="shop-page padding-tb">
             <div class="section-header wow fadeInUp" data-wow-delay="0.3s">
                 <h2>Participated Event</h2>
@@ -44,9 +42,22 @@
                                         </div>
                                     </div>
                                     <div class="product-content">
-                                        <h5><a href="#">Name</a></h5>
-                                        <h6>Place</h6>
-                                        <a href="#" class="btn btn-primary">See Assigned Work</a>
+                                        <h5><a href="#">Event Name: {{$value->ename}}</a></h5>
+                                        <h6>Organizer:{{$value->owner_name}}</h6>
+                                        <h6>Contact:{{$value->mobile}}</h6>
+                                        <h6>Event Date:{{$value->edate}}</h6>
+                                        @if($value->assigned_work == null)
+                                            <h6>Your Work:No Work Assigned</h6>
+                                        @else
+                                            <h6>Your Work:{{$value->assigned_work}}</h6>
+                                        @endif
+                                        @if($value->address == null)
+                                            <h6>Work Address:No Work Assigned</h6>
+                                        @else
+                                            <h6>Work Address:{{$value->address}}</h6>
+                                        @endif
+
+
                                     </div>
                                 </div>
                                 <div class="product-list-item">
