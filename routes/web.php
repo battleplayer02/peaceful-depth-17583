@@ -72,18 +72,15 @@ Route::get("MyBookingController", "MyBookingController@index");
 
 Route::get('/chat/{docid}', 'ChatController@index');
 
+
+//Volunteers
 Route::view('/createevent','createevent');
 Route::get('geteid','EventController@getfulldata');
 Route::view('showparticipant','showparticipant');
-
 Route::get('events','EventController@retrieve');
-
 Route::post('eventcontroller','EventController@insert');
-
 Route::view('addparticipants','addparticipants');
-
 Route::post('addpp','AddParticipants@insert');
-
 Route::get('assignwork',function () {
     return view('assignwork', [
         "pid" => request()->get('pid'),
@@ -91,19 +88,19 @@ Route::get('assignwork',function () {
     ]);
 });
 Route::post('/addwork','EventController@addwork');
-
 Route::get("/participates", "ParticiapantController@retrieve");
-
 Route::get("searchevents","SearchEventController@retrieve");
 Route::get('eventparticipate','SearchEventController@insert');
 
 
-
+//Pass
 Route::post('requestcont','TravelController@index');
-
 Route::view('pass','pass');
-
 Route::get('getpassdetails','TravelController@verify');
 Route::get('verifypass','TravelController@verifypass');
 Route::get('request','TravelController@request');
+
+//Medical Stores
+Route::view('medicalview','medical');
+Route::get('medicalcontroller','MedicalController@retrieve');
 

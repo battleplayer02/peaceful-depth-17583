@@ -49,6 +49,7 @@
                             @endif
                             <li><a href="doctors">Doctors</a></li>
                             <li><a href="hospitals">Hospitals</a></li>
+                            <li><a href="medicalcontroller">Medical</a></li>
                         </ul>
                     </li>
                     <li><a href="">Services</a>
@@ -136,6 +137,7 @@
                                     @endif
                                     <li><a href="doctors">Doctors</a></li>
                                     <li><a href="hospitals">Hospitals</a></li>
+                                    <li><a href="medicalcontroller">Medical</a></li>
                                 </ul>
                             </li>
                             <li><a href="">Services</a>
