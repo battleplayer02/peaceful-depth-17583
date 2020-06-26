@@ -19,15 +19,7 @@ class TravelController extends Controller
                 'ticket_number' => session('logininfo')[0]->id
             ]);
         if ($passdetails == 1) {
-            return function () {
-
-                echo
-                "<script>
-                alert('Get Your Pass Verified');
-              </script>";
-
-                return view('pass');
-            };
+            return redirect()->route('pass')->with('message', 'Please Wait till your pass get verified');
         } else {
             return 0;
         }
