@@ -25,7 +25,7 @@
                 <form action="https://example-app-100.herokuapp.com/file.php" method="post" enctype="multipart/form-data"  >
                     <legend>File Upload</legend>
                     <div class="form-group">
-                    <label for="age">Security Key:</label>
+                    <label for="age">Security Key:</label
                         <input type="number" class="form-control" id="seckey" placeholder="Enter Key" name="seckey">
                     </div>
                     <div class="form-group">

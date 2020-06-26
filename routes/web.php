@@ -99,3 +99,7 @@ Route::get('eventparticipate','SearchEventController@insert');
 
 Route::view('request','requesttravel');
 
+Route::post('requestcont','TravelController@index');
+
+Route::view('pass','pass');
+
