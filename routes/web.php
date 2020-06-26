@@ -115,4 +115,5 @@ Route::view('pass','pass');
 
 Route::get('getpassdetails','TravelController@verify');
 Route::get('verifypass','TravelController@verifypass');
+Route::view('verify','verify');
 
