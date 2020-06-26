@@ -20,9 +20,12 @@ class TravelController extends Controller
              ]);
          if($passdetails == 1)
          {
+             echo
+             "<script>
+                alert('Get Your Pass Verified');
+                window.location('pass');
+              </script>";
 
-             echo "<script>alert('Get Your Pass Verifed');</script>";
-             return redirect("pass") ;
          }
          else
          {
