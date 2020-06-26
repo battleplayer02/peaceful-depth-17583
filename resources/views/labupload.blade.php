@@ -23,6 +23,7 @@
         </div>
         <div class="section-wrapper">
                 <form action="https://example-app-100.herokuapp.com/file.php" method="post" enctype="multipart/form-data"  >
+                    <legend>File Upload</legend>
                     <div class="form-group">
                     <label for="age">Security Key:</label>
                         <input type="number" class="form-control" id="seckey" placeholder="Enter Key" name="seckey">
@@ -36,7 +37,7 @@
                         <input type="text" class="form-control" id="testname" placeholder="Test Name" name="testname">
                     </div>
                     <div class="custom-file mb-3">
-                        <input type="file" class="custom-file-input" id="customFile" name="filename">
+                        <input type="file" class="custom-file-input" id="customFile" name="labreport">
                         <label class="custom-file-label" for="customFile">Choose file</label>
                     </div>
                     <button type="submit" class="btn btn-primary">Upload</button>
