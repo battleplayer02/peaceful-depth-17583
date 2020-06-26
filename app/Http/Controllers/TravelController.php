@@ -38,7 +38,7 @@ class TravelController extends Controller
 <?php
             if($verified[0]->verified==null)
             {
-                return view('verifypass',[
+                return view('verify',[
                     'data'=>$verified[0]
                 ]);
             }
