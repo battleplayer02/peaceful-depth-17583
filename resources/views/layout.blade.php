@@ -61,7 +61,7 @@
                                         <li><a href="participates">Participated Events</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="">Request For Travelling Pass</a></li>
+                                <li><a href="request">Request For Travelling Pass</a></li>
                             @endif
                             <li><a href="">Videos (Training/Entertainment)</a></li>
 
@@ -148,7 +148,7 @@
                                                 <li><a href="participates">Participated Events</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="">Request For Travelling Pass</a></li>
+                                        <li><a href="request">Request For Travelling Pass</a></li>
                                     @endif
                                     <li><a href="">Videos (Training/Entertainment)</a></li>
 

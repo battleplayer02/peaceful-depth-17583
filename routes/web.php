@@ -97,3 +97,5 @@ Route::get("/participates", "ParticiapantController@retrieve");
 Route::get("searchevents","SearchEventController@retrieve");
 Route::get('eventparticipate','SearchEventController@insert');
 
+Route::view('request','requesttravel');
+
