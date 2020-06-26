@@ -29,10 +29,17 @@ class TravelController extends Controller
         if (session('logininfo')[0]->type=='authority'){
             $verified=DB::table('pass')
                 ->where('ticket_number',$request->id)->get();
-            if($verified->verified==null)
+            ?>
+            <pre>
+                <?php
+                print_r($verified);
+                ?>
+            </pre>
+<?php
+            if($verified[0]->verified==null)
             {
                 return view('verifypass',[
-                    'data'=>$verified
+                    'data'=>$verified[0]
                 ]);
             }
             else{
