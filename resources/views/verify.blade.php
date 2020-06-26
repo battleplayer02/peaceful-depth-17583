@@ -30,35 +30,41 @@
                 <form action="getpassdetails">
                     <input type="text" class="form-control" id="id" name="id" placeholder="Your ID "
                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your ID'">
-                    <button id="search" class="btn btn-primary text-uppercase banner-right">Search</button>
+                    <button id="search" class="form-control btn btn-primary text-uppercase banner-right">Search</button>
+                    <br>
                 </form>
                 @if(isset($data))
                     <form class="form-wrap" action="verifypass" method="get">
                         @csrf
-                        <input type="hidden" value="{{$data->pass_id}}" name="passid">
-                        <input type="date" class="form-control" id="ticket_valid" name="ticket_valid"
-                               value="{{$data->valid_till}}"
-                               placeholder="Valid Till" onfocus="this.placeholder = ''"
-                               onblur="this.placeholder = 'Valid Till '">
-                        <input type="text" class="form-control" id="reason" name="reason" placeholder="Reason " readonly
-                               value="{{$data->reason}}"
-                               onfocus="this.placeholder = ''" onblur="this.placeholder = 'reason '">
-                        <input type="text" class="form-control" id="vehicle_no" name="vehicle_no" readonly
-                               value="{{$data->vehicle_number}}"
-                               placeholder="Vehicle Number " onfocus="this.placeholder = ''"
-                               onblur="this.placeholder = 'Vehicle Number'">
-                        <input type="text" class="form-control" id="vehicle_type" name="vehicle_type" readonly
-                               value="{{$data->vehicle_type}}"
-                               placeholder="Vehicle Type " onfocus="this.placeholder = ''"
-                               onblur="this.placeholder = 'Vehicle Type'">
-                        <select class="form-control" name="verified">
-                            <option value="Verified">Verified</option>
-                            <option value="Not Verified">Not Verified</option>
-                        </select>
-                        <input type="text" class="form-control" id="issuedby" name="issuedby"
-                               placeholder="Issued By(Authority Name)" onfocus="this.placeholder = ''"
-                               onblur="this.placeholder = 'Issued By(Authority Name) '">
-                        <button id="submit" class="btn btn-primary text-uppercase">Submit</button>
+                        <legend>Verify Pass</legend>
+                        <fieldset>
+                            <input type="hidden" value="{{$data->pass_id}}" name="passid">
+                            <input type="date" class="form-control" id="ticket_valid" name="ticket_valid"
+                                   value="{{$data->valid_till}}"
+                                   placeholder="Valid Till" onfocus="this.placeholder = ''"
+                                   onblur="this.placeholder = 'Valid Till '">
+                            <input type="text" class="form-control" id="reason" name="reason" placeholder="Reason "
+                                   readonly
+                                   value="{{$data->reason}}"
+                                   onfocus="this.placeholder = ''" onblur="this.placeholder = 'reason '">
+                            <input type="text" class="form-control" id="vehicle_no" name="vehicle_no" readonly
+                                   value="{{$data->vehicle_number}}"
+                                   placeholder="Vehicle Number " onfocus="this.placeholder = ''"
+                                   onblur="this.placeholder = 'Vehicle Number'">
+                            <input type="text" class="form-control" id="vehicle_type" name="vehicle_type" readonly
+                                   value="{{$data->vehicle_type}}"
+                                   placeholder="Vehicle Type " onfocus="this.placeholder = ''"
+                                   onblur="this.placeholder = 'Vehicle Type'">
+                            <select class="form-control" name="verified">
+                                <option value="">--Verification Status--</option>
+                                <option value="Verified">Verified</option>
+                                <option value="Not Verified">Not Verified</option>
+                            </select><br>
+                            <input type="text" class="form-control" id="issuedby" name="issuedby"
+                                   placeholder="Issued By(Authority Name)" onfocus="this.placeholder = ''"
+                                   onblur="this.placeholder = 'Issued By(Authority Name) '">
+                            <button id="submit" class="form-control btn btn-primary text-uppercase">Submit</button>
+                        </fieldset>
                     </form>
                 @endif
                 <br/><br/>
