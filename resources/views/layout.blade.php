@@ -126,13 +126,13 @@
                                     <li><a href="">Lab Reports</a>
                                         <ul class="lab-ul">
                                             @if(session('logininfo'))
-                                            <li><a href="labdownload">Get My Report</a></li>
+                                                <li><a href="labdownload">Get My Report</a></li>
                                             @endif
                                             <li><a href="labupload">Upload Report</a></li>
                                         </ul>
                                     </li>
                                     @if(session('logininfo'))
-                                    <li><a href="MyBookingController">My Appointments</a></li>
+                                        <li><a href="MyBookingController">My Appointments</a></li>
                                     @endif
                                     <li><a href="doctors">Doctors</a></li>
                                     <li><a href="hospitals">Hospitals</a></li>
@@ -148,7 +148,11 @@
                                                 <li><a href="participates">Participated Events</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="request">Request For Travelling Pass</a></li>
+                                        @if(session('logininfo')[0]->type=='authority')
+                                            <li><a href="verify">Verify Travelling Pass</a></li>
+                                        @else
+                                            <li><a href="request">Request For Travelling Pass</a></li>
+                                        @endif
                                     @endif
                                     <li><a href="">Videos (Training/Entertainment)</a></li>
 

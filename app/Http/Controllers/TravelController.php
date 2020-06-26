@@ -24,4 +24,35 @@ class TravelController extends Controller
             return 0;
         }
     }
+
+    function verify(Request $request){
+        if (session('logininfo')[0]->type=='authority'){
+            $verified=DB::table('pass')
+                ->where('ticket_number',$request->id)->get();
+            if($verified->verified==null)
+            {
+                return view('verifypass',[
+                    'data'=>$verified
+                ]);
+            }
+            else{
+                echo "<script>alert('This pass is verified')</script>";
+            }
+        }
+        else{
+            echo "<script>alert('Please login with a authorised account.')</script>";
+        }
+    }
+    function verifypass(Request $request){
+        $flag = DB::table('pass')
+            ->where('pass_id',$request->passid)
+            ->update([
+                'verified'=>$request->verified,
+                'valid_till'=>$request->ticket_valid,
+                'issued_by'=>$request->issuedby
+            ]);
+        if($flag){
+            return redirect('verified');
+        }
+    }
 }

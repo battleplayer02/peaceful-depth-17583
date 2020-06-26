@@ -97,9 +97,22 @@ Route::get("/participates", "ParticiapantController@retrieve");
 Route::get("searchevents","SearchEventController@retrieve");
 Route::get('eventparticipate','SearchEventController@insert');
 
-Route::view('request','requesttravel');
+Route::view('request',function (){
+    $data=DB::table('pass')->where('ticket_number',session('logininfo')[0]->id)
+        ->get();
+    if($data->verified!=null)
+    {
+        return view('pass');
+    }
+    else{
+        return view('requesttravel');
+    }
+});
 
 Route::post('requestcont','TravelController@index');
 
 Route::view('pass','pass');
+
+Route::get('getpassdetails','TravelController@verify');
+Route::get('verifypass','TravelController@verifypass');
 
