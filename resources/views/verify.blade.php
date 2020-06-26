@@ -27,7 +27,7 @@
 
                 {{csrf_field()}}
 
-                <form action="getpassdetials">
+                <form action="getpassdetails">
                     <input type="text" class="form-control" id="id" name="id" placeholder="Your ID "
                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your ID'">
                     <button id="search" class="btn btn-primary text-uppercase banner-right">Search</button>
