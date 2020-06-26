@@ -33,7 +33,7 @@
                     <button id="search" class="btn btn-primary text-uppercase banner-right">Search</button>
                 </form>
                 @if(isset($data))
-                    <form class="form-wrap" action="verifypass" method="post">
+                    <form class="form-wrap" action="verifypass" method="get">
                         @csrf
                         <input type="hidden" value="{{$data->pass_id}}" name="passid">
                         <input type="date" class="form-control" id="ticket_valid" name="ticket_valid"
