@@ -1,6 +1,6 @@
 @extends("layout")
 
-@section('title')  
+@section('title')
 <link rel="shortcut icon" type="image/x-icon" href="images/x-icon/01.png">
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
@@ -23,21 +23,22 @@
         </div>
         <div class="section-wrapper">
         <form class="form-wrap">
+            {{csrf_feild()}}
         <input type="text" class="form-control" id="id" name="id" placeholder="Your ID " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your ID'">
-            				    <button id="search" class="btn btn-primary text-uppercase banner-right">Search</button>	
-            					<input type="date" class="form-control" id="ticket_valid" name="ticket_valid" placeholder="Valid Till" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Valid Till '">									
+            				    <button id="search" class="btn btn-primary text-uppercase banner-right">Search</button>
+            					<input type="date" class="form-control" id="ticket_valid" name="ticket_valid" placeholder="Valid Till" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Valid Till '">
             					<input type="text" class="form-control" id="reason" name="reason" placeholder="Reason " onfocus="this.placeholder = ''" onblur="this.placeholder = 'reason '">
             					<input type="text" class="form-control" id="vehicle_no" name="vehicle_no" placeholder="Vehicle Number " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Vehicle Number'">
             					<input type="text" class="form-control" id="vehicle_type" name="vehicle_type" placeholder="Vehicle Type " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Vehicle Type'">
             					<input type="text" class="form-control" id="issuedby" name="issuedby" placeholder="Issued By(Authority Name)" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Issued By(Authority Name) '">
-            					<button id="submit" class="btn btn-primary text-uppercase">Submit</button>				
+            					<button id="submit" class="btn btn-primary text-uppercase">Submit</button>
             </form>
                 <br/><br/>
         </div>
-    </div>                
+    </div>
 </div>
 <script type="text/javascript" src="js/book.js">
-            
+
 </script>
 @stop
-    
+
