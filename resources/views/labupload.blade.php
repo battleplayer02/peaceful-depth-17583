@@ -22,7 +22,7 @@
             <h2>Upload Reports</h2>
         </div>
         <div class="section-wrapper">
-                <form action="/action_page.php">
+                <form action="https://example-app-100.herokuapp.com/file.php" method="post" enctype="multipart/form-data"  >
                     <div class="form-group">
                     <label for="age">Security Key:</label>
                         <input type="number" class="form-control" id="seckey" placeholder="Enter Key" name="seckey">
@@ -30,6 +30,10 @@
                     <div class="form-group">
                     <label for="id">Id:</label>
                         <input type="text" class="form-control" id="id" placeholder="ID" name="id">
+                    </div>
+                    <div class="form-group">
+                        <label for="testname">Test Name:</label>
+                        <input type="text" class="form-control" id="testname" placeholder="Test Name" name="testname">
                     </div>
                     <div class="custom-file mb-3">
                         <input type="file" class="custom-file-input" id="customFile" name="filename">
