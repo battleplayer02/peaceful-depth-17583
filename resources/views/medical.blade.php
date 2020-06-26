@@ -14,9 +14,6 @@
 @endsection
 
 @section('content')
-<pre>
-    {{$mdata}}
-</pre>
     <div class="container">
         <br/><br/>
         <div class="section-wrapper">
@@ -26,7 +23,8 @@
                         <div class="service-inner">
                             <div class="service-content">
                                 <h4>Medical Stores</h4>
-                                <table class="table table-striped">
+                                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search through cities.." title="Type in a name">
+                                <table class="table table-striped" id="mtable">
                                     <thead>
                                     <tr>
                                         <th>Name</th>
@@ -53,8 +51,25 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="js/book.js">
-
+    <script>
+        function myFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("mtable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[3];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
     </script>
 @stop
 
