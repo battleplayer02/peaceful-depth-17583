@@ -56,4 +56,15 @@ class TravelController extends Controller
             return redirect('verify');
         }
     }
+    function request(){
+        $data=DB::table('pass')->where('ticket_number',session('logininfo')[0]->id)
+            ->get();
+        if($data->verified!=null)
+        {
+            return view('pass');
+        }
+        else{
+            return view('requesttravel');
+        }
+    }
 }
