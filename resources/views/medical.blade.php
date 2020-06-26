@@ -36,13 +36,14 @@
                                     </tr>
                                     </thead>
                                     <tbody>
+                                    @foreach($mdata as $value)
                                     <tr>
-
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
+                                        <td>{{$value->store_name}}</td>
+                                        <td>{{$value->number}}</td>
+                                        <td>{{$value->address}}</td>
+                                        <td>{{$value->city}}</td>
                                     </tr>
+                                    @endforeach
                                     </tbody>
                                 </table>
                             </div>
