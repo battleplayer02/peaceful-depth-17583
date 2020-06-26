@@ -18,7 +18,7 @@ Inspired by: https://dribbble.com/shots/1166639-Movie-Ticket/attachments/152161
     <div class="title">
         <p class="cinema">ODEON CINEMA PRESENTS</p>
         <p class="movie-title">ONLY GOD FORGIVES</p>
-    </div>
+    </div>git
     <div class="poster">
         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/25240/only-god-forgives.jpg" alt="Movie: Only God Forgives" />
     </div>

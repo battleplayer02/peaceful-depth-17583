@@ -25,7 +25,7 @@
             </div>
             <div class="section-wrapper">
                 <form class="form-wrap" action="requestcont" method="post">
-                    {{csrf_feild()}}
+                    {{csrf_field()}}
                     <input type="text" class="form-control" id="vehicle_no" name="vehicle_no"
                            placeholder="Vehicle Number " onfocus="this.placeholder = ''"
                            onblur="this.placeholder = 'Vehicle Number '">

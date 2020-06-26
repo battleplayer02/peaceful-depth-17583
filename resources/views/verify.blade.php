@@ -23,7 +23,7 @@
         </div>
         <div class="section-wrapper">
         <form class="form-wrap">
-            {{csrf_feild()}}
+            {{csrf_field()}}
         <input type="text" class="form-control" id="id" name="id" placeholder="Your ID " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your ID'">
             				    <button id="search" class="btn btn-primary text-uppercase banner-right">Search</button>
             					<input type="date" class="form-control" id="ticket_valid" name="ticket_valid" placeholder="Valid Till" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Valid Till '">
