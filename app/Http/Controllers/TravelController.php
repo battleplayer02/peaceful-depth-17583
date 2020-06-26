@@ -59,7 +59,7 @@ class TravelController extends Controller
     function request(){
         $data=DB::table('pass')->where('ticket_number',session('logininfo')[0]->id)
             ->get();
-        if($data->verified!=null)
+        if($data[0]->verified!=null)
         {
             return view('pass');
         }
