@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Pass</title>
-    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="css/stylepass.css">
 
 </head>
@@ -23,11 +24,21 @@
     </div>
     <div class="holes-lower"></div>
     <div class="serial">
-        <h3>Data</h3>
+        <table>
+            <tr>
+                <td>Valid Till:</td>
+                <td>{{$data[0]->valid_till}}</td>
+            </tr>
+            <tr>
+                <td>Issued By :</td>
+                <td>{{$data[0]->issued_by}}</td>
+            </tr>
+        </table>
     </div>
 </div>
 <!-- partial -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="js/scriptpass.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src="js/scriptpass.js"></script>
 
 </body>
 </html>
