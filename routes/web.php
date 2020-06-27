@@ -95,10 +95,11 @@ Route::get('eventparticipate','SearchEventController@insert');
 
 //Pass
 Route::post('requestcont','TravelController@index');
-Route::view('pass','pass');
+Route::get('pass',"PassController@index");
 Route::get('getpassdetails','TravelController@verify');
 Route::get('verifypass','TravelController@verifypass');
 Route::get('request','TravelController@request');
+Route::get('qr','qrverified');
 
 //Medical Stores
 Route::view('medicalview','medical');
