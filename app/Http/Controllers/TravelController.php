@@ -61,7 +61,9 @@ class TravelController extends Controller
             ->get();
         if($data[0]->verified!=null)
         {
-            return view('pass');
+            return view('pass',[
+                'data'=>$data
+            ]);
         }
         else{
             return view('requesttravel');
