@@ -16,7 +16,7 @@
         <p class="movie-title">This Is A Verified Travelling Pass</p>
         <p class="cinema">Name : {{session('logininfo')[0]->name}}</p>
     </div>
-    <div class="poster" style="background: url('/images/qr.png'); background-size: 100%">
+    <div class="poster" style="background-image: url('{{asset('/images/qr.png')}}'); background-size: 100%">
     </div>
     <div class="info">
     </div>
