@@ -17,4 +17,10 @@ class PassController extends Controller
             'data'=>$data
         ]);
     }
+
+    function openqr(){
+        if (request()->get('code')=='123465'){
+            return view('qrverified');
+        }
+    }
 }

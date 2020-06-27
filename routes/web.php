@@ -74,34 +74,41 @@ Route::get('/chat/{docid}', 'ChatController@index');
 
 
 //Volunteers
-Route::view('/createevent','createevent');
-Route::get('geteid','EventController@getfulldata');
-Route::view('showparticipant','showparticipant');
-Route::get('events','EventController@retrieve');
-Route::post('eventcontroller','EventController@insert');
-Route::view('addparticipants','addparticipants');
-Route::post('addpp','AddParticipants@insert');
-Route::get('assignwork',function () {
+Route::view('/createevent', 'createevent');
+Route::get('geteid', 'EventController@getfulldata');
+Route::view('showparticipant', 'showparticipant');
+Route::get('events', 'EventController@retrieve');
+Route::post('eventcontroller', 'EventController@insert');
+Route::view('addparticipants', 'addparticipants');
+Route::post('addpp', 'AddParticipants@insert');
+Route::get('assignwork', function () {
     return view('assignwork', [
         "pid" => request()->get('pid'),
         "eid" => request()->get('eid')
     ]);
 });
-Route::post('/addwork','EventController@addwork');
+Route::post('/addwork', 'EventController@addwork');
 Route::get("/participates", "ParticiapantController@retrieve");
-Route::get("searchevents","SearchEventController@retrieve");
-Route::get('eventparticipate','SearchEventController@insert');
+Route::get("searchevents", "SearchEventController@retrieve");
+Route::get('eventparticipate', 'SearchEventController@insert');
 
 
 //Pass
-Route::post('requestcont','TravelController@index');
-Route::get('pass',"PassController@index");
-Route::get('getpassdetails','TravelController@verify');
-Route::get('verifypass','TravelController@verifypass');
-Route::get('request','TravelController@request');
-Route::get('qr','qrverified');
+Route::post('requestcont', 'TravelController@index');
+
+Route::get('pass', "PassController@index");
+
+Route::get('getpassdetails', 'TravelController@verify');
+
+Route::get('verifypass', 'TravelController@verifypass');
+
+Route::get('request', 'TravelController@request');
+
+Route::get('qr', 'PassController@openqr');
 
 //Medical Stores
-Route::view('medicalview','medical');
-Route::get('medicalcontroller','MedicalController@retrieve');
+
+Route::view('medicalview', 'medical');
+
+Route::get('medicalcontroller', 'MedicalController@retrieve');
 
