@@ -13,11 +13,10 @@
 <div class="ticket">
     <div class="holes-top"></div>
     <div class="title">
-        <p class="cinema">ODEON CINEMA PRESENTS</p>
-        <p class="movie-title">ONLY GOD FORGIVES</p>
+        <p class="cinema">This Is A Verified Travelling Pass</p>
+        <p class="movie-title">Name : {{session('logininfo')[0]->name}}</p>
     </div>
-    <div class="poster">
-        <img src="images/qr.png" alt="qr not found" />
+    <div class="poster" style="background: url('{{images/qr.png}}')">
     </div>
     <div class="info">
     </div>
