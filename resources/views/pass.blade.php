@@ -17,7 +17,7 @@
         <p class="cinema">Name : {{session('logininfo')[0]->name}}</p>
     </div>
     <div class="poster">
-        <img src="images/qr.png" alt="qr not found" height="200" width="300"/>
+        <img src="images/qr.png" alt="qr not found" height="200" width="100%"/>
     </div>
     <div class="info">
     </div>
